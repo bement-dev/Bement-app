@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Bement/../.jazzy.yaml">
+   </FileRef>
+   <FileRef
       location = "group:Bement.xcodeproj">
    </FileRef>
    <FileRef

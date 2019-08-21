@@ -53,29 +53,6 @@
 		B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD0230DF2D500CF4420 /* Main.storyboard */; };
 		B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD3230DF38600CF4420 /* Assets.xcassets */; };
 		B2824BD7230DF5EA00CF4420 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2824BD6230DF5EA00CF4420 /* CloudKit.framework */; };
-		B2824BFB230DF77A00CF4420 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD9230DF77900CF4420 /* index.html */; };
-		B2824BFC230DF77A00CF4420 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = B2824BDA230DF77900CF4420 /* search.json */; };
-		B2824BFD230DF77A00CF4420 /* highlight.css in Resources */ = {isa = PBXBuildFile; fileRef = B2824BDC230DF77900CF4420 /* highlight.css */; };
-		B2824BFE230DF77A00CF4420 /* jazzy.css in Resources */ = {isa = PBXBuildFile; fileRef = B2824BDD230DF77900CF4420 /* jazzy.css */; };
-		B2824BFF230DF77A00CF4420 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B2824BDF230DF77900CF4420 /* jquery.min.js */; };
-		B2824C00230DF77A00CF4420 /* jazzy.js in Resources */ = {isa = PBXBuildFile; fileRef = B2824BE0230DF77900CF4420 /* jazzy.js */; };
-		B2824C01230DF77A00CF4420 /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = B2824BE2230DF77A00CF4420 /* carat.png */; };
-		B2824C02230DF77A00CF4420 /* dash.png in Resources */ = {isa = PBXBuildFile; fileRef = B2824BE3230DF77A00CF4420 /* dash.png */; };
-		B2824C03230DF77A00CF4420 /* gh.png in Resources */ = {isa = PBXBuildFile; fileRef = B2824BE4230DF77A00CF4420 /* gh.png */; };
-		B2824C04230DF77A00CF4420 /* undocumented.json in Resources */ = {isa = PBXBuildFile; fileRef = B2824BE5230DF77A00CF4420 /* undocumented.json */; };
-		B2824C05230DF77A00CF4420 /* badge.svg in Resources */ = {isa = PBXBuildFile; fileRef = B2824BE6230DF77A00CF4420 /* badge.svg */; };
-		B2824C06230DF77A00CF4420 /* docSet.dsidx in Resources */ = {isa = PBXBuildFile; fileRef = B2824BEB230DF77A00CF4420 /* docSet.dsidx */; };
-		B2824C07230DF77A00CF4420 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B2824BED230DF77A00CF4420 /* index.html */; };
-		B2824C08230DF77A00CF4420 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = B2824BEE230DF77A00CF4420 /* search.json */; };
-		B2824C09230DF77A00CF4420 /* highlight.css in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF0230DF77A00CF4420 /* highlight.css */; };
-		B2824C0A230DF77A00CF4420 /* jazzy.css in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF1230DF77A00CF4420 /* jazzy.css */; };
-		B2824C0B230DF77A00CF4420 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF3230DF77A00CF4420 /* jquery.min.js */; };
-		B2824C0C230DF77A00CF4420 /* jazzy.js in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF4230DF77A00CF4420 /* jazzy.js */; };
-		B2824C0D230DF77A00CF4420 /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF6230DF77A00CF4420 /* carat.png */; };
-		B2824C0E230DF77A00CF4420 /* dash.png in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF7230DF77A00CF4420 /* dash.png */; };
-		B2824C0F230DF77A00CF4420 /* gh.png in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF8230DF77A00CF4420 /* gh.png */; };
-		B2824C10230DF77A00CF4420 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2824BF9230DF77A00CF4420 /* Info.plist */; };
-		B2824C11230DF77A00CF4420 /* .tgz in Resources */ = {isa = PBXBuildFile; fileRef = B2824BFA230DF77A00CF4420 /* .tgz */; };
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
 		B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4918230DEC37007DB33A /* SceneDelegate.swift */; };
 		B29E4921230DEC37007DB33A /* Bement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B29E491F230DEC37007DB33A /* Bement.xcdatamodeld */; };
@@ -399,18 +376,18 @@
 				B2824BD0230DF2D500CF4420 /* Main.storyboard */,
 				B2824B53230DEF0000CF4420 /* LaunchScreen.storyboard */,
 				B2824BCA230DF24D00CF4420 /* Localizable.strings */,
-				B29E4927230DEC3F007DB33A /* Info.plist */,
-				B2824B6F230DEF0200CF4420 /* Bement Buildings.mlmodel */,
-				B2824BD3230DF38600CF4420 /* Assets.xcassets */,
-				B29E491F230DEC37007DB33A /* Bement.xcdatamodeld */,
-				B2824B63230DEF0200CF4420 /* Extension */,
 				B2824B6D230DEF0200CF4420 /* GlobalVariable.swift */,
+				B2824B63230DEF0200CF4420 /* Extension */,
 				B2824B50230DEF0000CF4420 /* Helpers */,
 				B2824B54230DEF0000CF4420 /* Social Media Feeds */,
 				B2824B6E230DEF0200CF4420 /* CatalogResources.swift */,
 				B2824B5F230DEF0100CF4420 /* Tools.swift */,
 				B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */,
 				B2824B61230DEF0100CF4420 /* Announcement.swift */,
+				B2824BD3230DF38600CF4420 /* Assets.xcassets */,
+				B29E4927230DEC3F007DB33A /* Info.plist */,
+				B29E491F230DEC37007DB33A /* Bement.xcdatamodeld */,
+				B2824B6F230DEF0200CF4420 /* Bement Buildings.mlmodel */,
 			);
 			path = Bement;
 			sourceTree = "<group>";
@@ -488,33 +465,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2824C03230DF77A00CF4420 /* gh.png in Resources */,
-				B2824BFE230DF77A00CF4420 /* jazzy.css in Resources */,
-				B2824C09230DF77A00CF4420 /* highlight.css in Resources */,
-				B2824C00230DF77A00CF4420 /* jazzy.js in Resources */,
-				B2824C08230DF77A00CF4420 /* search.json in Resources */,
-				B2824BFF230DF77A00CF4420 /* jquery.min.js in Resources */,
-				B2824BFD230DF77A00CF4420 /* highlight.css in Resources */,
-				B2824BFB230DF77A00CF4420 /* index.html in Resources */,
-				B2824C05230DF77A00CF4420 /* badge.svg in Resources */,
 				B2824BC8230DF24D00CF4420 /* Localizable.strings in Resources */,
-				B2824C11230DF77A00CF4420 /* .tgz in Resources */,
-				B2824C0F230DF77A00CF4420 /* gh.png in Resources */,
-				B2824C06230DF77A00CF4420 /* docSet.dsidx in Resources */,
-				B2824C10230DF77A00CF4420 /* Info.plist in Resources */,
-				B2824C0E230DF77A00CF4420 /* dash.png in Resources */,
 				B2824B89230DEF0300CF4420 /* LaunchScreen.storyboard in Resources */,
-				B2824C0D230DF77A00CF4420 /* carat.png in Resources */,
-				B2824C04230DF77A00CF4420 /* undocumented.json in Resources */,
-				B2824BFC230DF77A00CF4420 /* search.json in Resources */,
 				B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */,
-				B2824C01230DF77A00CF4420 /* carat.png in Resources */,
-				B2824C0B230DF77A00CF4420 /* jquery.min.js in Resources */,
-				B2824C0C230DF77A00CF4420 /* jazzy.js in Resources */,
-				B2824C0A230DF77A00CF4420 /* jazzy.css in Resources */,
 				B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */,
-				B2824C02230DF77A00CF4420 /* dash.png in Resources */,
-				B2824C07230DF77A00CF4420 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
