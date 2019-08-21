@@ -396,7 +396,6 @@
 				B29E4916230DEC37007DB33A /* AppDelegate.swift */,
 				B29E4918230DEC37007DB33A /* SceneDelegate.swift */,
 				B2824B72230DEF0300CF4420 /* User Interface */,
-				B2824B61230DEF0100CF4420 /* Announcement.swift */,
 				B2824BD0230DF2D500CF4420 /* Main.storyboard */,
 				B2824B53230DEF0000CF4420 /* LaunchScreen.storyboard */,
 				B2824BCA230DF24D00CF4420 /* Localizable.strings */,
@@ -411,6 +410,7 @@
 				B2824B6E230DEF0200CF4420 /* CatalogResources.swift */,
 				B2824B5F230DEF0100CF4420 /* Tools.swift */,
 				B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */,
+				B2824B61230DEF0100CF4420 /* Announcement.swift */,
 			);
 			path = Bement;
 			sourceTree = "<group>";
