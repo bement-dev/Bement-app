@@ -1,0 +1,351 @@
+/* Class = "UILabel"; text = "Grade 6"; ObjectID = "03b-PL-rrN"; */
+"03b-PL-rrN.text" = "6年级";
+
+/* Class = "UILabel"; text = "All Public Team Calendars"; ObjectID = "0Fh-zF-cme"; */
+"0Fh-zF-cme.text" = "综合体育项目日历";
+
+/* Class = "UIButton"; normalTitle = "Contact Bement"; ObjectID = "0Qw-s0-1J0"; */
+"0Qw-s0-1J0.normalTitle" = "联系Bement";
+
+/* Class = "UINavigationItem"; title = "The Look Ahead"; ObjectID = "1Ky-Pn-kZy"; */
+"1Ky-Pn-kZy.title" = "The Look Ahead";
+
+/* Class = "UITextField"; placeholder = "U.S."; ObjectID = "1av-Nv-Yq3"; */
+"1av-Nv-Yq3.placeholder" = "U.S.";
+
+/* Class = "UITextField"; placeholder = "Parent/Guardian Name"; ObjectID = "20W-fP-vJ9"; */
+"20W-fP-vJ9.placeholder" = "家长/监护人 名称";
+
+/* Class = "UILabel"; text = "Golf"; ObjectID = "2OA-hA-n5V"; */
+"2OA-hA-n5V.text" = "高尔夫";
+
+/* Class = "UILabel"; text = "Swimming and Diving"; ObjectID = "2sC-59-fnE"; */
+"2sC-59-fnE.text" = "游泳与跳水";
+
+/* Class = "UILabel"; text = "Calendars"; ObjectID = "3HW-jr-Rbp"; */
+"3HW-jr-Rbp.text" = "日历";
+
+/* Class = "UISegmentedControl"; 3XP-FX-LRV.segmentTitles[0] = "Boarder"; ObjectID = "3XP-FX-LRV"; */
+"3XP-FX-LRV.segmentTitles[0]" = "住宿";
+
+/* Class = "UISegmentedControl"; 3XP-FX-LRV.segmentTitles[1] = "Day"; ObjectID = "3XP-FX-LRV"; */
+"3XP-FX-LRV.segmentTitles[1]" = "走读";
+
+/* Class = "UILabel"; text = "Cross Country"; ObjectID = "3YY-D6-Fhw"; */
+"3YY-D6-Fhw.text" = "越野跑";
+
+/* Class = "UILabel"; text = "Performance Calendar"; ObjectID = "40F-Me-7Xm"; */
+"40F-Me-7Xm.text" = "表演日历";
+
+/* Class = "UITableViewSection"; headerTitle = "School Calenders"; ObjectID = "4LT-kO-62H"; */
+"4LT-kO-62H.headerTitle" = "学校日历";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "4Ld-ci-KEf"; */
+"4Ld-ci-KEf.text" = "邮箱：";
+
+/* Class = "UILabel"; text = "Grade Applying for:"; ObjectID = "4iT-wV-BQH"; */
+"4iT-wV-BQH.text" = "申请年级：";
+
+/* Class = "UILabel"; text = "Tennis"; ObjectID = "4qG-O4-BMA"; */
+"4qG-O4-BMA.text" = "网球";
+
+/* Class = "UIButton"; normalTitle = "Inquire"; ObjectID = "6GH-9Y-ndM"; */
+"6GH-9Y-ndM.normalTitle" = "询问";
+
+/* Class = "UILabel"; text = "Grade 5"; ObjectID = "6Nm-8Y-TZ4"; */
+"6Nm-8Y-TZ4.text" = "5年级";
+
+/* Class = "UILabel"; text = "How did you learn about Bement?"; ObjectID = "7BL-h2-xIZ"; */
+"7BL-h2-xIZ.text" = "您如何得知Bement的?";
+
+/* Class = "UILabel"; text = "JV Squash"; ObjectID = "7j0-4K-P56"; */
+"7j0-4K-P56.text" = "JV 壁球";
+
+/* Class = "UITableViewSection"; headerTitle = "Athletic Calenders"; ObjectID = "82D-ww-NVV"; */
+"82D-ww-NVV.headerTitle" = "体育日历";
+
+/* Class = "UINavigationItem"; title = "Clagett McLannan"; ObjectID = "8es-Tg-syQ"; */
+"8es-Tg-syQ.title" = "Clagett McLannan";
+
+/* Class = "UILabel"; text = "Boys Varsity Soccer"; ObjectID = "8lX-VR-cWE"; */
+"8lX-VR-cWE.text" = "男生 Varsity 足球";
+
+/* Class = "UILabel"; text = "Recreational Tennis"; ObjectID = "9Tq-Gs-yRh"; */
+"9Tq-Gs-yRh.text" = "娱乐性网球";
+
+/* Class = "UILabel"; text = "Welcome to"; ObjectID = "9qB-yG-qGv"; */
+"9qB-yG-qGv.text" = "欢迎光临";
+
+/* Class = "UILabel"; text = "Last Name"; ObjectID = "AG3-8o-T07"; */
+"AG3-8o-T07.text" = "姓";
+
+/* Class = "UILabel"; text = "Boys JV Soccer"; ObjectID = "AMg-Fv-gX2"; */
+"AMg-Fv-gX2.text" = "男生 JV 足球";
+
+/* Class = "UILabel"; text = "Current Grade:"; ObjectID = "Aol-wh-Guc"; */
+"Aol-wh-Guc.text" = "当前年级:";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "BpX-FV-H6P"; */
+"BpX-FV-H6P.title" = "返回";
+
+/* Class = "UIButton"; normalTitle = "Take a photo"; ObjectID = "CEb-VY-Qur"; */
+"CEb-VY-Qur.normalTitle" = "拍摄";
+
+/* Class = "UILabel"; text = "Boys JV Basketball"; ObjectID = "CHM-XI-4QT"; */
+"CHM-XI-4QT.text" = "男生 JV 篮球";
+
+
+/* Class = "UIButton"; normalTitle = "Phone"; ObjectID = "DeG-WQ-wg7"; */
+"DeG-WQ-wg7.normalTitle" = "电话";
+
+/* Class = "UILabel"; text = "Year Applying for"; ObjectID = "Dnf-dn-nII"; */
+"Dnf-dn-nII.text" = "申请年份";
+
+/* Class = "UILabel"; text = "Library Catalog"; ObjectID = "FTb-Rb-x7N"; */
+"FTb-Rb-x7N.text" = "图书馆目录";
+
+/* Class = "UILabel"; text = "Clagett McLennan"; ObjectID = "GBb-mO-eZe"; */
+"GBb-mO-eZe.text" = "Clagett McLennan";
+
+/* Class = "UIButton"; normalTitle = "Please select the year"; ObjectID = "GJN-YY-yge"; */
+"GJN-YY-yge.normalTitle" = "请选择年份";
+
+/* Class = "UINavigationItem"; title = "Instagram"; ObjectID = "HAl-MS-LsT"; */
+"HAl-MS-LsT.title" = "Instagram";
+
+/* Class = "UITextField"; placeholder = "Friends, family, etc... (optional)"; ObjectID = "HGT-zW-bgI"; */
+"HGT-zW-bgI.placeholder" = "朋友, 家人... (可选)";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "I3M-7t-MzA"; */
+"I3M-7t-MzA.text" = "名字:";
+
+/* Class = "UILabel"; text = "Outdoor Skills"; ObjectID = "IQV-9I-bJI"; */
+"IQV-9I-bJI.text" = "户外技巧";
+
+/* Class = "UILabel"; text = "Date: 04/23/2004"; ObjectID = "Ial-eH-MWc"; */
+"Ial-eH-MWc.text" = "日期: 04/23/2004";
+
+/* Class = "UIButton"; normalTitle = "Please select the grade"; ObjectID = "If2-hg-0Nh"; */
+"If2-hg-0Nh.normalTitle" = "请选择年级";
+
+/* Class = "UILabel"; text = "Girls Varsity Soccer"; ObjectID = "IoO-Dv-bpG"; */
+"IoO-Dv-bpG.text" = "女生 Varsity 足球";
+
+/* Class = "UILabel"; text = "Street:"; ObjectID = "JMU-4u-ul1"; */
+"JMU-4u-ul1.text" = "街道:";
+
+/* Class = "UILabel"; text = "Date of Birth"; ObjectID = "K22-Go-Pnd"; */
+"K22-Go-Pnd.text" = "生日";
+
+/* Class = "UILabel"; text = "Boys Lacrosse"; ObjectID = "N75-FZ-SNz"; */
+"N75-FZ-SNz.text" = "男生长曲棍球";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "NB6-v9-Eve"; */
+"NB6-v9-Eve.title" = "Title";
+
+/* Class = "UINavigationItem"; title = "Inquire"; ObjectID = "NDY-EV-tQ4"; */
+"NDY-EV-tQ4.title" = "询问";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "NUK-aH-L8u"; */
+"NUK-aH-L8u.text" = "性别";
+
+/* Class = "UILabel"; text = "Girls Varsity Basketball"; ObjectID = "NZA-O9-Ias"; */
+"NZA-O9-Ias.text" = "nvsh Varsity 篮球";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "OVo-C3-ODs"; */
+"OVo-C3-ODs.title" = "Title";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "PBg-Fg-WzK"; */
+"PBg-Fg-WzK.text" = "名字:";
+
+/* Class = "UILabel"; text = "Toni Costa"; ObjectID = "Pvb-sT-r4I"; */
+"Pvb-sT-r4I.text" = "Toni Costa";
+
+/* Class = "UILabel"; text = "All Public Calendars"; ObjectID = "Q9s-3L-kqM"; */
+"Q9s-3L-kqM.text" = "综合日历";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QVy-ef-e4S"; */
+"QVy-ef-e4S.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Email"; ObjectID = "QtJ-jh-cyy"; */
+"QtJ-jh-cyy.normalTitle" = "邮箱";
+
+/* Class = "UITextField"; placeholder = "me@runkaizhang.xyz"; ObjectID = "RGL-QO-eNJ"; */
+"RGL-QO-eNJ.placeholder" = "me@runkaizhang.xyz";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "SKA-HD-sAb"; */
+"SKA-HD-sAb.title" = "返回";
+
+/* Class = "UISegmentedControl"; Sy7-D7-C00.segmentTitles[0] = "Male"; ObjectID = "Sy7-D7-C00"; */
+"Sy7-D7-C00.segmentTitles[0]" = "男";
+
+/* Class = "UISegmentedControl"; Sy7-D7-C00.segmentTitles[1] = "Female"; ObjectID = "Sy7-D7-C00"; */
+"Sy7-D7-C00.segmentTitles[1]" = "女";
+
+/* Class = "UISegmentedControl"; Sy7-D7-C00.segmentTitles[2] = "Other"; ObjectID = "Sy7-D7-C00"; */
+"Sy7-D7-C00.segmentTitles[2]" = "其他";
+
+/* Class = "UIButton"; normalTitle = "Please select the grade"; ObjectID = "TVm-Q8-XKO"; */
+"TVm-Q8-XKO.normalTitle" = "请选择年级";
+
+/* Class = "UILabel"; text = "Lower School Calendar"; ObjectID = "TfO-pm-4mR"; */
+"TfO-pm-4mR.text" = "小学日历";
+
+/* Class = "UILabel"; text = "Field Hockey"; ObjectID = "Tkk-RX-Lr3"; */
+"Tkk-RX-Lr3.text" = "曲棍球";
+
+/* Class = "UILabel"; text = "Grade 8 and 9"; ObjectID = "Ut7-x9-5NY"; */
+"Ut7-x9-5NY.text" = "8和9年级;
+
+/* Class = "UIButton"; normalTitle = "Contact"; ObjectID = "W1Y-C0-2tm"; */
+"W1Y-C0-2tm.normalTitle" = "联系";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "WSJ-Mc-Ljm"; */
+"WSJ-Mc-Ljm.normalTitle" = "发送";
+
+/* Class = "UILabel"; text = "All-School Calendar"; ObjectID = "WXc-vv-Wgw"; */
+"WXc-vv-Wgw.text" = "全校日历";
+
+/* Class = "UINavigationItem"; title = "Lunch Schedule"; ObjectID = "WZg-za-xur"; */
+"WZg-za-xur.title" = "午餐安排";
+
+/* Class = "UITextField"; placeholder = "Sunderland (optional)"; ObjectID = "Wzu-Cm-X5g"; */
+"Wzu-Cm-X5g.placeholder" = "Sunderland (可选)";
+
+/* Class = "UILabel"; text = "Grade 3"; ObjectID = "XCk-uj-Cpd"; */
+"XCk-uj-Cpd.text" = "3年级";
+
+/* Class = "UILabel"; text = "Boarder/Day"; ObjectID = "YfA-YT-ISj"; */
+"YfA-YT-ISj.text" = "住宿/走读";
+
+/* Class = "UILabel"; text = "Grade 2"; ObjectID = "Yyr-Um-Yek"; */
+"Yyr-Um-Yek.text" = "2年级";
+
+/* Class = "UILabel"; text = "Alpine Ski Racing"; ObjectID = "Z7y-Ja-fNq"; */
+"Z7y-Ja-fNq.text" = "滑雪竞赛";
+
+/* Class = "UITextField"; placeholder = "Massachusetts (optional)"; ObjectID = "ZEk-gq-RRh"; */
+"ZEk-gq-RRh.placeholder" = "Massachusetts (可选)";
+
+/* Class = "UILabel"; text = "City:"; ObjectID = "ZFc-7H-UQ2"; */
+"ZFc-7H-UQ2.text" = "城市：";
+
+/* Class = "UILabel"; text = "Ultimate"; ObjectID = "ZLu-zX-Ylh"; */
+"ZLu-zX-Ylh.text" = "飞盘";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "ZOz-OG-7HR"; */
+"ZOz-OG-7HR.title" = "返回";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Zfe-Lb-U5d"; */
+"Zfe-Lb-U5d.title" = "返回";
+
+/* Class = "UILabel"; text = "Current School Name"; ObjectID = "agB-uP-coE"; */
+"agB-uP-coE.text" = "当前学校名称";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "bai-Z2-CFM"; */
+"bai-Z2-CFM.title" = "返回";
+
+/* Class = "UITabBarItem"; title = "Instagram"; ObjectID = "czN-uY-u6H"; */
+"czN-uY-u6H.title" = "Instagram";
+
+/* Class = "UILabel"; text = "Current Grade"; ObjectID = "dJx-cf-7GN"; */
+"dJx-cf-7GN.text" = "当前年级";
+
+/* Class = "UITextView"; text = "Take or choose a photo to identify a Bement building"; ObjectID = "eNL-hn-LAe"; */
+"eNL-hn-LAe.text" = "选择或者拍摄一张Bement建筑来把它认出来。";
+
+/* Class = "UILabel"; text = "Year Applying for:"; ObjectID = "fIz-5l-Jcw"; */
+"fIz-5l-Jcw.text" = "申请年份";
+
+/* Class = "UILabel"; text = "The Look Ahead"; ObjectID = "hTI-jx-ltX"; */
+"hTI-jx-ltX.text" = "The Look Ahead";
+
+/* Class = "UILabel"; text = "Grade 7"; ObjectID = "i4J-NL-sfX"; */
+"i4J-NL-sfX.text" = "7年级";
+
+/* Class = "UINavigationItem"; title = "Contact Bement"; ObjectID = "i80-x1-vAS"; */
+"i80-x1-vAS.title" = "联系 Bement";
+
+/* Class = "UINavigationItem"; title = "Library Resources"; ObjectID = "iUg-XZ-LkL"; */
+"iUg-XZ-LkL.title" = "图书馆资源";
+
+/* Class = "UINavigationItem"; title = "Inquire"; ObjectID = "j7D-TJ-Wgj"; */
+"j7D-TJ-Wgj.title" = "询问";
+
+/* Class = "UILabel"; text = "Boys Varsity Basketball"; ObjectID = "kBM-9T-Kux"; */
+"kBM-9T-Kux.text" = "男生 Varsity 篮球";
+
+/* Class = "UILabel"; text = "Grade 4"; ObjectID = "kMn-kC-gQM"; */
+"kMn-kC-gQM.text" = "4年级";
+
+/* Class = "UITextField"; placeholder = "Student Name"; ObjectID = "kkH-pf-q4n"; */
+"kkH-pf-q4n.placeholder" = "学生名称";
+
+/* Class = "UILabel"; text = "Office of the Head of School, Registrar"; ObjectID = "ktX-4a-TLq"; */
+"ktX-4a-TLq.text" = "Office of the Head of School, Registrar";
+
+/* Class = "UITextField"; placeholder = "27 Hadley Rd (optional)"; ObjectID = "lPh-Y1-bAE"; */
+"lPh-Y1-bAE.placeholder" = "27 Hadley Rd (可选)";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "lin-QC-5dc"; */
+"lin-QC-5dc.text" = "国家";
+
+/* Class = "UILabel"; text = "Lunch Schedule"; ObjectID = "mkO-cE-uaf"; */
+"mkO-cE-uaf.text" = "餐饮安排";
+
+/* Class = "UILabel"; text = "Upper School Calendar"; ObjectID = "n5U-Z8-RSH"; */
+"n5U-Z8-RSH.text" = "中学日历";
+
+/* Class = "UILabel"; text = "Dance"; ObjectID = "oMW-eW-JmV"; */
+"oMW-eW-JmV.text" = "舞蹈";
+
+/* Class = "UILabel"; text = "Varsity Squash"; ObjectID = "oht-GV-E5k"; */
+"oht-GV-E5k.text" = "Varsity 壁球";
+
+/* Class = "UILabel"; text = "Track and Field"; ObjectID = "pSx-Io-Qsh"; */
+"pSx-Io-Qsh.text" = "田径比赛";
+
+/* Class = "UIButton"; normalTitle = "Send Inquiry"; ObjectID = "qbQ-54-1i4"; */
+"qbQ-54-1i4.normalTitle" = "发送闻讯";
+
+/* Class = "UINavigationItem"; title = "Contacts"; ObjectID = "qmG-QL-zQO"; */
+"qmG-QL-zQO.title" = "联系";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "r9n-6N-GcG"; */
+"r9n-6N-GcG.text" = "Label";
+
+/* Class = "UILabel"; text = "State:"; ObjectID = "rDe-Km-lYy"; */
+"rDe-Km-lYy.text" = "州/省:";
+
+/* Class = "UILabel"; text = "First Name"; ObjectID = "rQI-D4-Sag"; */
+"rQI-D4-Sag.text" = "名";
+
+/* Class = "UILabel"; text = "Girls Lacrosse"; ObjectID = "sIk-gx-MwG"; */
+"sIk-gx-MwG.text" = "女生长曲棍球";
+
+/* Class = "UILabel"; text = "Admission Calendar"; ObjectID = "sbH-nj-wsv"; */
+"sbH-nj-wsv.text" = "招生部日历";
+
+/* Class = "UILabel"; text = "Kindergarten"; ObjectID = "wE9-KQ-38e"; */
+"wE9-KQ-38e.text" = "幼儿园";
+
+/* Class = "UILabel"; text = "Grade 1"; ObjectID = "wft-3s-M6F"; */
+"wft-3s-M6F.text" = "1年级";
+
+/* Class = "UILabel"; text = "Social Media"; ObjectID = "xAe-pW-h53"; */
+"xAe-pW-h53.text" = "社交媒体";
+
+/* Class = "UILabel"; text = "Girls JV Basketball "; ObjectID = "xWu-QW-OBg"; */
+"xWu-QW-OBg.text" = "女生 JV 篮球";
+
+/* Class = "UILabel"; text = "Grade Applying for"; ObjectID = "y4e-IY-VL9"; */
+"y4e-IY-VL9.text" = "申请年级";
+
+/* Class = "UINavigationItem"; title = "Calendars"; ObjectID = "yay-SP-Auv"; */
+"yay-SP-Auv.title" = "日历";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "yb1-D7-VUB"; */
+"yb1-D7-VUB.title" = "返回";
+
+/* Class = "UITextField"; placeholder = "Name of the current school"; ObjectID = "zih-pH-Bei"; */
+"zih-pH-Bei.placeholder" = "当前学校名称;

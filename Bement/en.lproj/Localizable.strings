@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Bement
+
+  Created by Runkai Zhang on 8/21/19.
+  Copyright © 2019 The Bement School. All rights reserved.
+*/
+
+"phone" = "Phone";
+"Cancel" = "Cancel";
+"ok" = "Ok";
+"snowTitle" = "Tomorrow is a snow day.";
+"snowSubtitle" = "Stay safe!";
+"noSchool" = "There is no school tomorrow.";
+"summer" = "Have a great summer!";
+"email" = "Email";

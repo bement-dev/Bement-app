@@ -1,0 +1,32 @@
+PODS:
+  - Fuzi (3.1.1)
+  - Kingfisher (5.7.0)
+  - MarkdownView (1.6.0)
+  - Shift (0.2.2)
+  - SkeletonView (1.7)
+
+DEPENDENCIES:
+  - Fuzi
+  - Kingfisher
+  - MarkdownView
+  - Shift
+  - SkeletonView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Fuzi
+    - Kingfisher
+    - MarkdownView
+    - Shift
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Fuzi: bcc5694488dd6e672e126cbf3c5471d7a79506d1
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  MarkdownView: 25c1c2d7ff9706624a575556296e188be3dd3f6b
+  Shift: 86dc634d046fc86a879dbfdb492739672cc092be
+  SkeletonView: 7d7378731b708f8a6e6b1ffefb68cc3903f10a03
+
+PODFILE CHECKSUM: 540f26b20b172bc27a9c0a62f76b3f1ba2b8cb4b
+
+COCOAPODS: 1.7.5

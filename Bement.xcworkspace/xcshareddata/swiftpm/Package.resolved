@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FeedKit",
+        "repositoryURL": "https://github.com/nmdias/FeedKit",
+        "state": {
+          "branch": null,
+          "revision": "2e22aeebc438f15c4a5441645f20a26a1ba9febd",
+          "version": "8.1.1"
+        }
+      },
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager",
+        "state": {
+          "branch": null,
+          "revision": "3f31c45feae664bcd81615796ab444e1ff450d54",
+          "version": "6.4.1"
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
+        "state": {
+          "branch": null,
+          "revision": "6c8652a8ea35a64cf36367d07b3d6e5e6a24b272",
+          "version": "4.3.1"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "5.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
