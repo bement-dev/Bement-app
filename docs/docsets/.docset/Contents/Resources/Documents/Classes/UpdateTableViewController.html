@@ -4,188 +4,216 @@
     <title>UpdateTableViewController Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
+
     <a name="//apple_ref/swift/Class/UpdateTableViewController" class="dashAnchor"></a>
+
     <a title="UpdateTableViewController Class Reference"></a>
-    <header>
-      <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (11% documented)</p>
-        <p class="header-right"><a href="https://github.com/bement-dev/Bement-app"><img src="../img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fbement%2Ddev%2Egithub%2Eio%2FBement%2Dapp%2Fdocsets%2F%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
-      </div>
-    </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="../index.html"> Reference</a>
-        <img id="carat" src="../img/carat.png" />
-        UpdateTableViewController Class Reference
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (11% documented)
       </p>
-    </div>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bement-dev/Bement-app">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fbement%2Ddev%2Egithub%2Eio%2FBement%2Dapp%2Fdocsets%2F%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      UpdateTableViewController Class Reference
+    </p>
+
     <div class="content-wrapper">
-      <nav class="sidebar">
+      <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/Announcement.html">Announcement</a>
+                <a class="nav-group-task-link" href="../Classes/Announcement.html">Announcement</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AnnouncementViewController.html">AnnouncementViewController</a>
+                <a class="nav-group-task-link" href="../Classes/AnnouncementViewController.html">AnnouncementViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+                <a class="nav-group-task-link" href="../Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Bement_Buildings.html">Bement_Buildings</a>
+                <a class="nav-group-task-link" href="../Classes/Bement_Buildings.html">Bement_Buildings</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Bement_BuildingsInput.html">Bement_BuildingsInput</a>
+                <a class="nav-group-task-link" href="../Classes/Bement_BuildingsInput.html">Bement_BuildingsInput</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Bement_BuildingsOutput.html">Bement_BuildingsOutput</a>
+                <a class="nav-group-task-link" href="../Classes/Bement_BuildingsOutput.html">Bement_BuildingsOutput</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CalendersTableViewController.html">CalendersTableViewController</a>
+                <a class="nav-group-task-link" href="../Classes/CalendersTableViewController.html">CalendersTableViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CameraPageViewController.html">CameraPageViewController</a>
+                <a class="nav-group-task-link" href="../Classes/CameraPageViewController.html">CameraPageViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CatalogDetailTableViewController.html">CatalogDetailTableViewController</a>
+                <a class="nav-group-task-link" href="../Classes/CatalogDetailTableViewController.html">CatalogDetailTableViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CatalogTableViewController.html">CatalogTableViewController</a>
+                <a class="nav-group-task-link" href="../Classes/CatalogTableViewController.html">CatalogTableViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CatalogWebViewController.html">CatalogWebViewController</a>
+                <a class="nav-group-task-link" href="../Classes/CatalogWebViewController.html">CatalogWebViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/ClagettViewController.html">ClagettViewController</a>
+                <a class="nav-group-task-link" href="../Classes/ClagettViewController.html">ClagettViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/ContactBementViewController.html">ContactBementViewController</a>
+                <a class="nav-group-task-link" href="../Classes/ContactBementViewController.html">ContactBementViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/DetailTableViewCell.html">DetailTableViewCell</a>
+                <a class="nav-group-task-link" href="../Classes/DetailTableViewCell.html">DetailTableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/FacebookTableViewController.html">FacebookTableViewController</a>
+                <a class="nav-group-task-link" href="../Classes/FacebookTableViewController.html">FacebookTableViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/FacebookWithImageTableViewCell.html">FacebookWithImageTableViewCell</a>
+                <a class="nav-group-task-link" href="../Classes/FacebookWithImageTableViewCell.html">FacebookWithImageTableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/HamburgerButton.html">HamburgerButton</a>
+                <a class="nav-group-task-link" href="../Classes/HamburgerButton.html">HamburgerButton</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/InquiryViewController.html">InquiryViewController</a>
+                <a class="nav-group-task-link" href="../Classes/InquiryViewController.html">InquiryViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/InstagramTableViewController.html">InstagramTableViewController</a>
+                <a class="nav-group-task-link" href="../Classes/InstagramTableViewController.html">InstagramTableViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/InstagramWithImageTableViewCell.html">InstagramWithImageTableViewCell</a>
+                <a class="nav-group-task-link" href="../Classes/InstagramWithImageTableViewCell.html">InstagramWithImageTableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/LoginViewController.html">LoginViewController</a>
+                <a class="nav-group-task-link" href="../Classes/LoginViewController.html">LoginViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/LookAheadViewController.html">LookAheadViewController</a>
+                <a class="nav-group-task-link" href="../Classes/LookAheadViewController.html">LookAheadViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/LunchViewController.html">LunchViewController</a>
+                <a class="nav-group-task-link" href="../Classes/LunchViewController.html">LunchViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+                <a class="nav-group-task-link" href="../Classes/SceneDelegate.html">SceneDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/SpeedContactViewController.html">SpeedContactViewController</a>
+                <a class="nav-group-task-link" href="../Classes/SpeedContactViewController.html">SpeedContactViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/Tools.html">Tools</a>
+                <a class="nav-group-task-link" href="../Classes/Tools.html">Tools</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/TwitterTableViewController.html">TwitterTableViewController</a>
+                <a class="nav-group-task-link" href="../Classes/TwitterTableViewController.html">TwitterTableViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/TwitterWithImageTableViewCell.html">TwitterWithImageTableViewCell</a>
+                <a class="nav-group-task-link" href="../Classes/TwitterWithImageTableViewCell.html">TwitterWithImageTableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/UpdateTableViewCell.html">UpdateTableViewCell</a>
+                <a class="nav-group-task-link" href="../Classes/UpdateTableViewCell.html">UpdateTableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/UpdateTableViewController.html">UpdateTableViewController</a>
+                <a class="nav-group-task-link" href="../Classes/UpdateTableViewController.html">UpdateTableViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/UpdateViewController.html">UpdateViewController</a>
+                <a class="nav-group-task-link" href="../Classes/UpdateViewController.html">UpdateViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/ViewController.html">ViewController</a>
+                <a class="nav-group-task-link" href="../Classes/ViewController.html">ViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/WeatherStore.html">WeatherStore</a>
+                <a class="nav-group-task-link" href="../Classes/WeatherStore.html">WeatherStore</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Extensions.html">Extensions</a>
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/CALayer.html">CALayer</a>
+                <a class="nav-group-task-link" href="../Extensions/CALayer.html">CALayer</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/UIImage.html">UIImage</a>
+                <a class="nav-group-task-link" href="../Extensions/UIImage.html">UIImage</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/UIStoryboard.html">UIStoryboard</a>
+                <a class="nav-group-task-link" href="../Extensions/UIStoryboard.html">UIStoryboard</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/UIStoryboard/Storyboard.html">– Storyboard</a>
+                <a class="nav-group-task-link" href="../Extensions/UIStoryboard/Storyboard.html">– Storyboard</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/UIView.html">UIView</a>
+                <a class="nav-group-task-link" href="../Extensions/UIView.html">UIView</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/UIViewController.html">UIViewController</a>
+                <a class="nav-group-task-link" href="../Extensions/UIViewController.html">UIViewController</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Protocols.html">Protocols</a>
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/SegueHandlerType.html">SegueHandlerType</a>
+                <a class="nav-group-task-link" href="../Protocols/SegueHandlerType.html">SegueHandlerType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/StoryboardIdentifiable.html">StoryboardIdentifiable</a>
+                <a class="nav-group-task-link" href="../Protocols/StoryboardIdentifiable.html">StoryboardIdentifiable</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Structs.html">Structures</a>
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AnimationHelper.html">AnimationHelper</a>
+                <a class="nav-group-task-link" href="../Structs/AnimationHelper.html">AnimationHelper</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Catalog.html">Catalog</a>
+                <a class="nav-group-task-link" href="../Structs/Catalog.html">Catalog</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/GlobalVariable.html">GlobalVariable</a>
+                <a class="nav-group-task-link" href="../Structs/GlobalVariable.html">GlobalVariable</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-        <section>
-          <section class="section">
+
+        <section class="section">
+          <div class="section-content">
             <h1>UpdateTableViewController</h1>
               <div class="declaration">
                 <div class="language">
@@ -195,10 +223,13 @@
               </div>
             <p>Undocumented</p>
 
-          </section>
-          <section class="section task-group-section">
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -263,7 +294,7 @@
                   <h3 class="section-name">Table view data source</h3>
                 </a>
               </div>
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -347,14 +378,15 @@
                 </li>
               </ul>
             </div>
-          </section>
+          </div>
         </section>
-        <section id="footer">
-          <p>&copy; 2019 <a class="link" href="http://www.runkaizhang.xyz/" target="_blank" rel="external">Runkai Zhang</a>. All rights reserved. (Last updated: 2019-08-22)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-        </section>
+
       </article>
     </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="http://www.runkaizhang.xyz/" target="_blank" rel="external">Runkai Zhang</a>. All rights reserved. (Last updated: 2019-08-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
   </body>
 </div>
 </html>

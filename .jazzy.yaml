@@ -3,6 +3,6 @@ author_url: http://www.runkaizhang.xyz/
 github_url: https://github.com/bement-dev/Bement-app
 root_url: https://bement-dev.github.io/Bement-app/
 output: docs
-theme: apple
+theme: fullwidth
 xcodebuild_arguments: [-workspace, 'Bement.xcworkspace', -scheme, 'Bement']
 min_acl: private
