@@ -1,6 +1,10 @@
 # The Bement Parent Portal
 [Original repository](https://github.com/1105420698/Bement-App)
 
+Basic Ground Rules:
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contribution Guide](CONTRIBUTING.md)
+
 ## What is it?
 It is an app that helps parents at Bement to get access news and information quicker and easier. 
 
