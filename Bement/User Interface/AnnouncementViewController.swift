@@ -10,21 +10,44 @@ import UIKit
 import CloudKit
 import Reachability
 
+/// The configuration `ViewController` class for announcements.
 class AnnouncementViewController: UIViewController {
     
-    @IBOutlet var currentAnnouncement: UILabel!
+    /// The button for saving the changes to the configuration.
     @IBOutlet var saveButton: UIButton!
+    /// The switch to determine whether the announcement is going to be displayed.
     @IBOutlet var announcementSwitch: UISwitch!
+    /// The `UITextField` for inputing the title of the announcement.
     @IBOutlet var titleField: UITextField!
+    /// The `UITextField` for inputing the first line of the announcement.
     @IBOutlet var firstField: UITextField!
+    /// The `UITextField` for inputing the second line of the announcement.
     @IBOutlet var secondField: UITextField!
     
+    /// Set up the button after the screen is loaded.
     override func viewDidLoad() {
         super.viewDidLoad()
 
         Tools.beautifulButton(saveButton)
     }
     
+    /// Disables the text fields if the switch is off, because it means that the announcement is not going to be displayed.
+    @IBAction func switchSwitched(_ sender: UISwitch) {
+        if sender.isOn {
+            titleField.isEnabled = true
+            firstField.isEnabled = true
+            secondField.isEnabled = true
+        } else {
+            titleField.isEnabled = false
+            firstField.isEnabled = false
+            secondField.isEnabled = false
+        }
+    }
+    
+    /**
+     Execute when `saveButton` is clicked.
+     This method first check whether an iCloud account is logged into the device, if true, then it will try to upload the `Announcement` record.
+    */
     @IBAction func saveClicked(_ sender: Any) {
         CKContainer.default().accountStatus(completionHandler: { accountStatus, _ in
             if accountStatus == .noAccount {

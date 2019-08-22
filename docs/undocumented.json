@@ -2,57 +2,8 @@
   "warnings": [
     {
       "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 13,
-      "symbol": "Announcement",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 14,
-      "symbol": "Announcement.display",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 15,
-      "symbol": "Announcement.titleString",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 16,
-      "symbol": "Announcement.firstLine",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 17,
-      "symbol": "Announcement.secondLine",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 19,
-      "symbol": "Announcement.init(display:titleString:firstLine:secondLine:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 26,
+      "line": 47,
       "symbol": "Announcement.upload(sender:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/Announcement.swift",
-      "line": 50,
-      "symbol": "Announcement.update(sender:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -65,72 +16,23 @@
     },
     {
       "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 17,
+      "line": 19,
       "symbol": "AppDelegate.instagramItems",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 18,
+      "line": 20,
       "symbol": "AppDelegate.twitterItems",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 19,
+      "line": 21,
       "symbol": "AppDelegate.facebookItems",
       "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 21,
-      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 69,
-      "symbol": "AppDelegate.application(_:supportedInterfaceOrientationsFor:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 81,
-      "symbol": "AppDelegate.topViewControllerWithRootViewController(rootViewController:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 95,
-      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 101,
-      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 109,
-      "symbol": "AppDelegate.persistentContainer",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/AppDelegate.swift",
-      "line": 138,
-      "symbol": "AppDelegate.saveContext()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -873,69 +775,6 @@
       "line": 43,
       "symbol": "Tools.component2Date(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 13,
-      "symbol": "AnnouncementViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 15,
-      "symbol": "AnnouncementViewController.currentAnnouncement",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 16,
-      "symbol": "AnnouncementViewController.saveButton",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 17,
-      "symbol": "AnnouncementViewController.announcementSwitch",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 18,
-      "symbol": "AnnouncementViewController.titleField",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 19,
-      "symbol": "AnnouncementViewController.firstField",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 20,
-      "symbol": "AnnouncementViewController.secondField",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 22,
-      "symbol": "AnnouncementViewController.viewDidLoad()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runkai/Bement/Bement/User Interface/AnnouncementViewController.swift",
-      "line": 28,
-      "symbol": "AnnouncementViewController.saveClicked(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

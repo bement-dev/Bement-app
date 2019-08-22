@@ -14,7 +14,7 @@
     <a title="Announcement Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (5% documented)</p>
+        <p><a href="../index.html"> Docs</a> (11% documented)</p>
         <p class="header-right"><a href="https://github.com/bement-dev/Bement-app"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fbement%2Ddev%2Egithub%2Eio%2FBement%2Dapp%2Fdocsets%2F%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -193,7 +193,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>The <code>Announcement</code> object, allowing the saving process to be easier.</p>
 
           </section>
           <section class="section task-group-section">
@@ -212,7 +212,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Whether or not the announcement is going to be displayed.</p>
 
                       </div>
                       <div class="declaration">
@@ -239,7 +239,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The title for the announcement</p>
 
                       </div>
                       <div class="declaration">
@@ -266,7 +266,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The first line of the announcement</p>
 
                       </div>
                       <div class="declaration">
@@ -293,7 +293,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The second line of the announcement</p>
 
                       </div>
                       <div class="declaration">
@@ -320,7 +320,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The initiation of an <code>Announcement</code> object.</p>
 
                       </div>
                       <div class="declaration">
@@ -330,6 +330,61 @@
                           <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">display</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">titleString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">firstLine</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">secondLine</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>display</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Bool</code> that determines whether the announcement is going to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>titleString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The title for the announcement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>firstLine</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first line of the announcement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secondLine</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second line of the announcement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -374,7 +429,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The update method, designed to be its own function so that it can be used outside of the <code><a href="../Classes/Announcement.html#/s:6Bement12AnnouncementC6upload6senderySo16UIViewControllerC_tF">upload(sender:)</a></code>&lsquo;s scope.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Using this method without the knowledge of whether a record already exists will result in inconsistency and errors.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -384,6 +444,25 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>UIViewController</code> that is recieving and presenting the success message.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
