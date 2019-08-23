@@ -4,6 +4,7 @@ PODS:
   - MarkdownView (1.6.0)
   - Shift (0.2.2)
   - SkeletonView (1.7)
+  - Spring (1.0.6)
 
 DEPENDENCIES:
   - Fuzi
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - MarkdownView
   - Shift
   - SkeletonView
+  - Spring (from `https://github.com/MengTo/Spring.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -20,13 +22,23 @@ SPEC REPOS:
     - Shift
     - SkeletonView
 
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
+    :git: https://github.com/MengTo/Spring.git
+
 SPEC CHECKSUMS:
   Fuzi: bcc5694488dd6e672e126cbf3c5471d7a79506d1
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   MarkdownView: 25c1c2d7ff9706624a575556296e188be3dd3f6b
   Shift: 86dc634d046fc86a879dbfdb492739672cc092be
   SkeletonView: 7d7378731b708f8a6e6b1ffefb68cc3903f10a03
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
 
-PODFILE CHECKSUM: 540f26b20b172bc27a9c0a62f76b3f1ba2b8cb4b
+PODFILE CHECKSUM: 27fcc71f14cd679f3fde8a8b7426cadbe2e98b0c
 
 COCOAPODS: 1.7.5

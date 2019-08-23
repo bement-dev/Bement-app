@@ -11,4 +11,5 @@ target 'Bement' do
   pod "Shift"
   pod "SkeletonView"
   pod "MarkdownView"
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
 end

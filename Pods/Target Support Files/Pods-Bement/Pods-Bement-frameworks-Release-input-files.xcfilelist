@@ -4,3 +4,4 @@ ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework
 ${BUILT_PRODUCTS_DIR}/Shift/Shift.framework
 ${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
+${BUILT_PRODUCTS_DIR}/Spring/Spring.framework
