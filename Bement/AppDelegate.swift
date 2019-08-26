@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: Application Handling
     
-    /// Fires when the application is launched
+    /// :nodoc: Fires when the application is launched
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    /// This method sets up the screen orientation, allowing different settings for different `ViewController`s.
+    /// :nodoc: This method sets up the screen orientation, allowing different settings for different `ViewController`s.
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if let rootViewController = self.topViewControllerWithRootViewController(rootViewController: window?.rootViewController) {
             if rootViewController.responds(to: Selector(("canRotate"))) {

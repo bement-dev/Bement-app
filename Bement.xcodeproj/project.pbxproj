@@ -28,7 +28,6 @@
 		B2824B99230DEF0300CF4420 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B67230DEF0200CF4420 /* UIViewController.swift */; };
 		B2824B9C230DEF0300CF4420 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B6D230DEF0200CF4420 /* GlobalVariable.swift */; };
 		B2824B9D230DEF0300CF4420 /* CatalogResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B6E230DEF0200CF4420 /* CatalogResources.swift */; };
-		B2824B9E230DEF0300CF4420 /* Bement Buildings.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B2824B6F230DEF0200CF4420 /* Bement Buildings.mlmodel */; };
 		B2824BA0230DEF0300CF4420 /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B73230DEF0300CF4420 /* CatalogTableViewController.swift */; };
 		B2824BA1230DEF0300CF4420 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B74230DEF0300CF4420 /* DetailTableViewCell.swift */; };
 		B2824BA2230DEF0300CF4420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B75230DEF0300CF4420 /* ViewController.swift */; };
@@ -53,6 +52,7 @@
 		B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD0230DF2D500CF4420 /* Main.storyboard */; };
 		B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD3230DF38600CF4420 /* Assets.xcassets */; };
 		B2824BD7230DF5EA00CF4420 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2824BD6230DF5EA00CF4420 /* CloudKit.framework */; };
+		B29E36092314411800658276 /* BementBuildingClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */; };
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
 		B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4918230DEC37007DB33A /* SceneDelegate.swift */; };
 		B29E4921230DEC37007DB33A /* Bement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B29E491F230DEC37007DB33A /* Bement.xcdatamodeld */; };
@@ -79,7 +79,6 @@
 		B2824B67230DEF0200CF4420 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B2824B6D230DEF0200CF4420 /* GlobalVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 		B2824B6E230DEF0200CF4420 /* CatalogResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogResources.swift; sourceTree = "<group>"; };
-		B2824B6F230DEF0200CF4420 /* Bement Buildings.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Bement Buildings.mlmodel"; sourceTree = "<group>"; };
 		B2824B73230DEF0300CF4420 /* CatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogTableViewController.swift; sourceTree = "<group>"; };
 		B2824B74230DEF0300CF4420 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		B2824B75230DEF0300CF4420 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +127,7 @@
 		B2824BF8230DF77A00CF4420 /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
 		B2824BF9230DF77A00CF4420 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2824BFA230DF77A00CF4420 /* .tgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = .tgz; sourceTree = "<group>"; };
+		B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BementBuildingClassifier.mlmodel; sourceTree = "<group>"; };
 		B29E4913230DEC37007DB33A /* Bement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29E4916230DEC37007DB33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29E4918230DEC37007DB33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -387,7 +387,7 @@
 				B2824BD3230DF38600CF4420 /* Assets.xcassets */,
 				B29E4927230DEC3F007DB33A /* Info.plist */,
 				B29E491F230DEC37007DB33A /* Bement.xcdatamodeld */,
-				B2824B6F230DEF0200CF4420 /* Bement Buildings.mlmodel */,
+				B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */,
 			);
 			path = Bement;
 			sourceTree = "<group>";
@@ -526,7 +526,6 @@
 				B2824B92230DEF0300CF4420 /* Tools.swift in Sources */,
 				B2824B8C230DEF0300CF4420 /* InstagramTableViewController.swift in Sources */,
 				B2824B99230DEF0300CF4420 /* UIViewController.swift in Sources */,
-				B2824B9E230DEF0300CF4420 /* Bement Buildings.mlmodel in Sources */,
 				B2824BA4230DEF0300CF4420 /* LookAheadViewController.swift in Sources */,
 				B2824B94230DEF0300CF4420 /* Announcement.swift in Sources */,
 				B2824B8D230DEF0300CF4420 /* TwitterWithImageTableViewCell.swift in Sources */,
@@ -549,6 +548,7 @@
 				B2824B8A230DEF0300CF4420 /* TwitterTableViewController.swift in Sources */,
 				B2824BAB230DEF0300CF4420 /* UpdateTableViewController.swift in Sources */,
 				B2824BAA230DEF0300CF4420 /* UpdateTableViewCell.swift in Sources */,
+				B29E36092314411800658276 /* BementBuildingClassifier.mlmodel in Sources */,
 				B2824BA9230DEF0300CF4420 /* CatalogDetailTableViewController.swift in Sources */,
 				B2824BA6230DEF0300CF4420 /* CatalogWebViewController.swift in Sources */,
 				B2824B9D230DEF0300CF4420 /* CatalogResources.swift in Sources */,

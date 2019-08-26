@@ -21,7 +21,7 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet var titleBackground: UIView!
     
     var newMedia: Bool?
-    let model = Bement_Buildings()
+    let model = BementBuildingClassifier()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,14 +105,14 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
                 UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(image:didFinishSavingWithError:contextInfo:)), nil)
             }
             
-            guard let buildingIdOutput = try? model.prediction(input: Bement_BuildingsInput(image: buffer(from: image)!)) else {
+            guard let buildingIdOutput = try? model.prediction(input: BementBuildingClassifierInput(image: buffer(from: image)!)) else {
                 fatalError("Unexpected runtime error.")
             }
             
             let output = buildingIdOutput.classLabelProbs
             let result = buildingIdOutput.classLabel
             
-            if (output[result]!) <= 0.65 {
+            if (output[result]!) <= 0.75 {
                 //print("None of the them is a Bement Building")
                 let alert = UIAlertController(title: "Sorry", message: "I cannot identify what building it is", preferredStyle: .alert)
                 let button = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
