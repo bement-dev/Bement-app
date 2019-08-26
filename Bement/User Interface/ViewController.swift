@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         publicDatabase.fetch(withRecordID: recordID, completionHandler: { record, error in
             if error != nil {
                 DispatchQueue.main.sync {
-                    self.hourTitle.text = "They are no special"
+                    self.hourTitle.text = "There are no special"
                     self.startHour.text = "announcements at this moment."
                     self.endHour.text = ""
                 }
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
                     }
                 } else {
                     DispatchQueue.main.sync {
-                        self.hourTitle.text = "They are no special"
+                        self.hourTitle.text = "There are no special"
                         self.startHour.text = "announcements at this moment."
                         self.endHour.text = ""
                     }
