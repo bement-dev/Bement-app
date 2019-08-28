@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B7DFA2EE2E299A8CD210C45 /* Pods_Bement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */; };
+		B25E76262315F90500B9399D /* Update#0.md in Resources */ = {isa = PBXBuildFile; fileRef = B25E76252315F90500B9399D /* Update#0.md */; };
 		B2824B48230DEE2A00CF4420 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B2824B47230DEE2A00CF4420 /* SwiftyJSON */; };
 		B2824B4B230DEE6400CF4420 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = B2824B4A230DEE6400CF4420 /* FeedKit */; };
 		B2824B86230DEF0300CF4420 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.release.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.release.xcconfig"; sourceTree = "<group>"; };
 		8935B9066163E6CA8BEB2838 /* Pods-Bement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.debug.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.debug.xcconfig"; sourceTree = "<group>"; };
+		B25E76252315F90500B9399D /* Update#0.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Update#0.md"; sourceTree = "<group>"; };
 		B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
 		B2824B51230DEF0000CF4420 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
 		B2824B52230DEF0000CF4420 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 				E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B25E76242315F90500B9399D /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				B25E76252315F90500B9399D /* Update#0.md */,
+			);
+			path = Updates;
 			sourceTree = "<group>";
 		};
 		B2824B50230DEF0000CF4420 /* Helpers */ = {
@@ -351,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				B29E4915230DEC37007DB33A /* Bement */,
+				B25E76242315F90500B9399D /* Updates */,
 				B2824BD8230DF77900CF4420 /* docs */,
 				B29E4914230DEC37007DB33A /* Products */,
 				600D72C34D3F455661C18410 /* Pods */,
@@ -468,6 +479,7 @@
 				B2824BC8230DF24D00CF4420 /* Localizable.strings in Resources */,
 				B2824B89230DEF0300CF4420 /* LaunchScreen.storyboard in Resources */,
 				B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */,
+				B25E76262315F90500B9399D /* Update#0.md in Resources */,
 				B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
