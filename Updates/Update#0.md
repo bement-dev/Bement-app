@@ -38,10 +38,10 @@ I absolutely love it, but I do I tell everyone that?
 
 ## Roadmap to v2.0
 1. :x: Fully support multiple languages
-    - :x: Chinese
-    - :x: Korean
-    - :x: Japanese
-    - :x: Spanish
+    - :x: Chinese :cn:
+    - :x: Korean :kr:
+    - :x: Japanese :jp:
+    - :x: Spanish :es:
 2. :x: Take Identify out of beta
     - :x: Raise the Identify accuracy to above 90% for each building
 3. :x: Improve the image resizing capability in Social Media
