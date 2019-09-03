@@ -57,7 +57,26 @@
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
 		B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4918230DEC37007DB33A /* SceneDelegate.swift */; };
 		B29E4921230DEC37007DB33A /* Bement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B29E491F230DEC37007DB33A /* Bement.xcdatamodeld */; };
+		B2F970E2231E0F4F003C854A /* BementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F970E1231E0F4F003C854A /* BementUITests.swift */; };
+		B2F970F0231E0F5F003C854A /* BementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F970EF231E0F5F003C854A /* BementTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2F970E4231E0F4F003C854A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29E490B230DEC37007DB33A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B29E4912230DEC37007DB33A;
+			remoteInfo = Bement;
+		};
+		B2F970F2231E0F5F003C854A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29E490B230DEC37007DB33A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B29E4912230DEC37007DB33A;
+			remoteInfo = Bement;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.release.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +154,13 @@
 		B29E4918230DEC37007DB33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B29E4920230DEC37007DB33A /* Bement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bement.xcdatamodel; sourceTree = "<group>"; };
 		B29E4927230DEC3F007DB33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F970DF231E0F4F003C854A /* BementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F970E1231E0F4F003C854A /* BementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BementUITests.swift; sourceTree = "<group>"; };
+		B2F970E3231E0F4F003C854A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F970ED231E0F5F003C854A /* BementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F970EF231E0F5F003C854A /* BementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BementTests.swift; sourceTree = "<group>"; };
+		B2F970F1231E0F5F003C854A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F970F7231E0F78003C854A /* Bement.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bement.xctestplan; sourceTree = "<group>"; };
 		E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,6 +175,20 @@
 				B2824BD7230DF5EA00CF4420 /* CloudKit.framework in Frameworks */,
 				B2824B48230DEE2A00CF4420 /* SwiftyJSON in Frameworks */,
 				2B7DFA2EE2E299A8CD210C45 /* Pods_Bement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F970DC231E0F4F003C854A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F970EA231E0F5F003C854A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +400,12 @@
 		B29E490A230DEC37007DB33A = {
 			isa = PBXGroup;
 			children = (
+				B2F970F7231E0F78003C854A /* Bement.xctestplan */,
 				B29E4915230DEC37007DB33A /* Bement */,
 				B25E76242315F90500B9399D /* Updates */,
 				B2824BD8230DF77900CF4420 /* docs */,
+				B2F970E0231E0F4F003C854A /* BementUITests */,
+				B2F970EE231E0F5F003C854A /* BementTests */,
 				B29E4914230DEC37007DB33A /* Products */,
 				600D72C34D3F455661C18410 /* Pods */,
 				630BA7DFFD33383A289DDBA6 /* Frameworks */,
@@ -373,6 +416,8 @@
 			isa = PBXGroup;
 			children = (
 				B29E4913230DEC37007DB33A /* Bement.app */,
+				B2F970DF231E0F4F003C854A /* BementUITests.xctest */,
+				B2F970ED231E0F5F003C854A /* BementTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -403,6 +448,24 @@
 			path = Bement;
 			sourceTree = "<group>";
 		};
+		B2F970E0231E0F4F003C854A /* BementUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2F970E1231E0F4F003C854A /* BementUITests.swift */,
+				B2F970E3231E0F4F003C854A /* Info.plist */,
+			);
+			path = BementUITests;
+			sourceTree = "<group>";
+		};
+		B2F970EE231E0F5F003C854A /* BementTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2F970EF231E0F5F003C854A /* BementTests.swift */,
+				B2F970F1231E0F5F003C854A /* Info.plist */,
+			);
+			path = BementTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +494,42 @@
 			productReference = B29E4913230DEC37007DB33A /* Bement.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B2F970DE231E0F4F003C854A /* BementUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F970E6231E0F4F003C854A /* Build configuration list for PBXNativeTarget "BementUITests" */;
+			buildPhases = (
+				B2F970DB231E0F4F003C854A /* Sources */,
+				B2F970DC231E0F4F003C854A /* Frameworks */,
+				B2F970DD231E0F4F003C854A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2F970E5231E0F4F003C854A /* PBXTargetDependency */,
+			);
+			name = BementUITests;
+			productName = BementUITests;
+			productReference = B2F970DF231E0F4F003C854A /* BementUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B2F970EC231E0F5F003C854A /* BementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F970F4231E0F5F003C854A /* Build configuration list for PBXNativeTarget "BementTests" */;
+			buildPhases = (
+				B2F970E9231E0F5F003C854A /* Sources */,
+				B2F970EA231E0F5F003C854A /* Frameworks */,
+				B2F970EB231E0F5F003C854A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2F970F3231E0F5F003C854A /* PBXTargetDependency */,
+			);
+			name = BementTests;
+			productName = BementTests;
+			productReference = B2F970ED231E0F5F003C854A /* BementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -443,6 +542,14 @@
 				TargetAttributes = {
 					B29E4912230DEC37007DB33A = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					B2F970DE231E0F4F003C854A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B29E4912230DEC37007DB33A;
+					};
+					B2F970EC231E0F5F003C854A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B29E4912230DEC37007DB33A;
 					};
 				};
 			};
@@ -467,6 +574,8 @@
 			projectRoot = "";
 			targets = (
 				B29E4912230DEC37007DB33A /* Bement */,
+				B2F970DE231E0F4F003C854A /* BementUITests */,
+				B2F970EC231E0F5F003C854A /* BementTests */,
 			);
 		};
 /* End PBXProject section */
@@ -481,6 +590,20 @@
 				B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */,
 				B25E76262315F90500B9399D /* Update#0.md in Resources */,
 				B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F970DD231E0F4F003C854A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F970EB231E0F5F003C854A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +698,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2F970DB231E0F4F003C854A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F970E2231E0F4F003C854A /* BementUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F970E9231E0F5F003C854A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F970F0231E0F5F003C854A /* BementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2F970E5231E0F4F003C854A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B29E4912230DEC37007DB33A /* Bement */;
+			targetProxy = B2F970E4231E0F4F003C854A /* PBXContainerItemProxy */;
+		};
+		B2F970F3231E0F5F003C854A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B29E4912230DEC37007DB33A /* Bement */;
+			targetProxy = B2F970F2231E0F5F003C854A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B2824BCA230DF24D00CF4420 /* Localizable.strings */ = {
@@ -753,6 +905,84 @@
 			};
 			name = Release;
 		};
+		B2F970E7231E0F4F003C854A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C58CLY4K2U;
+				INFOPLIST_FILE = BementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.Bement.BementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bement;
+			};
+			name = Debug;
+		};
+		B2F970E8231E0F4F003C854A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C58CLY4K2U;
+				INFOPLIST_FILE = BementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.Bement.BementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bement;
+			};
+			name = Release;
+		};
+		B2F970F5231E0F5F003C854A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C58CLY4K2U;
+				INFOPLIST_FILE = BementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.Bement.BementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bement.app/Bement";
+			};
+			name = Debug;
+		};
+		B2F970F6231E0F5F003C854A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C58CLY4K2U;
+				INFOPLIST_FILE = BementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.Bement.BementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bement.app/Bement";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -770,6 +1000,24 @@
 			buildConfigurations = (
 				B29E492B230DEC3F007DB33A /* Debug */,
 				B29E492C230DEC3F007DB33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F970E6231E0F4F003C854A /* Build configuration list for PBXNativeTarget "BementUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F970E7231E0F4F003C854A /* Debug */,
+				B2F970E8231E0F4F003C854A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F970F4231E0F5F003C854A /* Build configuration list for PBXNativeTarget "BementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F970F5231E0F5F003C854A /* Debug */,
+				B2F970F6231E0F5F003C854A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
