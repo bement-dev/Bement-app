@@ -24,7 +24,7 @@ class AnnouncementViewController: UIViewController {
     /// The `UITextField` for inputing the second line of the announcement.
     @IBOutlet var secondField: UITextField!
     
-    /// Set up the button after the screen is loaded.
+    ///:nodoc: Set up the button after the screen is loaded.
     override func viewDidLoad() {
         super.viewDidLoad()
 
