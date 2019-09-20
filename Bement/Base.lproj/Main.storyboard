@@ -1868,7 +1868,7 @@
             </objects>
             <point key="canvasLocation" x="5530.3999999999996" y="348.76847290640393"/>
         </scene>
-        <!--Lunch Schedule-->
+        <!--Weekly Menu-->
         <scene sceneID="A3U-j4-oYV">
             <objects>
                 <viewController id="oTH-hD-MKO" customClass="LunchViewController" customModule="Bement" customModuleProvider="target" sceneMemberID="viewController">
@@ -1878,7 +1878,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="w8r-y7-I0i"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Lunch Schedule" id="WZg-za-xur">
+                    <navigationItem key="navigationItem" title="Weekly Menu" id="WZg-za-xur">
                         <barButtonItem key="rightBarButtonItem" title="Back" id="yb1-D7-VUB">
                             <connections>
                                 <segue destination="DP5-ko-fP9" kind="unwind" unwindAction="backToMain:" id="JBj-2W-pLl"/>
