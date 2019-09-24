@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// :nodoc: This method sets up the screen orientation, allowing different settings for different `ViewController`s.
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if let rootViewController = self.topViewControllerWithRootViewController(rootViewController: window?.rootViewController) {
-            if rootViewController.responds(to: Selector(("canRotate"))) {
+            if rootViewController.responds(to: #selector(ClagettViewController.canRotate)) {
                 // Unlock landscape view orientations for this view controller
                 return .all
             }

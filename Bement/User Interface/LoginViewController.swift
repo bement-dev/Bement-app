@@ -54,7 +54,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginClicked(_ sender: Any) {
-        if passworldField.text!.isEmpty {
+        var keys: [String:String]?
+        
+        if let path = Bundle.main.path(forResource: "keys", ofType: "plist") {
+            keys = NSDictionary(contentsOfFile: path) as? [String : String]
+        }
+        
+        if passworldField.text! == keys!["announcementPassword"] {
             self.performSegue(withIdentifier: "loggedIn", sender: self)
         } else {
             let alert = UIAlertController(title: "Password Incorrect!", message: "Please try again.", preferredStyle: .alert)

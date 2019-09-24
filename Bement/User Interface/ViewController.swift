@@ -77,6 +77,8 @@ class ViewController: UIViewController {
         ])
     }
     
+    public static var hasMessages = false
+    
     func fetchData() {
         retrieveWeatherData()
         
@@ -89,6 +91,8 @@ class ViewController: UIViewController {
                     self.startHour.text = "announcements at this moment."
                     self.endHour.text = ""
                 }
+                
+                ViewController.hasMessages = false
             } else {
                 if Bool(truncating: (record!["display"] as! Int) as NSNumber) == true {
                     DispatchQueue.main.sync {
@@ -96,12 +100,16 @@ class ViewController: UIViewController {
                         self.startHour.text = record?["firstLine"] ?? ""
                         self.endHour.text = record?["secondLine"] ?? ""
                     }
+                    
+                    ViewController.hasMessages = true
                 } else {
                     DispatchQueue.main.sync {
                         self.hourTitle.text = "There are no special"
                         self.startHour.text = "announcements at this moment."
                         self.endHour.text = ""
                     }
+                    
+                    ViewController.hasMessages = false
                 }
             }
         })

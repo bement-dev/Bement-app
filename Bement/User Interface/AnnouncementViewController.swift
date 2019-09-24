@@ -24,11 +24,25 @@ class AnnouncementViewController: UIViewController {
     /// The `UITextField` for inputing the second line of the announcement.
     @IBOutlet var secondField: UITextField!
     
+    @IBOutlet var currentAnnouncement: UILabel!
+    
     ///:nodoc: Set up the button after the screen is loaded.
     override func viewDidLoad() {
         super.viewDidLoad()
 
         Tools.beautifulButton(saveButton)
+        
+        currentAnnouncement.text = "\(ViewController.hasMessages)"
+        
+        if announcementSwitch.isOn {
+            titleField.isEnabled = true
+            firstField.isEnabled = true
+            secondField.isEnabled = true
+        } else {
+            titleField.isEnabled = false
+            firstField.isEnabled = false
+            secondField.isEnabled = false
+        }
     }
     
     /// Disables the text fields if the switch is off, because it means that the announcement is not going to be displayed.
@@ -62,6 +76,7 @@ class AnnouncementViewController: UIViewController {
                         if self.titleField.text!.isEmpty {
                             let data = Announcement(display: self.announcementSwitch.isOn, titleString: self.titleField.text!, firstLine: self.firstField.text, secondLine: self.secondField.text)
                             data.upload(sender: self)
+                            self.currentAnnouncement.text = "true"
                         } else {
                             let alert = UIAlertController(title: "Oops...", message: "You need to type something in the Title field.", preferredStyle: .alert)
                             let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
@@ -72,6 +87,7 @@ class AnnouncementViewController: UIViewController {
                     } else {
                         let data = Announcement(display: self.announcementSwitch.isOn, titleString: self.titleField.text!, firstLine: self.firstField.text, secondLine: self.secondField.text)
                         data.upload(sender: self)
+                        self.currentAnnouncement.text = "false"
                     }
                 }
             }

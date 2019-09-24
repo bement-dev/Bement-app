@@ -53,6 +53,7 @@
 		B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD0230DF2D500CF4420 /* Main.storyboard */; };
 		B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD3230DF38600CF4420 /* Assets.xcassets */; };
 		B2824BD7230DF5EA00CF4420 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2824BD6230DF5EA00CF4420 /* CloudKit.framework */; };
+		B297B5432339BAB6006C3ACE /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B297B5422339BAB6006C3ACE /* keys.plist */; };
 		B29E36092314411800658276 /* BementBuildingClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */; };
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
 		B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4918230DEC37007DB33A /* SceneDelegate.swift */; };
@@ -147,6 +148,7 @@
 		B2824BF8230DF77A00CF4420 /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
 		B2824BF9230DF77A00CF4420 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2824BFA230DF77A00CF4420 /* .tgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = .tgz; sourceTree = "<group>"; };
+		B297B5422339BAB6006C3ACE /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BementBuildingClassifier.mlmodel; sourceTree = "<group>"; };
 		B29E4913230DEC37007DB33A /* Bement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29E4916230DEC37007DB33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -423,6 +425,7 @@
 		B29E4915230DEC37007DB33A /* Bement */ = {
 			isa = PBXGroup;
 			children = (
+				B297B5422339BAB6006C3ACE /* keys.plist */,
 				B2824BD5230DF5E600CF4420 /* Bement.entitlements */,
 				B29E4916230DEC37007DB33A /* AppDelegate.swift */,
 				B29E4918230DEC37007DB33A /* SceneDelegate.swift */,
@@ -551,7 +554,7 @@
 				};
 			};
 			buildConfigurationList = B29E490E230DEC37007DB33A /* Build configuration list for PBXProject "Bement" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -584,6 +587,7 @@
 			files = (
 				B2824BC8230DF24D00CF4420 /* Localizable.strings in Resources */,
 				B2824B89230DEF0300CF4420 /* LaunchScreen.storyboard in Resources */,
+				B297B5432339BAB6006C3ACE /* keys.plist in Resources */,
 				B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */,
 				B25E76262315F90500B9399D /* Update#0.md in Resources */,
 				B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */,
