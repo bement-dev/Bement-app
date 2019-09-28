@@ -13,7 +13,11 @@ import Fuzi
 
 class InstagramTableViewController: UITableViewController {
     
-    var reloaded = false
+    var reloaded = false {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +70,12 @@ class InstagramTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.estimatedRowHeight
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let link = URL(string: AppDelegate.instagramItems[indexPath.row].link!) {
+          UIApplication.shared.open(link)
+        }
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

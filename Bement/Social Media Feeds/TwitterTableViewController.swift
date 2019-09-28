@@ -1,5 +1,5 @@
 //
-//  InstagramTableViewController.swift
+//  TwitterTableViewController.swift
 //  Bement
 //
 //  Created by Runkai Zhang on 5/27/19.
@@ -69,6 +69,12 @@ class TwitterTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.estimatedRowHeight
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let link = URL(string: AppDelegate.twitterItems[indexPath.row].link!) {
+          UIApplication.shared.open(link)
+        }
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

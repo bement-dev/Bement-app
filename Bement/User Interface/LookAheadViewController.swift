@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 import Fuzi
 
-class LookAheadViewController: UIViewController {
+class LookAheadViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet var lookAheadView: WKWebView!
     

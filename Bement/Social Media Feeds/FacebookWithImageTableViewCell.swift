@@ -1,5 +1,5 @@
 //
-//  InstagramTableViewCell.swift
+//  FacebookWithImageTableViewCell.swift
 //  Bement
 //
 //  Created by Runkai Zhang on 5/27/19.
