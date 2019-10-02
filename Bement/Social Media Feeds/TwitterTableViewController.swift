@@ -13,7 +13,11 @@ import Fuzi
 
 class TwitterTableViewController: UITableViewController {
     
-    var reloaded = false
+    var reloaded1 = false
+    var reloaded2 = false
+    var reloaded3 = false
+    var reloaded4 = false
+    var reloaded5 = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +44,11 @@ class TwitterTableViewController: UITableViewController {
         
         do {
             let doc = try HTMLDocument(string: AppDelegate.twitterItems[indexPath.row].description!, encoding: String.Encoding.utf8)
-            cellWithImage.content.text = doc.body?.children[0].stringValue
+            if doc.body!.children[0].stringValue == "\n      \n      \n    " {
+                cellWithImage.content.text = ""
+            } else {
+                cellWithImage.content.text = doc.body?.children[0].children[1].stringValue
+            }
         } catch let error {
             print(error)
         }
@@ -59,9 +67,29 @@ class TwitterTableViewController: UITableViewController {
             cellWithImage.contentImage.removeConstraints(cellWithImage.contentImage.constraints)
         }
         
-        if indexPath.row == 4 && !reloaded {
+        if indexPath.row == 0 && !reloaded1 {
             tableView.reloadData()
-            reloaded = true
+            reloaded1.toggle()
+        }
+        
+        if indexPath.row == 1 && !reloaded2 {
+            tableView.reloadData()
+            reloaded2.toggle()
+        }
+        
+        if indexPath.row == 2 && !reloaded3 {
+            tableView.reloadData()
+            reloaded3.toggle()
+        }
+        
+        if indexPath.row == 3 && !reloaded4 {
+            tableView.reloadData()
+            reloaded4.toggle()
+        }
+        
+        if indexPath.row == 4 && !reloaded5 {
+            tableView.reloadData()
+            reloaded5.toggle()
         }
         
         return cellWithImage
