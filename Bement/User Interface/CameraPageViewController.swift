@@ -101,16 +101,13 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
             cameraView.image = image
             titleBackground.isHidden = true
             
-            if newMedia == true {
-                UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(image:didFinishSavingWithError:contextInfo:)), nil)
-            }
-            
             guard let buildingIdOutput = try? model.prediction(input: BementBuildingClassifierInput(image: buffer(from: image)!)) else {
                 fatalError("Unexpected runtime error.")
             }
             
             let output = buildingIdOutput.classLabelProbs
             let result = buildingIdOutput.classLabel
+            
             
             if (output[result]!) <= 0.75 {
                 //print("None of the them is a Bement Building")
@@ -121,11 +118,25 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
                 self.present(alert, animated: true)
             } else {
                 //print(result)
+                print(output[result]!)
                 let alert = UIAlertController(title: "Congrats!", message: "You found \(result)", preferredStyle: .alert)
                 let button = UIAlertAction(title: "Yeah!", style: .cancel, handler: nil)
                 
                 alert.addAction(button)
-                self.present(alert, animated: true)
+                self.present(alert, animated: true) {
+                    if self.newMedia == true {
+                        let question = UIAlertController(title: "Save your photo", message: "Do you want to save this photo?", preferredStyle: .alert)
+                        let yes = UIAlertAction(title: "Yes", style: .default) { action in
+                            UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(image:didFinishSavingWithError:contextInfo:)), nil)
+                        }
+                        let no = UIAlertAction(title: "No", style: .destructive, handler: nil)
+                        
+                        question.addAction(yes)
+                        question.addAction(no)
+                        
+                        self.present(question, animated: true, completion: nil)
+                    }
+                }
             }
         }
     }

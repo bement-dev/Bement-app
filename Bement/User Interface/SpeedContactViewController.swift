@@ -16,14 +16,20 @@ class SpeedContactViewController: UIViewController, MFMailComposeViewControllerD
     @IBOutlet var costaCard: UIView!
     @IBOutlet var admitCard: UIView!
     @IBOutlet var busiCard: UIView!
+    @IBOutlet var nurseCard: UIView!
+    @IBOutlet var afterCard: UIView!
     
     @IBOutlet var costaPhone: UIButton!
     @IBOutlet var admitPhone: UIButton!
     @IBOutlet var busiPhone: UIButton!
+    @IBOutlet var nursePhone: UIButton!
+    @IBOutlet var afterPhone: UIButton!
     
     @IBOutlet var costaEmail: UIButton!
     @IBOutlet var admitEmail: UIButton!
     @IBOutlet var busiEmail: UIButton!
+    @IBOutlet var nurseEmail: UIButton!
+    @IBOutlet var afterEmail: UIButton!
     
     @IBOutlet var emailsGroup: [UIButton]!
     @IBOutlet var phoneGroup: [UIButton]!
@@ -58,6 +64,12 @@ class SpeedContactViewController: UIViewController, MFMailComposeViewControllerD
         case busiPhone:
             guard let number = URL(string: "tel://4137747061") else { return }
             UIApplication.shared.open(number)
+        case nursePhone:
+            guard let number = URL(string: "tel://4137747061,102") else { return }
+            UIApplication.shared.open(number)
+        case afterPhone:
+            guard let number = URL(string: "tel://4137747061,126") else { return }
+            UIApplication.shared.open(number)
         default:
             print("This should not happen!")
         }
@@ -89,6 +101,10 @@ class SpeedContactViewController: UIViewController, MFMailComposeViewControllerD
             composeEmail(to: ["admit@bement.org"])
         case busiEmail:
             composeEmail(to: ["jboyden@bement.org"])
+        case nurseEmail:
+            composeEmail(to: ["azilinski@bement.org"])
+        case afterEmail:
+            composeEmail(to: ["bwisniewski@bement.org"])
         default:
             print("This should not happen!")
         }

@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     @IBOutlet var endHour: UILabel!
     @IBOutlet var data: UIButton!
     @IBOutlet var identity: UIButton!
-    @IBOutlet var admin: UIButton!
     @IBOutlet var weatherIcon: UIImageView!
     @IBOutlet var temperatureLabel: UILabel!
     @IBOutlet var uvBackground: UIView!
@@ -150,10 +149,6 @@ class ViewController: UIViewController {
                 self.identity.center.x += self.view.bounds.width
                 self.identity.alpha = 1
             }
-            UIView.animate(withDuration: 0.5) {
-                self.admin.center.x += self.view.bounds.width
-                self.admin.alpha = 1
-            }
         } else {
             UIView.animate(withDuration: 0.3) {
                 self.data.center.x -= self.view.bounds.width
@@ -162,10 +157,6 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.4) {
                 self.identity.center.x -= self.view.bounds.width
                 self.identity.alpha = 0
-            }
-            UIView.animate(withDuration: 0.5) {
-                self.admin.center.x -= self.view.bounds.width
-                self.admin.alpha = 0
             }
         }
     }
@@ -188,17 +179,13 @@ class ViewController: UIViewController {
         if button.showsMenu {
             self.data.center.x = originalLocationMoved!
             self.identity.center.x = originalLocationMoved!
-            self.admin.center.x = originalLocationMoved!
             self.data.alpha = 1
             self.identity.alpha = 1
-            self.admin.alpha = 1
         } else {
             self.data.center.x = originalLocation!
             self.identity.center.x = originalLocation!
-            self.admin.center.x = originalLocation!
             self.data.alpha = 0
             self.identity.alpha = 0
-            self.admin.alpha = 0
         }
     }
     
@@ -265,41 +252,41 @@ class ViewController: UIViewController {
                                     }
                                     switch self.weather!.icon {
                                     case "clear-day":
-                                        self.weatherIcon.image = UIImage(systemName: "sun.max")
+                                        self.weatherIcon.image = UIImage(systemName: "sun.max.fill")
                                         self.weatherIcon.tintColor = UIColor.systemYellow
                                     case "clear-night":
                                         self.weatherIcon.image = UIImage(systemName: "moon.fill")
                                         self.weatherIcon.tintColor = UIColor.systemYellow
                                     case "rain":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.rain")
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.rain.fill")
                                         self.weatherIcon.tintColor = UIColor.systemTeal
                                     case "snow":
-                                        self.weatherIcon.image = UIImage(systemName: "snow")
+                                        self.weatherIcon.image = UIImage(systemName: "snow.fill")
                                         self.weatherIcon.tintColor = UIColor.systemTeal
                                     case "sleet":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.sleet")
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.sleet.fill")
                                         self.weatherIcon.tintColor = UIColor.systemTeal
                                     case "wind":
                                         self.weatherIcon.image = UIImage(systemName: "wind")
                                         self.weatherIcon.tintColor = UIColor.systemTeal
                                     case "fog":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.fog")
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.fog.fill")
                                         self.weatherIcon.tintColor = UIColor.systemGray
                                     case "cloudy":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud")
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.fill")
                                         self.weatherIcon.tintColor = UIColor.systemGray
                                     case "partly-cloudy-day":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.sun")
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.sun.fill")
                                         self.weatherIcon.tintColor = UIColor.systemYellow
                                     case "partly-cloudy-night":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.moon")
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.moon.fill")
                                         self.weatherIcon.tintColor = UIColor.systemBlue
                                     case "hail":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.hail")
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.hail.fill")
                                         self.weatherIcon.tintColor = UIColor.systemBlue
                                     case "thunderstorm":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.bolt.rain")
-                                        self.weatherIcon.tintColor = UIColor.systemBlue
+                                        self.weatherIcon.image = UIImage(systemName: "cloud.bolt.rain.fill")
+                                        self.weatherIcon.tintColor = UIColor.systemYellow
                                     case "tornado":
                                         self.weatherIcon.image = UIImage(systemName: "tornado")
                                         self.weatherIcon.tintColor = UIColor.systemBlue
