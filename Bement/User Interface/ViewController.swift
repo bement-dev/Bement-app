@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 import CloudKit
+import WhatsNewKit
+import SPPermission
 
 class ViewController: UIViewController {
     
@@ -125,6 +127,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        whatsNewIfNeeded()
+        
         fetchData()
         adjustMenuItem()
     }
@@ -133,6 +137,49 @@ class ViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         
         adjustMenuItem()
+    }
+    
+    // Adjust this accordingly before every major & minor release.
+    func whatsNewIfNeeded() {
+        let items = [
+            WhatsNew.Item(
+                title: "Look Ahead",
+                subtitle: "You no longer have to search through your emails.",
+                image: UIImage(named: "Bullhorn")),
+            WhatsNew.Item(
+                title: "Calendar",
+                subtitle: "Get all of the events together in one calendar.",
+                image: #imageLiteral(resourceName: "Calendar event")),
+            WhatsNew.Item(
+                title: "Weekly Menu",
+                subtitle: "Always wonder what kind of food Bement provide?",
+                image: #imageLiteral(resourceName: "Apps drawer")),
+            WhatsNew.Item(
+                title: "Social Media",
+                subtitle: "All posts under one roof, not three.",
+                image: #imageLiteral(resourceName: "Arrow Down"))
+        ]
+        
+        let theme = WhatsNewViewController.Theme { configuration in
+            configuration.apply(animation: .slideRight)
+            configuration.backgroundColor = UIColor(named: "backgroundColor-Custom")!
+            configuration.titleView.titleColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            configuration.itemsView.titleColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            configuration.itemsView.subtitleColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            configuration.completionButton.backgroundColor = UIColor(named: "buttonColor")!
+        }
+        
+        let config = WhatsNewViewController.Configuration(theme: theme)
+        
+        let whatsNew = WhatsNew(title: "New Features", items: items)
+        
+        let keyValueVersionStore = KeyValueWhatsNewVersionStore(keyValueable: UserDefaults.standard)
+        
+        let whatsNewVC = WhatsNewViewController(whatsNew: whatsNew, configuration: config, versionStore: keyValueVersionStore)
+        
+        if let vc = whatsNewVC {
+            self.present(vc, animated: true)
+        }
     }
     
     @objc func toggle(_ sender: AnyObject!) {

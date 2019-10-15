@@ -31,7 +31,6 @@ extension CAGradientLayer {
 
 // MARK: Skeleton sublayers
 extension CALayer {
-    
     static let skeletonSubLayersName = "SkeletonSubLayersName"
 
     var skeletonSublayers: [CALayer] {
@@ -46,11 +45,7 @@ extension CALayer {
             .setCornerRadius(multilineCornerRadius)
 
         (0..<numberOfSublayers).forEach { index in
-            var width = getLineWidth(index: index, numberOfSublayers: numberOfSublayers, lastLineFillPercent: lastLineFillPercent)
-            if index == numberOfSublayers - 1 && numberOfSublayers != 1 {
-                width = width * CGFloat(lastLineFillPercent) / 100;
-            }
-
+			let width = calculatedWidthForLine(at: index, totalLines: numberOfSublayers, lastLineFillPercent: lastLineFillPercent)
             if let layer = layerBuilder
                 .setIndex(index)
                 .setWidth(width)
@@ -64,17 +59,16 @@ extension CALayer {
         let currentSkeletonSublayers = skeletonSublayers
         let numberOfSublayers = currentSkeletonSublayers.count
         for (index, layer) in currentSkeletonSublayers.enumerated() {
-            let width = getLineWidth(index: index, numberOfSublayers: numberOfSublayers, lastLineFillPercent: lastLineFillPercent)
+			let width = calculatedWidthForLine(at: index, totalLines: numberOfSublayers, lastLineFillPercent: lastLineFillPercent)
             layer.updateLayerFrame(for: index, width: width)
         }
     }
 
-    private func getLineWidth(index: Int, numberOfSublayers: Int, lastLineFillPercent: Int) -> CGFloat {
+	private func calculatedWidthForLine(at index: Int, totalLines: Int, lastLineFillPercent: Int) -> CGFloat {
         var width = bounds.width
-        if index == numberOfSublayers - 1 && numberOfSublayers != 1 {
-            width = width * CGFloat(lastLineFillPercent) / 100;
+        if index == totalLines - 1 && totalLines != 1 {
+            width = width * CGFloat(lastLineFillPercent) / 100
         }
-
         return width
     }
 
@@ -84,8 +78,8 @@ extension CALayer {
     }
 
     private func calculateNumLines(maxLines: Int) -> Int {
-        let spaceRequitedForEachLine = SkeletonAppearance.default.multilineHeight + SkeletonAppearance.default.multilineSpacing
-        var numberOfSublayers = Int(round(CGFloat(bounds.height)/CGFloat(spaceRequitedForEachLine)))
+        let requiredSpaceForEachLine = SkeletonAppearance.default.multilineHeight + SkeletonAppearance.default.multilineSpacing
+        var numberOfSublayers = Int(round(CGFloat(bounds.height)/CGFloat(requiredSpaceForEachLine)))
         if maxLines != 0,  maxLines <= numberOfSublayers { numberOfSublayers = maxLines }
         return numberOfSublayers
     }
@@ -93,7 +87,6 @@ extension CALayer {
 
 // MARK: Animations
 public extension CALayer {
-
     var pulse: CAAnimation {
         let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.backgroundColor))
         pulseAnimation.fromValue = backgroundColor
@@ -102,6 +95,7 @@ public extension CALayer {
         pulseAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         pulseAnimation.autoreverses = true
         pulseAnimation.repeatCount = .infinity
+        pulseAnimation.isRemovedOnCompletion = false
         return pulseAnimation
     }
     
@@ -119,15 +113,19 @@ public extension CALayer {
         animGroup.duration = 1.5
         animGroup.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         animGroup.repeatCount = .infinity
+        animGroup.isRemovedOnCompletion = false
         
         return animGroup
     }
     
-    func playAnimation(_ anim: SkeletonLayerAnimation, key: String) {
+    func playAnimation(_ anim: SkeletonLayerAnimation, key: String, completion: (() -> Void)? = nil) {
         skeletonSublayers.recursiveSearch(leafBlock: {
+            DispatchQueue.main.async { CATransaction.begin() }
+            DispatchQueue.main.async { CATransaction.setCompletionBlock(completion) }
             add(anim(self), forKey: key)
+            DispatchQueue.main.async { CATransaction.commit() }
         }) {
-            $0.playAnimation(anim, key: key)
+            $0.playAnimation(anim, key: key, completion: completion)
         }
     }
     
@@ -138,4 +136,18 @@ public extension CALayer {
             $0.stopAnimation(forKey: key)
         }
     }
+}
+
+extension CALayer {
+	func setOpacity(from: Int, to: Int, duration: TimeInterval, completion: (() -> Void)?) {
+        DispatchQueue.main.async { CATransaction.begin() }
+		let animation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+		animation.fromValue = from
+		animation.toValue = to
+		animation.duration = duration
+		animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        DispatchQueue.main.async { CATransaction.setCompletionBlock(completion) }
+		add(animation, forKey: "setOpacityAnimation")
+        DispatchQueue.main.async { CATransaction.commit() }
+	}
 }

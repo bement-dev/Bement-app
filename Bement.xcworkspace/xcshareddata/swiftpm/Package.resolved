@@ -29,12 +29,30 @@
         }
       },
       {
+        "package": "Siren",
+        "repositoryURL": "https://github.com/ArtSabintsev/Siren.git",
+        "state": {
+          "branch": null,
+          "revision": "70ad233b782104592fe90b066807a3930e218eb1",
+          "version": "5.2.3"
+        }
+      },
+      {
         "package": "SwiftyJSON",
         "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
         "state": {
           "branch": null,
           "revision": "2b6054efa051565954e1d2b9da831680026cd768",
           "version": "5.0.0"
+        }
+      },
+      {
+        "package": "WhatsNewKit",
+        "repositoryURL": "https://github.com/SvenTiigi/WhatsNewKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d508a3a431b842573b7357a385c5bab3246138c6",
+          "version": "1.3.0"
         }
       }
     ]

@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import FeedKit
 import SwiftyJSON
+import Siren
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// :nodoc: Fires when the application is launched
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Siren.shared.wail()
         
         let instaURL = URL(string: "https://rss.app/feeds/vXhoCLgzZOUpWIhM.xml")!
         let instaParser = FeedParser(URL: instaURL)

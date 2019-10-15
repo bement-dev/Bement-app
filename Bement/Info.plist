@@ -29,6 +29,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera is required to be used for identifying buildings.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Photos taken are added to your library so that you can view them later.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photos taken are added to your library so that you can view them later.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -61,8 +65,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Photos taken are added to your library so that you can view them later.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

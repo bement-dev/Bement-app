@@ -22,6 +22,9 @@
         <img src="https://img.shields.io/badge/contact-@JuanpeCatalan-blue.svg?style=flat" alt="Twitter: @JuanpeCatalan" />
     </a>
     <br/>
+    <a href="https://gitter.im/SkeletonView/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
+        <img src="https://badges.gitter.im/SkeletonView/community.svg?style=flat" />
+    </a>
     <a href="https://twitter.com/intent/tweet?text=Wow%20This%20library%20is%20awesome:&url=https%3A%2F%2Fgithub.com%2FJuanpe%2FSkeletonView">
       <img src="https://img.shields.io/twitter/url/https/github.com/Juanpe/SkeletonView.svg?style=social" alt="License" />
     </a>
@@ -50,6 +53,7 @@ Enjoy it! 🙂
   * [Custom colors](#-custom-colors)
   * [Appearance](#-appearance)
   * [Custom animations](#-custom-animations)
+  * [Transitions](#-transitions)
   * [Hierarchy](#-hierarchy)
   * [Debug](#-debug)
 * [Documentation](#-documentation)
@@ -99,7 +103,7 @@ Once you have your Swift package set up, adding `SkeletonView` as a dependency i
 
 ```swift
   dependencies: [
-    .package(url: "https://github.com/Juanpe/SkeletonView.git", from: "1.7")
+    .package(url: "https://github.com/Juanpe/SkeletonView.git", from: "1.7.0")
   ]
 ```
 
@@ -173,7 +177,7 @@ avatarImageView.isSkeletonable = true
 
 #### Skeleton views layout
 
-Sometimes skeleton layout may not fit your layout because the parent view bounds have changed. For example, rotating the device.
+Sometimes skeleton layout may not fit your layout because the parent view bounds have changed. ~For example, rotating the device.~
 
 You can relayout the skeleton views like so:
 
@@ -182,6 +186,8 @@ override func viewDidLayoutSubviews() {
     view.layoutSkeletonIfNeeded()
 }
 ```
+
+⚠️⚠️ You shouldn't call this method. From *version 1.8.1* you don't need to call this method, the library does automatically. So, you can use this method *ONLY* in the cases when you need to update the layout of the skeleton manually.
 
 #### Update skeleton configuration
 
@@ -390,20 +396,63 @@ view.showAnimatedGradientSkeleton(usingGradient: gradient, animation: animation)
 Exist another way to create sliding animations, just using this shortcut:
 >>```let animation = GradientDirection.leftToRight.slidingAnimation()```
 
+
+
+### 🏄 Transitions
+
+```SkeletonView``` has build-in transitions to **show** or **hide** the skeletons in a *smoother* way 🤙
+
+To use the transition, simply add the ```transition``` parameter to your ```showSkeleton()``` or ```hideSkeleton()``` function with the transition time, like this:
+
+```swift
+view.showSkeleton(transition: .crossDissolve(0.25))     //Show skeleton cross dissolve transition with 0.25 seconds fade time
+view.hideSkeleton(transition: .crossDissolve(0.25))     //Hide skeleton cross dissolve transition with 0.25 seconds fade time
+
+```
+
+**Preview**
+
+<table>
+<tr>
+<td width="50%">
+<center>None</center>
+</td>
+<td width="50%">
+<center>Cross dissolve</center>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<img src="Assets/skeleton_transition_nofade.gif"></img>
+</td>
+<td width="50%">
+<img src="Assets/skeleton_transition_fade.gif"></img>
+</td>
+</tr>
+</table>
+
+
 ### 👨‍👧‍👦 Hierarchy
 
 Since ```SkeletonView``` is recursive, and we want skeleton to be very efficient, we want to stop recursion as soon as possible. For this reason, you must set the container view as `Skeletonable`, because Skeleton will stop looking for `skeletonable` subviews as soon as a view is not Skeletonable, breaking then the recursion.
 
 Because an image is worth a thousand words:
 
+In this example we have a `UIViewController` with a `ContainerView` and a `UITableView`. When the view is ready, we show the skeleton using this method:
+```
+view.showSkeleton()
+```
+
 > ```ìsSkeletonable```= ☠️
 
-| Configuration | Result
-|------- | -------
-|![](Assets/no_skeletonable.png) | ![](Assets/no_skeletonables_result.png)
-|![](Assets/container_no_skeletonable.png) | ![](Assets/no_skeletonables_result.png)
-|![](Assets/container_skeletonable.png) | ![](Assets/container_skeletonable_result.png)
-|![](Assets/all_skeletonables.png) | ![](Assets/all_skeletonables_result.png)
+| Configuration | Result|
+|:-------:|:-------:|
+|<img src="Assets/no_skeletonable.jpg" width="350"/> | <img src="Assets/no_skeletonables_result.png" width="350"/>|
+|<img src="Assets/container_no_skeletonable.jpg" width="350"/> | <img src="Assets/no_skeletonables_result.png" width="350"/>|
+|<img src="Assets/container_skeletonable.jpg" width="350"/> | <img src="Assets/container_skeletonable_result.png" width="350"/>|
+|<img src="Assets/all_skeletonables.jpg" width="350"/>| <img src="Assets/all_skeletonables_result.png" width="350"/>|
+|<img src="Assets/tableview_no_skeletonable.jpg" width="350"/> | <img src="Assets/tableview_no_skeletonable_result.png" height="350"/>|
+|<img src="Assets/tableview_skeletonable.jpg" width="350"/> | <img src="Assets/tableview_skeletonable_result.png" height="350"/>|
 
 
 ### 🔬 Debug
@@ -439,7 +488,7 @@ Coming soon...😅
 
 * iOS 9.0+
 * tvOS 9.0+
-* Swift 4.2
+* Swift 5
 
 ## 📬 Next steps
 
@@ -451,8 +500,8 @@ Coming soon...😅
 * [x] Add recovery state
 * [x] Custom default appearance
 * [x] Debug mode
+* [x] Add animations when it shows/hides the skeletons
 * [ ] Custom collections compatible
-* [ ] Add animations when it shows/hides the skeletons
 * [ ] MacOS and WatchOS compatible
 
 ## ❤️ Contributing
@@ -479,6 +528,7 @@ See [all contributors](https://github.com/Juanpe/SkeletonView/graphs/contributor
 - [CocoaControls](https://www.cocoacontrols.com/controls/skeletonview)
 - [Awesome iOS Newsletter #74](https://ios.libhunt.com/newsletter/74)
 - [Swift News #36](https://www.youtube.com/watch?v=mAGpsQiy6so)
+- [Best iOS articles, new tools & more](https://medium.com/flawless-app-stories/best-ios-articles-new-tools-more-fcbe673e10d)
 
 
 

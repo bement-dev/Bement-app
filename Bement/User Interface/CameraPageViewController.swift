@@ -10,6 +10,7 @@ import UIKit
 import MobileCoreServices
 import CoreML
 import Shift
+import SPPermission
 
 class CameraPageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -46,7 +47,22 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         titleLabel.startTimedAnimation()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if !(SPPermission.isAllowed(.camera) && SPPermission.isAllowed(.photoLibrary)) {
+            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
+        } else if SPPermission.isAllowed(.camera) && !SPPermission.isAllowed(.photoLibrary) {
+            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
+        } else if !SPPermission.isAllowed(.camera) && SPPermission.isAllowed(.photoLibrary) {
+            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
+        } else if SPPermission.isDenied(.camera) || SPPermission.isDenied(.photoLibrary) {
+            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
+        }
     }
     
     @IBAction func useCamera(_ sender: AnyObject) {
