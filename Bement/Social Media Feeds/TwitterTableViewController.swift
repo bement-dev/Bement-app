@@ -47,7 +47,7 @@ class TwitterTableViewController: UITableViewController {
             if doc.body!.children[0].stringValue == "\n      \n      \n    " {
                 cellWithImage.content.text = ""
             } else {
-                cellWithImage.content.text = doc.body?.children[0].children[1].stringValue
+                cellWithImage.content.text = doc.body?.children[0].children[0].stringValue
             }
         } catch let error {
             print(error)
@@ -55,44 +55,48 @@ class TwitterTableViewController: UITableViewController {
         
         if let url = AppDelegate.twitterItems[indexPath.row].enclosure?.attributes!.url {
             cellWithImage.contentImage.showAnimatedSkeleton()
-            cellWithImage.contentImage.kf.setImage(
-                with: URL(string: url),
-                options: [
-                    .scaleFactor(UIScreen.main.scale)
-                ]) { _ in
+            cellWithImage.contentImage.kf.setImage(with: URL(string: url),
+            options: [
+            .scaleFactor(UIScreen.main.scale)
+            ]) { _ in
                 cellWithImage.contentImage.hideSkeleton()
+                if indexPath.row == 0 && !self.reloaded1 {
+                    tableView.reloadData()
+                    self.reloaded1.toggle()
+                }
+                
+                if indexPath.row == 1 && !self.reloaded2 {
+                    tableView.reloadData()
+                    self.reloaded2.toggle()
+                }
+                
+                if indexPath.row == 2 && !self.reloaded3 {
+                    tableView.reloadData()
+                    self.reloaded3.toggle()
+                }
+                
+                if indexPath.row == 3 && !self.reloaded4 {
+                    tableView.reloadData()
+                    self.reloaded4.toggle()
+                }
+                
+                if indexPath.row == 4 && !self.reloaded5 {
+                    tableView.reloadData()
+                    self.reloaded5.toggle()
+                }
             }
         } else {
             cellWithImage.contentImage.isHidden = true
             cellWithImage.contentImage.removeConstraints(cellWithImage.contentImage.constraints)
         }
         
-        if indexPath.row == 0 && !reloaded1 {
-            tableView.reloadData()
-            reloaded1.toggle()
-        }
-        
-        if indexPath.row == 1 && !reloaded2 {
-            tableView.reloadData()
-            reloaded2.toggle()
-        }
-        
-        if indexPath.row == 2 && !reloaded3 {
-            tableView.reloadData()
-            reloaded3.toggle()
-        }
-        
-        if indexPath.row == 3 && !reloaded4 {
-            tableView.reloadData()
-            reloaded4.toggle()
-        }
-        
-        if indexPath.row == 4 && !reloaded5 {
-            tableView.reloadData()
-            reloaded5.toggle()
-        }
-        
         return cellWithImage
+    }
+    
+    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
+        cellWithImage.contentImage.kf.cancelDownloadTask()
+
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -101,7 +105,7 @@ class TwitterTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let link = URL(string: AppDelegate.twitterItems[indexPath.row].link!) {
-          UIApplication.shared.open(link)
+            UIApplication.shared.open(link)
         }
     }
     

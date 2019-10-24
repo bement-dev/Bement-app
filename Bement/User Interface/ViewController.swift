@@ -11,6 +11,8 @@ import SwiftyJSON
 import CloudKit
 import WhatsNewKit
 import SPPermission
+import FeedKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
         
         observer = NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main) { _ in
             self.fetchData()
+            self.fetchPosts()
         }
 
         originalLocationMoved = data.center.x
@@ -81,6 +84,7 @@ class ViewController: UIViewController {
     public static var hasMessages = false
     
     func fetchData() {
+        
         retrieveWeatherData()
         
         let publicDatabase = CKContainer.default().publicCloudDatabase
@@ -114,7 +118,6 @@ class ViewController: UIViewController {
                 }
             }
         })
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -137,6 +140,54 @@ class ViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         
         adjustMenuItem()
+    }
+    
+    func fetchPosts() {
+        AppDelegate.facebookItems.removeAll()
+        AppDelegate.instagramItems.removeAll()
+        AppDelegate.twitterItems.removeAll()
+        
+        let instaURL = URL(string: "https://rss.app/feeds/vXhoCLgzZOUpWIhM.xml")!
+        let instaParser = FeedParser(URL: instaURL)
+        instaParser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
+            if result.isSuccess {
+                for item in result.rssFeed!.items! {
+                    AppDelegate.instagramItems.append(item)
+                }
+                ViewController.instagramRetrieved = true
+            } else {
+                ViewController.instagramRetrieved = false
+                print(result.error!)
+            }
+        }
+
+        let twitterURL = URL(string: "https://rss.app/feeds/3r2kmUvEXa9v77jH.xml")!
+        let twitterParser = FeedParser(URL: twitterURL)
+        twitterParser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
+            if result.isSuccess {
+                for item in result.rssFeed!.items! {
+                    AppDelegate.twitterItems.append(item)
+                }
+                ViewController.twitterRetrieved = true
+            } else {
+                ViewController.twitterRetrieved = false
+                print(result.error!)
+            }
+        }
+        
+        let facebookURL = URL(string: "https://rss.app/feeds/q0MUQ8lpZOqiLsHx.xml")!
+        let facebookParser = FeedParser(URL: facebookURL)
+        facebookParser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
+            if result.isSuccess {
+                for item in result.rssFeed!.items! {
+                    AppDelegate.facebookItems.append(item)
+                }
+                ViewController.facebookRecieved = true
+            } else {
+                ViewController.facebookRecieved = false
+                print(result.error!)
+            }
+        }
     }
     
     // Adjust this accordingly before every major & minor release.

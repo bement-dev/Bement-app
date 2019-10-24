@@ -60,33 +60,33 @@ class InstagramTableViewController: UITableViewController {
             with: url,
             options: [
                 .scaleFactor(UIScreen.main.scale)
-            ]) { _ in
+        ]) { _ in
             cellWithImage.contentImage.hideSkeleton()
-        }
-        
-        if indexPath.row == 0 && !reloaded1 {
-            tableView.reloadData()
-            reloaded1.toggle()
-        }
-        
-        if indexPath.row == 1 && !reloaded2 {
-            tableView.reloadData()
-            reloaded2.toggle()
-        }
-        
-        if indexPath.row == 2 && !reloaded3 {
-            tableView.reloadData()
-            reloaded3.toggle()
-        }
-        
-        if indexPath.row == 3 && !reloaded4 {
-            tableView.reloadData()
-            reloaded4.toggle()
-        }
-        
-        if indexPath.row == 4 && !reloaded5 {
-            tableView.reloadData()
-            reloaded5.toggle()
+            
+            if indexPath.row == 0 && !self.reloaded1 {
+                tableView.reloadData()
+                self.reloaded1.toggle()
+            }
+            
+            if indexPath.row == 1 && !self.reloaded2 {
+                tableView.reloadData()
+                self.reloaded2.toggle()
+            }
+            
+            if indexPath.row == 2 && !self.reloaded3 {
+                tableView.reloadData()
+                self.reloaded3.toggle()
+            }
+            
+            if indexPath.row == 3 && !self.reloaded4 {
+                tableView.reloadData()
+                self.reloaded4.toggle()
+            }
+            
+            if indexPath.row == 4 && !self.reloaded5 {
+                tableView.reloadData()
+                self.reloaded5.toggle()
+            }
         }
         
         return cellWithImage
@@ -98,7 +98,7 @@ class InstagramTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let link = URL(string: AppDelegate.instagramItems[indexPath.row].link!) {
-          UIApplication.shared.open(link)
+            UIApplication.shared.open(link)
         }
     }
     
