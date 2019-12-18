@@ -15,8 +15,17 @@
         "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager",
         "state": {
           "branch": null,
-          "revision": "3f31c45feae664bcd81615796ab444e1ff450d54",
-          "version": "6.4.1"
+          "revision": "dba0d0a6689534e7b7aae7d3728af0ca60a24b66",
+          "version": "6.5.4"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "2f9d171f17869768f6dbec1d039b851e2503af35",
+          "version": "5.12.0"
         }
       },
       {
@@ -38,6 +47,15 @@
         }
       },
       {
+        "package": "SkeletonView",
+        "repositoryURL": "https://github.com/Juanpe/SkeletonView.git",
+        "state": {
+          "branch": null,
+          "revision": "5384fd34ddb8010cbc84a5faa5e82a9d0bd8af22",
+          "version": "1.8.2"
+        }
+      },
+      {
         "package": "SwiftyJSON",
         "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
         "state": {
@@ -51,8 +69,8 @@
         "repositoryURL": "https://github.com/SvenTiigi/WhatsNewKit.git",
         "state": {
           "branch": null,
-          "revision": "d508a3a431b842573b7357a385c5bab3246138c6",
-          "version": "1.3.0"
+          "revision": "bf6f03101ee682c93da0a8141be5d05bb1f95e0e",
+          "version": "1.3.1"
         }
       }
     ]

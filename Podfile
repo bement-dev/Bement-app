@@ -7,11 +7,9 @@ target 'Bement' do
 
   # Pods for Bement
   pod 'Fuzi'
-  pod 'Kingfisher'
   pod 'Shift'
-  pod 'SkeletonView'
   pod 'MarkdownView'
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
-  pod 'SPPermission/Camera'
-  pod 'SPPermission/PhotoLibrary'
+  pod 'SPPermissions/Camera'
+  pod 'SPPermissions/PhotoLibrary'
 end

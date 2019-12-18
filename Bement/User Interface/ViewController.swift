@@ -10,7 +10,6 @@ import UIKit
 import SwiftyJSON
 import CloudKit
 import WhatsNewKit
-import SPPermission
 import FeedKit
 import SwiftyJSON
 

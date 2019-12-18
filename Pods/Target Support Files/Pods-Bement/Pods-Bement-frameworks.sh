@@ -162,20 +162,16 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Fuzi/Fuzi.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SPPermission/SPPermission.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SPPermissions/SPPermissions.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Shift/Shift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Spring/Spring.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Fuzi/Fuzi.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SPPermission/SPPermission.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SPPermissions/SPPermissions.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Shift/Shift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Spring/Spring.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

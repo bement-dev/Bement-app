@@ -10,7 +10,7 @@ import UIKit
 import MobileCoreServices
 import CoreML
 import Shift
-import SPPermission
+import SPPermissions
 
 class CameraPageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -54,14 +54,18 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if !(SPPermission.isAllowed(.camera) && SPPermission.isAllowed(.photoLibrary)) {
-            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
-        } else if SPPermission.isAllowed(.camera) && !SPPermission.isAllowed(.photoLibrary) {
-            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
-        } else if !SPPermission.isAllowed(.camera) && SPPermission.isAllowed(.photoLibrary) {
-            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
-        } else if SPPermission.isDenied(.camera) || SPPermission.isDenied(.photoLibrary) {
-            SPPermission.Dialog.request(with: [.camera, .photoLibrary], on: self)
+        if !(SPPermission.camera.isAuthorized && SPPermission.photoLibrary.isAuthorized) {
+            let controller = SPPermissions.dialog([.camera, .photoLibrary])
+            
+            controller.present(on: self)
+        } else if SPPermission.camera.isAuthorized && !SPPermission.photoLibrary.isAuthorized {
+            let controller = SPPermissions.dialog([.camera, .photoLibrary])
+            
+            controller.present(on: self)
+        } else if !SPPermission.camera.isAuthorized && !SPPermission.photoLibrary.isAuthorized {
+            let controller = SPPermissions.dialog([.camera, .photoLibrary])
+            
+            controller.present(on: self)
         }
     }
     
