@@ -1,4 +1,4 @@
-# The Bement Parent Portal
+# The Bement App
 [Original repository](https://github.com/1105420698/Bement-App)
 
 Basic Ground Rules:
