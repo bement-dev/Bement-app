@@ -1,5 +1,5 @@
 # The Bement App
-[Original repository](https://github.com/1105420698/Bement-App)
+[Original repository (archived)](https://github.com/1105420698/Bement-App)
 
 Basic Ground Rules:
 - [Code of Conduct](CODE_OF_CONDUCT.md)
