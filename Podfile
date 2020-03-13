@@ -9,7 +9,6 @@ target 'Bement' do
   pod 'Fuzi'
   pod 'Shift'
   pod 'MarkdownView'
-  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
   pod 'SPPermissions/Camera'
   pod 'SPPermissions/PhotoLibrary'
 end

@@ -58,14 +58,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cells" id="0Ew-Tz-UxP" customClass="DetailTableViewCell" customModule="Bement" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Ew-Tz-UxP" id="IMH-jr-nkp">
-                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVy-ef-e4S">
-                                            <rect key="frame" x="16" y="11" width="324" height="21"/>
+                                            <rect key="frame" x="16" y="10.999999999999998" width="324" height="21.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -451,7 +451,7 @@
                                     <segue destination="YJY-5t-Djc" kind="show" id="5JJ-Ez-IfG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G05-VN-bQJ" customClass="SpringButton" customModule="Spring">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G05-VN-bQJ">
                                 <rect key="frame" x="209" y="573.33333333333337" width="150" height="89.666666666666629"/>
                                 <color key="backgroundColor" name="mainButtonColor"/>
                                 <constraints>
@@ -463,27 +463,13 @@
                                 <state key="normal" image="news">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.59999999999999998"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.29999999999999999"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="x">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="touchExit:" destination="vhr-DB-jCY" eventType="touchDragExit" id="j5N-DP-IpU"/>
                                     <action selector="touchedDown:" destination="vhr-DB-jCY" eventType="touchDown" id="cWn-mW-yXs"/>
                                     <segue destination="b8g-TP-mtR" kind="show" id="R40-vN-cUL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEb-eu-8Cn" customClass="SpringButton" customModule="Spring">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEb-eu-8Cn">
                                 <rect key="frame" x="16" y="573.33333333333337" width="150" height="89.666666666666629"/>
                                 <color key="backgroundColor" name="mainButtonColor"/>
                                 <constraints>
@@ -495,24 +481,13 @@
                                 <state key="normal" image="lunch">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.59999999999999998"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.20000000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="touchExit:" destination="vhr-DB-jCY" eventType="touchDragExit" id="968-uE-PWl"/>
                                     <action selector="touchedDown:" destination="vhr-DB-jCY" eventType="touchDown" id="RVh-jd-RxY"/>
                                     <segue destination="o72-3g-jbA" kind="show" id="w49-l6-BqF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJd-2N-w2i" customClass="SpringButton" customModule="Spring">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJd-2N-w2i">
                                 <rect key="frame" x="209" y="448.33333333333331" width="150" height="89.999999999999943"/>
                                 <color key="backgroundColor" name="mainButtonColor"/>
                                 <constraints>
@@ -524,24 +499,13 @@
                                 <state key="normal" image="calendars">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.59999999999999998"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.10000000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="touchExit:" destination="vhr-DB-jCY" eventType="touchDragExit" id="TNj-TZ-eXo"/>
                                     <action selector="touchedDown:" destination="vhr-DB-jCY" eventType="touchDown" id="c6r-0a-IoI"/>
                                     <segue destination="OGI-SF-2ET" kind="show" id="BmP-aE-LYt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InF-yX-tXM" customClass="SpringButton" customModule="Spring">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InF-yX-tXM">
                                 <rect key="frame" x="16" y="448.33333333333331" width="150" height="89.999999999999943"/>
                                 <color key="backgroundColor" name="mainButtonColor"/>
                                 <constraints>
@@ -553,16 +517,6 @@
                                 <state key="normal" image="social">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="spring"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.59999999999999998"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="instagramPressed:" destination="vhr-DB-jCY" eventType="touchUpInside" id="npC-Dp-Tdv"/>
                                     <action selector="touchExit:" destination="vhr-DB-jCY" eventType="touchDragExit" id="tc6-HN-9kP"/>
@@ -2635,9 +2589,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This page is intended for developer to perform actions and adjust settings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWM-Hn-xDC">
-                                <rect key="frame" x="67" y="332" width="241" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This page is intended for developers to perform actions and adjust settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWM-Hn-xDC">
+                                <rect key="frame" x="54" y="332" width="267.33333333333331" height="61"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="1CM-Mb-tb5"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="61" id="Qac-jY-E6h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2652,7 +2607,7 @@
                             <constraint firstItem="cYK-IM-wRk" firstAttribute="top" secondItem="jMa-Pb-2Ud" secondAttribute="top" constant="45" id="89L-Sr-jp2"/>
                             <constraint firstItem="kWM-Hn-xDC" firstAttribute="centerX" secondItem="uvQ-cu-fuk" secondAttribute="centerX" id="8mL-TI-3zI"/>
                             <constraint firstItem="dEy-1l-uVm" firstAttribute="top" relation="lessThanOrEqual" secondItem="kWM-Hn-xDC" secondAttribute="bottom" constant="182" id="FZU-4a-rAv"/>
-                            <constraint firstItem="kWM-Hn-xDC" firstAttribute="leading" secondItem="jMa-Pb-2Ud" secondAttribute="leading" constant="67" id="K2W-kU-urd"/>
+                            <constraint firstItem="kWM-Hn-xDC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jMa-Pb-2Ud" secondAttribute="leading" constant="50" id="K2W-kU-urd"/>
                             <constraint firstItem="kWM-Hn-xDC" firstAttribute="top" secondItem="cYK-IM-wRk" secondAttribute="bottom" constant="26" id="T1t-Nt-Odm"/>
                             <constraint firstItem="cYK-IM-wRk" firstAttribute="leading" secondItem="jMa-Pb-2Ud" secondAttribute="leading" constant="85" id="Tsc-HE-5DF"/>
                             <constraint firstItem="jMa-Pb-2Ud" firstAttribute="trailing" secondItem="cYK-IM-wRk" secondAttribute="trailing" constant="85" id="Y58-HU-7Hi"/>
@@ -2661,7 +2616,7 @@
                             <constraint firstItem="dEy-1l-uVm" firstAttribute="leading" secondItem="jMa-Pb-2Ud" secondAttribute="leading" constant="16" id="fde-c7-YVg"/>
                             <constraint firstItem="mh9-b3-fbZ" firstAttribute="top" secondItem="dEy-1l-uVm" secondAttribute="bottom" constant="25" id="n6X-6a-6Ea"/>
                             <constraint firstItem="cYK-IM-wRk" firstAttribute="centerX" secondItem="uvQ-cu-fuk" secondAttribute="centerX" id="y1J-ms-QPx"/>
-                            <constraint firstItem="jMa-Pb-2Ud" firstAttribute="trailing" secondItem="kWM-Hn-xDC" secondAttribute="trailing" constant="67" id="ypM-ti-ARj"/>
+                            <constraint firstItem="jMa-Pb-2Ud" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kWM-Hn-xDC" secondAttribute="trailing" constant="50" id="ypM-ti-ARj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jMa-Pb-2Ud"/>
                     </view>

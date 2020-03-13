@@ -3,7 +3,7 @@
 <img align="left" src="https://github.com/ivanvorobei/SPPermissions/blob/master/Assets/Readme/Preview - 5.0.jpg" width="470"/>
 
 ### About
-SPPermissions is an API to ask for user permissions using Swift. The API provides for three UI options (list, dialog & native). The UI/UX is in an **Apple style** and supports iPad, dark mode, & tvOS. Also you can check the state permissions using the API.
+`SPPermissions` is an API to ask for user permissions using Swift. The API provides for three UI options (list, dialog & native). The UI/UX is in an **Apple style** and supports iPad, dark mode, & tvOS. Also you can check the state permissions using the API.
 
 Visit my store for iOS developers:
 
@@ -13,7 +13,7 @@ If you like the project, do not forget to `put star ★` and follow me on GitHub
 
 [![https://github.com/ivanvorobei](https://github.com/ivanvorobei/SPPermissions/blob/master/Assets/Buttons/follow-me-on-github.svg)](https://github.com/ivanvorobei)
 
-To help on this project, see the [Сooperation](#сooperation) section or our [chat](https://t.me/sppermissions).
+You can check example usage in app _Debts - Spending tracker_ for [iOS](https://itunes.apple.com/app/id1446635818) and [macOS](https://apps.apple.com/app/id1496914334). To help on `SPPermission` project, see the [Сooperation](#сooperation) section. 
 
 ## 5.x Migration
 
@@ -39,6 +39,7 @@ I recomended that you install the new version and create an issue if you have a 
     - [Native](#native)
 - [Permissions](#permissions)
 - [DataSource & Delegate](#datasource--delegate)
+- [Denied alert](#denied-alert)
 - [Good Practices](#good-practices)
 - [Keys in Info.plist](#keys-in-infoplist)
     - [Localization](#localization-keys)
@@ -200,7 +201,7 @@ let controller = SPPermissions.native([.calendar, .camera, .contacts])
 controller.delegate = self
 
 // Always use this method for request. 
-// You can pass any controller, this request becouse need implement base protocol.
+// You can pass any controller, this request because need implement base protocol.
 controller.present(on: self)
 ```
 
@@ -273,7 +274,7 @@ func didHide(permissions ids: [Int])
 func deniedData(for permission: SPPermission) -> SPPermissionDeniedAlertData?
 ```
 
-For `didHide` no way return array of `SPPermission`, becouse array of enum can't represented in objc. But you can detect permissions with it ID:
+You can detect permission values as follows:
 
 ```swift
 let permissions = ids.map { SPPermission(rawValue: $0) }
@@ -299,7 +300,7 @@ func deniedData(for permission: SPPermission) -> SPPermissionDeniedAlertData? {
 }
 ```
 
-If you don't implement this method, the alert will appear with default text. To disable the alert need return `nil`.
+If you don't implement this method, the alert will appear with default text. To disable the alert you just need return `nil`.
 
 ## Good Practices
 
@@ -364,8 +365,9 @@ The use of this project is completely free. If you can make a contribution, it w
 - Fix SPM support. Now SPM ignore config flags. Issue [#156](https://github.com/ivanvorobei/SPPermissions/issues/156)
 - Help me translate my app [Debts - Spending tracker](https://itunes.apple.com/app/id1446635818) for other languages. 
 - Add an icon for tv os example target.
+- Add code for `Bluetooth` request permission. For now after request `Bluetooth` developers get error.
 
-## Design previous version
+## Design of previous version
 
 I developed `SPPermissions` in an 'Apple-way'. To accomplish this, I checked 30 apps to get UI-elements for this project. I then took screenshots and re-drew the elements in Sketch. For example, the project's `Allow` button is similar to the `Get` button in the AppStore. Check this [timelapse](https://youtu.be/1mDdX7fQRv4) to see how I designed the `4.0` version of  `SPPermissions`:
 
