@@ -271,7 +271,6 @@
 				B2824B75230DEF0300CF4420 /* ViewController.swift */,
 				B2824B73230DEF0300CF4420 /* CatalogTableViewController.swift */,
 				B2824B74230DEF0300CF4420 /* DetailTableViewCell.swift */,
-				B2824B76230DEF0300CF4420 /* UpdateViewController.swift */,
 				B2824B77230DEF0300CF4420 /* LookAheadViewController.swift */,
 				B2824B78230DEF0300CF4420 /* InquiryViewController.swift */,
 				B2824B79230DEF0300CF4420 /* CatalogWebViewController.swift */,
@@ -280,6 +279,7 @@
 				B2824B7C230DEF0300CF4420 /* CatalogDetailTableViewController.swift */,
 				B2824B7D230DEF0300CF4420 /* UpdateTableViewCell.swift */,
 				B2824B7E230DEF0300CF4420 /* UpdateTableViewController.swift */,
+				B2824B76230DEF0300CF4420 /* UpdateViewController.swift */,
 				B2824B7F230DEF0300CF4420 /* CameraPageViewController.swift */,
 				B2824B80230DEF0300CF4420 /* AnnouncementViewController.swift */,
 				B2824B81230DEF0300CF4420 /* ContactBementViewController.swift */,
@@ -894,7 +894,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -916,7 +916,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
