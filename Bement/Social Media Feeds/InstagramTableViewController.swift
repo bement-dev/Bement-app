@@ -8,7 +8,6 @@
 
 import UIKit
 import Kingfisher
-import SkeletonView
 import Fuzi
 
 class InstagramTableViewController: UITableViewController {
@@ -53,16 +52,12 @@ class InstagramTableViewController: UITableViewController {
             print(error)
         }
         
-        cellWithImage.contentImage.showAnimatedSkeleton()
-        
         let url = URL(string: (AppDelegate.instagramItems[indexPath.row].enclosure?.attributes!.url)!)
         cellWithImage.contentImage.kf.setImage(
             with: url,
             options: [
                 .scaleFactor(UIScreen.main.scale)
         ]) { _ in
-            cellWithImage.contentImage.hideSkeleton()
-            
             if indexPath.row == 0 && !self.reloaded1 {
                 tableView.reloadData()
                 self.reloaded1.toggle()
