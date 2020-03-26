@@ -30,6 +30,8 @@ class LookAheadViewController: UIViewController, WKNavigationDelegate {
             do {
                 let doc = try HTMLDocument(string: html, encoding: String.Encoding.utf8)
                 DispatchQueue.global().async {
+                    
+                    // I swear if this code is outdated one day due to the fact that Bement modified their website, imma gonna be mad!
                     let unedittedCode = doc.body?.children[3].children[1].children[0].children[2].children[0].children[0].children[0].children[3].children[1].children[0].children[2].children[0].description
                     
                     let startOffset = unedittedCode!.index(unedittedCode!.startIndex, offsetBy: 9)

@@ -8,7 +8,6 @@
 
 import UIKit
 import Kingfisher
-import SkeletonView
 import Fuzi
 
 class FacebookTableViewController: UITableViewController {
@@ -54,13 +53,11 @@ class FacebookTableViewController: UITableViewController {
         }
         
         if let url = AppDelegate.facebookItems[indexPath.row].enclosure?.attributes!.url {
-            cellWithImage.contentImage.showAnimatedSkeleton()
             cellWithImage.contentImage.kf.setImage(
                 with: URL(string: url),
                 options: [
                     .scaleFactor(UIScreen.main.scale)
             ]) { _ in
-                cellWithImage.contentImage.hideSkeleton()
                 if indexPath.row == 0 && !self.reloaded1 {
                     tableView.reloadData()
                     self.reloaded1.toggle()

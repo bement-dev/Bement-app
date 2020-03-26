@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -128,14 +128,14 @@
 		0FB9511C540BF9B4DD2D8B670DD77583 /* SPRequestPermissionLocationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPRequestPermissionLocationHandler.swift; path = Source/SPPermissions/Permissions/Handlers/SPRequestPermissionLocationHandler.swift; sourceTree = "<group>"; };
 		13F2ADFDBA66B301FE281D01B1731A4E /* SPLocationPermission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPLocationPermission.swift; path = Source/SPPermissions/Permissions/SPLocationPermission.swift; sourceTree = "<group>"; };
 		1861472024D7B66599A955CD2A02A1BD /* SPPermissionsDialogController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsDialogController.swift; path = Source/SPPermissions/Interface/Dialog/Controllers/SPPermissionsDialogController.swift; sourceTree = "<group>"; };
-		1A7C2E118BAA3348A5A31EAC9A3B2EE2 /* Fuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fuzi.framework; path = Fuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7C2E118BAA3348A5A31EAC9A3B2EE2 /* Fuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6461067E3095A106AD657E297B7DC5 /* Pods-Bement-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bement-umbrella.h"; sourceTree = "<group>"; };
 		1F0428E67A4DF837E9CDED8B74AD4A66 /* Shift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Shift.xcconfig; sourceTree = "<group>"; };
 		1F328CF9A3AD7493C1356A6CB6DB80F7 /* SPPermissionsNativeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsNativeController.swift; path = Source/SPPermissions/Interface/Native/SPPermissionsNativeController.swift; sourceTree = "<group>"; };
 		1FAFA0FFF910D7863C726F0CC31B2917 /* MarkdownView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MarkdownView.modulemap; sourceTree = "<group>"; };
 		20000650126202876E1B257A120B425E /* SPPermissionsListFooterCommentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsListFooterCommentView.swift; path = Source/SPPermissions/Interface/List/Views/SPPermissionsListFooterCommentView.swift; sourceTree = "<group>"; };
 		204B74D11D125DBA1DA868EFC2114603 /* Shift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Shift-dummy.m"; sourceTree = "<group>"; };
-		209039795703F925DC2A9D91BF5B7821 /* MarkdownView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MarkdownView.bundle; path = "MarkdownView-MarkdownView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		209039795703F925DC2A9D91BF5B7821 /* MarkdownView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdownView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F1C07A89C915B8A63712D9A800C845 /* SPPermissionsGradeBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsGradeBlurView.swift; path = Source/SPPermissions/Interface/Shared/Other/SPPermissionsGradeBlurView.swift; sourceTree = "<group>"; };
 		25493E689E918F8EF27C00417B752629 /* SPPermissionsOpener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsOpener.swift; path = Source/SPPermissions/Data/SPPermissionsOpener.swift; sourceTree = "<group>"; };
 		2C3084F2FEE05BE210504F1D3A7D4C96 /* SPCameraPermission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPCameraPermission.swift; path = Source/SPPermissions/Permissions/SPCameraPermission.swift; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		32C1CA7B5CD8034FF998615AF124DA0A /* MarkdownView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarkdownView-prefix.pch"; sourceTree = "<group>"; };
 		34561D471E60161A1831A4D19E9AD605 /* SPPermissionsControllerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsControllerProtocol.swift; path = Source/SPPermissions/Protocols/SPPermissionsControllerProtocol.swift; sourceTree = "<group>"; };
 		37884FCF1E974A0A7DD5C5B563E8C5D8 /* SPPermissionActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionActionButton.swift; path = Source/SPPermissions/Interface/Shared/Buttons/SPPermissionActionButton.swift; sourceTree = "<group>"; };
-		385BBAC08A0FDF8218C6F7F9DE79B7FC /* main.css */ = {isa = PBXFileReference; includeInIndex = 1; name = main.css; path = webassets/dist/main.css; sourceTree = "<group>"; };
-		3C14440F725643142BFDC0136397AC36 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = webassets/dist/index.html; sourceTree = "<group>"; };
+		385BBAC08A0FDF8218C6F7F9DE79B7FC /* main.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = main.css; path = webassets/dist/main.css; sourceTree = "<group>"; };
+		3C14440F725643142BFDC0136397AC36 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = index.html; path = webassets/dist/index.html; sourceTree = "<group>"; };
 		3DA6C33B7750995D349526E1951CED7A /* ResourceBundle-MarkdownView-MarkdownView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MarkdownView-MarkdownView-Info.plist"; sourceTree = "<group>"; };
 		418A07331D0D8516F5B20492AA9DAC0F /* SPCalendarPermission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPCalendarPermission.swift; path = Source/SPPermissions/Permissions/SPCalendarPermission.swift; sourceTree = "<group>"; };
 		4266F5D15267C4730C300DE79C7087F9 /* SPPermissionsLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsLabel.swift; path = Source/SPPermissions/Interface/Shared/Labels/SPPermissionsLabel.swift; sourceTree = "<group>"; };
@@ -164,13 +164,13 @@
 		5760C3736EE9B16083C4055AE4DAFF54 /* SPMotionPermission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPMotionPermission.swift; path = Source/SPPermissions/Permissions/SPMotionPermission.swift; sourceTree = "<group>"; };
 		58A782EF2965A069782DE7BA0636BA7E /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
 		5C9DED56A2E1880EB17888DC31A61C7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5FD8E4EBA830B51FA0871FEAA75E4DF8 /* SPPermissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPPermissions.framework; path = SPPermissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD8E4EBA830B51FA0871FEAA75E4DF8 /* SPPermissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPPermissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F8D75825DEED9EC9782E347BB783B6 /* SPPermissionsDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsDataSource.swift; path = Source/SPPermissions/Protocols/SPPermissionsDataSource.swift; sourceTree = "<group>"; };
 		68A83AC31EA514575A080BB37D5506C9 /* SPPermissionsDialogFooterCommentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsDialogFooterCommentView.swift; path = Source/SPPermissions/Interface/Dialog/Views/SPPermissionsDialogFooterCommentView.swift; sourceTree = "<group>"; };
 		69A255D081286124C9391DB7595D3D09 /* Fuzi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Fuzi-Info.plist"; sourceTree = "<group>"; };
-		6AC88DFD99879B4FBFFB6D2FAEBD5D8C /* Pods_Bement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bement.framework; path = "Pods-Bement.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC88DFD99879B4FBFFB6D2FAEBD5D8C /* Pods_Bement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F391F28D01F0779EFA2D34808B74F8F /* NodeSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeSet.swift; path = Sources/NodeSet.swift; sourceTree = "<group>"; };
-		702CE5644EF1F26425C05E058547C562 /* MarkdownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarkdownView.framework; path = MarkdownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		702CE5644EF1F26425C05E058547C562 /* MarkdownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarkdownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70673D24F8E7DF2C5ECC8AB762A5EDE1 /* SPMediaLibraryPermission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPMediaLibraryPermission.swift; path = Source/SPPermissions/Permissions/SPMediaLibraryPermission.swift; sourceTree = "<group>"; };
 		713C9EA0DE1A91DA288B6CC4D229BA8A /* Pods-Bement-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bement-acknowledgements.markdown"; sourceTree = "<group>"; };
 		72100F956E39FBA8E91FA450291CF392 /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 		8972DDA8BA23E5C7813C26418BFC422E /* ShiftPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftPoint.swift; path = Shift/Classes/ShiftPoint.swift; sourceTree = "<group>"; };
 		8A0BBC7DE746A0078C552211FB954E00 /* Fuzi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fuzi-umbrella.h"; sourceTree = "<group>"; };
 		9A1F0EA19AF589A5D4DF4F452D9E5654 /* Shiftable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shiftable.swift; path = Shift/Classes/Shiftable.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A345632E85472268412E426026A0D69B /* SPPermissions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPPermissions.xcconfig; sourceTree = "<group>"; };
 		AD9690FEDB9035D8AA748549560152E1 /* SPPermissionDeniedAlertData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionDeniedAlertData.swift; path = Source/SPPermissions/Models/SPPermissionDeniedAlertData.swift; sourceTree = "<group>"; };
 		AEC1E6C33474F1CE867871923A2D2A64 /* SPPermissionsText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsText.swift; path = Source/SPPermissions/Data/SPPermissionsText.swift; sourceTree = "<group>"; };
@@ -202,11 +202,11 @@
 		BD840EE1356E67223397ADE59EFEA0C7 /* ShiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftUI.swift; path = Shift/Classes/ShiftUI.swift; sourceTree = "<group>"; };
 		C3A06F1D130AC4DFE05D6AFE6236681B /* SPContactsPermission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPContactsPermission.swift; path = Source/SPPermissions/Permissions/SPContactsPermission.swift; sourceTree = "<group>"; };
 		C717F98873033CCF338AD4306411D87E /* Pods-Bement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bement.release.xcconfig"; sourceTree = "<group>"; };
-		CF8ED894AF76D6294CBC655F5D928C3C /* Shift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Shift.framework; path = Shift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8ED894AF76D6294CBC655F5D928C3C /* Shift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DF75E0E825E8DFBDE1BFE16D010F08 /* SPPermissionIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionIconView.swift; path = Source/SPPermissions/Interface/Shared/Other/SPPermissionIconView.swift; sourceTree = "<group>"; };
 		D459DF1921306EC9FACF86DDCDB178AD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		D67464CADB0830BD8FE3AF8B8A1F4DC3 /* SPPermissionsColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsColor.swift; path = Source/SPPermissions/Data/SPPermissionsColor.swift; sourceTree = "<group>"; };
-		D8434BE78F340947CB7EFFFDD22D53B9 /* main.js */ = {isa = PBXFileReference; includeInIndex = 1; name = main.js; path = webassets/dist/main.js; sourceTree = "<group>"; };
+		D8434BE78F340947CB7EFFFDD22D53B9 /* main.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = main.js; path = webassets/dist/main.js; sourceTree = "<group>"; };
 		DC4D5B83D908311DAB4108C5F543E8CB /* SPSpeechPermission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPSpeechPermission.swift; path = Source/SPPermissions/Permissions/SPSpeechPermission.swift; sourceTree = "<group>"; };
 		DCA4AE7CF16B8E146BCC24CCA96CE843 /* SPPermissionsDialogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPPermissionsDialogView.swift; path = Source/SPPermissions/Interface/Dialog/Views/SPPermissionsDialogView.swift; sourceTree = "<group>"; };
 		DEA9C7480A1E266E50A6DC96E5D618A3 /* Pods-Bement-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bement-frameworks.sh"; sourceTree = "<group>"; };
@@ -305,7 +305,6 @@
 				7484F9EA18AE4565A6D2A8A3D2F8E9B0 /* ShiftUI_ObcjCompatible.swift */,
 				58A8EA9C535314E85490ABA0B3C85A9B /* Support Files */,
 			);
-			name = Shift;
 			path = Shift;
 			sourceTree = "<group>";
 		};
@@ -429,7 +428,6 @@
 				B961876D5B40A9C96A70D2367DBF4035 /* Queryable.swift */,
 				69E3DAA1BA509B916F0A7518F4EA93C8 /* Support Files */,
 			);
-			name = Fuzi;
 			path = Fuzi;
 			sourceTree = "<group>";
 		};
@@ -457,7 +455,6 @@
 				B2C9EBB6243B7D9642D093EF64BB76A8 /* Resources */,
 				75BAFDABD5A0F289FDA3B7D26678FC7C /* Support Files */,
 			);
-			name = MarkdownView;
 			path = MarkdownView;
 			sourceTree = "<group>";
 		};
@@ -477,7 +474,6 @@
 				562DB3AF9D392CD0930BA0B74F70A163 /* Core */,
 				C8F2DE816AA4E748A6E8D89D2B4FAE0D /* Support Files */,
 			);
-			name = SPPermissions;
 			path = SPPermissions;
 			sourceTree = "<group>";
 		};
@@ -687,11 +683,12 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = C05171FD79B65DA82D09E51C057DB623 /* Products */;
