@@ -1,15 +1,13 @@
 PODS:
-  - Fuzi (3.1.1)
   - MarkdownView (1.6.0)
   - Shift (0.2.2)
-  - SPPermissions/Camera (5.3):
+  - SPPermissions/Camera (5.3.2):
     - SPPermissions/Core
-  - SPPermissions/Core (5.3)
-  - SPPermissions/PhotoLibrary (5.3):
+  - SPPermissions/Core (5.3.2)
+  - SPPermissions/PhotoLibrary (5.3.2):
     - SPPermissions/Core
 
 DEPENDENCIES:
-  - Fuzi
   - MarkdownView
   - Shift
   - SPPermissions/Camera
@@ -17,17 +15,15 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Fuzi
     - MarkdownView
     - Shift
     - SPPermissions
 
 SPEC CHECKSUMS:
-  Fuzi: bcc5694488dd6e672e126cbf3c5471d7a79506d1
   MarkdownView: 25c1c2d7ff9706624a575556296e188be3dd3f6b
   Shift: 86dc634d046fc86a879dbfdb492739672cc092be
-  SPPermissions: a8056ef987855e8b231481f61bd8b4cbd3fcfd80
+  SPPermissions: f1f82ba07d1a07e1d73521b19e7c3550b0bc0ddb
 
-PODFILE CHECKSUM: 71ebd493605fce3e13902dfa018002637d1c7f26
+PODFILE CHECKSUM: ec412401a356f55c3997da2e2af410cbeeaac30d
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

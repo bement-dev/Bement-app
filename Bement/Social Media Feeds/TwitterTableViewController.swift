@@ -12,12 +12,6 @@ import Fuzi
 
 class TwitterTableViewController: UITableViewController {
     
-    var reloaded1 = false
-    var reloaded2 = false
-    var reloaded3 = false
-    var reloaded4 = false
-    var reloaded5 = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,12 +33,15 @@ class TwitterTableViewController: UITableViewController {
         
         let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
         
+        
+        cellWithImage.selectionStyle = .none
         cellWithImage.dateOfPub.text = "Date: \(datePub)"
         
         do {
             let doc = try HTMLDocument(string: AppDelegate.twitterItems[indexPath.row].description!, encoding: String.Encoding.utf8)
-            if doc.body!.children[0].stringValue == "\n      \n      \n    " {
-                cellWithImage.content.text = ""
+            
+            if doc.body!.children[0].stringValue.prefix(15) == "pic.twitter.com" {
+                cellWithImage.content.removeFromSuperview()
             } else {
                 cellWithImage.content.text = doc.body?.children[0].children[0].stringValue
             }
@@ -52,39 +49,20 @@ class TwitterTableViewController: UITableViewController {
             print(error)
         }
         
+        let processor = RoundCornerImageProcessor(cornerRadius: 15)
+        
         if let url = AppDelegate.twitterItems[indexPath.row].enclosure?.attributes!.url {
             cellWithImage.contentImage.kf.setImage(with: URL(string: url),
             options: [
-            .scaleFactor(UIScreen.main.scale)
+                .scaleFactor(UIScreen.main.scale),
+                .processor(processor)
+                
             ]) { _ in
-                if indexPath.row == 0 && !self.reloaded1 {
-                    tableView.reloadData()
-                    self.reloaded1.toggle()
-                }
-                
-                if indexPath.row == 1 && !self.reloaded2 {
-                    tableView.reloadData()
-                    self.reloaded2.toggle()
-                }
-                
-                if indexPath.row == 2 && !self.reloaded3 {
-                    tableView.reloadData()
-                    self.reloaded3.toggle()
-                }
-                
-                if indexPath.row == 3 && !self.reloaded4 {
-                    tableView.reloadData()
-                    self.reloaded4.toggle()
-                }
-                
-                if indexPath.row == 4 && !self.reloaded5 {
-                    tableView.reloadData()
-                    self.reloaded5.toggle()
-                }
+                tableView.reloadRows(at: [indexPath], with: .none)
             }
         } else {
-            cellWithImage.contentImage.isHidden = true
-            cellWithImage.contentImage.removeConstraints(cellWithImage.contentImage.constraints)
+            cellWithImage.contentImage.removeFromSuperview()
+            tableView.reloadRows(at: [indexPath], with: .none)
         }
         
         return cellWithImage
