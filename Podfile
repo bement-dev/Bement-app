@@ -6,7 +6,6 @@ target 'Bement' do
   use_frameworks!
 
   # Pods for Bement
-  pod 'Fuzi'
   pod 'Shift'
   pod 'MarkdownView'
   pod 'SPPermissions/Camera'
