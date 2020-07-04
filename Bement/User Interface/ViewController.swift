@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     
     var weather: WeatherStore?
     
-    public static var instagramRetrieved = false
     public static var twitterRetrieved = false
     public static var facebookRecieved = false
     
@@ -143,22 +142,7 @@ class ViewController: UIViewController {
     
     func fetchPosts() {
         AppDelegate.facebookItems.removeAll()
-        AppDelegate.instagramItems.removeAll()
         AppDelegate.twitterItems.removeAll()
-        
-        let instaURL = URL(string: "https://rss.app/feeds/vXhoCLgzZOUpWIhM.xml")!
-        let instaParser = FeedParser(URL: instaURL)
-        instaParser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
-            if result.isSuccess {
-                for item in result.rssFeed!.items! {
-                    AppDelegate.instagramItems.append(item)
-                }
-                ViewController.instagramRetrieved = true
-            } else {
-                ViewController.instagramRetrieved = false
-                print(result.error!)
-            }
-        }
 
         let twitterURL = URL(string: "https://rss.app/feeds/3r2kmUvEXa9v77jH.xml")!
         let twitterParser = FeedParser(URL: twitterURL)
@@ -206,7 +190,7 @@ class ViewController: UIViewController {
                 image: #imageLiteral(resourceName: "Apps drawer")),
             WhatsNew.Item(
                 title: "Social Media",
-                subtitle: "All posts under one roof, not three.",
+                subtitle: "All posts under one roof, not two.",
                 image: #imageLiteral(resourceName: "Arrow Down"))
         ]
         
@@ -300,7 +284,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func instagramPressed(_ sender: Any) {
-        if ViewController.instagramRetrieved && ViewController.facebookRecieved && ViewController.twitterRetrieved {
+        if ViewController.facebookRecieved && ViewController.twitterRetrieved {
             self.performSegue(withIdentifier: "social", sender: self)
         } else {
             let alert = UIAlertController(title: "Please wait", message: "The social media data are still being retrieved.", preferredStyle: .alert)

@@ -110,9 +110,6 @@
 /* Class = "UIButton"; normalTitle = "Please select the year"; ObjectID = "GJN-YY-yge"; */
 "GJN-YY-yge.normalTitle" = "请选择年份";
 
-/* Class = "UINavigationItem"; title = "Instagram"; ObjectID = "HAl-MS-LsT"; */
-"HAl-MS-LsT.title" = "Instagram";
-
 /* Class = "UITextField"; placeholder = "Friends, family, etc... (optional)"; ObjectID = "HGT-zW-bgI"; */
 "HGT-zW-bgI.placeholder" = "朋友, 家人... (可选)";
 
@@ -244,9 +241,6 @@
 
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "bai-Z2-CFM"; */
 "bai-Z2-CFM.title" = "返回";
-
-/* Class = "UITabBarItem"; title = "Instagram"; ObjectID = "czN-uY-u6H"; */
-"czN-uY-u6H.title" = "Instagram";
 
 /* Class = "UILabel"; text = "Current Grade"; ObjectID = "dJx-cf-7GN"; */
 "dJx-cf-7GN.text" = "当前年级";

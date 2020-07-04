@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LookAheadViewController Class Reference</title>
+    <title>BementBuildingClassifierOutput Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/LookAheadViewController" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/BementBuildingClassifierOutput" class="dashAnchor"></a>
 
-    <a title="LookAheadViewController Class Reference"></a>
+    <a title="BementBuildingClassifierOutput Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      LookAheadViewController Class Reference
+      BementBuildingClassifierOutput Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -211,14 +211,16 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>LookAheadViewController</h1>
+            <h1>BementBuildingClassifierOutput</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">LookAheadViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">WKNavigationDelegate</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="kt">OSX</span> <span class="mf">10.14</span><span class="p">,</span> <span class="n">iOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">tvOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
+<span class="kd">@available</span><span class="p">(</span><span class="n">watchOS</span><span class="p">,</span> <span class="n">unavailable</span><span class="p">)</span>
+<span class="kd">class</span> <span class="kt">BementBuildingClassifierOutput</span> <span class="p">:</span> <span class="kt">MLFeatureProvider</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Model Prediction Output Type</p>
 
           </div>
         </section>
@@ -230,9 +232,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@Bement@objc(cs)LookAheadViewController(py)lookAheadView"></a>
-                    <a name="//apple_ref/swift/Property/lookAheadView" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@Bement@objc(cs)LookAheadViewController(py)lookAheadView">lookAheadView</a>
+                    <a name="/s:6Bement0A24BuildingClassifierOutputC8provider33_A762A8D68EC05EE78356DE154349D3DELLSo17MLFeatureProvider_pvp"></a>
+                    <a name="//apple_ref/swift/Property/provider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Bement0A24BuildingClassifierOutputC8provider33_A762A8D68EC05EE78356DE154349D3DELLSo17MLFeatureProvider_pvp">provider</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -240,15 +242,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Source provided by CoreML</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
-<span class="k">var</span> <span class="nv">lookAheadView</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">MLFeatureProvider</span></code></pre>
 
                         </div>
                       </div>
@@ -258,9 +259,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@Bement@objc(cs)LookAheadViewController(im)viewDidLoad"></a>
-                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@Bement@objc(cs)LookAheadViewController(im)viewDidLoad">viewDidLoad()</a>
+                    <a name="/s:6Bement0A24BuildingClassifierOutputC15classLabelProbsSDySSSdGvp"></a>
+                    <a name="//apple_ref/swift/Property/classLabelProbs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Bement0A24BuildingClassifierOutputC15classLabelProbsSDySSSdGvp">classLabelProbs</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -268,14 +269,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Probability of each category as dictionary of strings to doubles</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">classLabelProbs</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -285,9 +286,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@Bement@objc(cs)LookAheadViewController(im)webView:decidePolicyForNavigationAction:decisionHandler:"></a>
-                    <a name="//apple_ref/swift/Method/webView(_:decidePolicyFor:decisionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@Bement@objc(cs)LookAheadViewController(im)webView:decidePolicyForNavigationAction:decisionHandler:">webView(_:decidePolicyFor:decisionHandler:)</a>
+                    <a name="/s:6Bement0A24BuildingClassifierOutputC10classLabelSSvp"></a>
+                    <a name="//apple_ref/swift/Property/classLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Bement0A24BuildingClassifierOutputC10classLabelSSvp">classLabel</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -295,14 +296,118 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Most likely image category as string value</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">webView</span><span class="p">(</span><span class="n">_</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="p">,</span> <span class="n">decidePolicyFor</span> <span class="nv">navigationAction</span><span class="p">:</span> <span class="kt">WKNavigationAction</span><span class="p">,</span> <span class="nv">decisionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">WKNavigationActionPolicy</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">classLabel</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Bement0A24BuildingClassifierOutputC12featureNamesShySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/featureNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Bement0A24BuildingClassifierOutputC12featureNamesShySSGvp">featureNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">featureNames</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Bement0A24BuildingClassifierOutputC12featureValue3forSo09MLFeatureF0CSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/featureValue(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Bement0A24BuildingClassifierOutputC12featureValue3forSo09MLFeatureF0CSgSS_tF">featureValue(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">featureValue</span><span class="p">(</span><span class="k">for</span> <span class="nv">featureName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MLFeatureValue</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Bement0A24BuildingClassifierOutputC15classLabelProbs0eF0ACSDySSSdG_SStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(classLabelProbs:classLabel:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Bement0A24BuildingClassifierOutputC15classLabelProbs0eF0ACSDySSSdG_SStcfc">init(classLabelProbs:classLabel:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">classLabelProbs</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">],</span> <span class="nv">classLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Bement0A24BuildingClassifierOutputC8featuresACSo17MLFeatureProvider_p_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(features:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Bement0A24BuildingClassifierOutputC8featuresACSo17MLFeatureProvider_p_tcfc">init(features:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">features</span><span class="p">:</span> <span class="kt">MLFeatureProvider</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Social media data variables
     
-    public static var instagramItems: [RSSFeedItem] = []
     public static var twitterItems: [RSSFeedItem] = []
     public static var facebookItems: [RSSFeedItem] = []
 
