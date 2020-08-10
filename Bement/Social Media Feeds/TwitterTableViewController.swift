@@ -33,13 +33,11 @@ class TwitterTableViewController: UITableViewController {
         
         let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
         
-        
         cellWithImage.selectionStyle = .none
         cellWithImage.dateOfPub.text = "Date: \(datePub)"
         
         do {
             let doc = try HTMLDocument(string: AppDelegate.twitterItems[indexPath.row].description!, encoding: String.Encoding.utf8)
-            
             if doc.body!.children[0].stringValue.prefix(15) == "pic.twitter.com" {
                 cellWithImage.content.removeFromSuperview()
             } else {
@@ -52,11 +50,11 @@ class TwitterTableViewController: UITableViewController {
         let processor = RoundCornerImageProcessor(cornerRadius: 15)
         
         if let url = AppDelegate.twitterItems[indexPath.row].enclosure?.attributes!.url {
-            cellWithImage.contentImage.kf.setImage(with: URL(string: url),
-            options: [
-                .scaleFactor(UIScreen.main.scale),
-                .processor(processor)
-                
+            cellWithImage.contentImage.kf.setImage(
+                with: URL(string: url),
+                options: [
+                    .scaleFactor(UIScreen.main.scale),
+                    .processor(processor)
             ]) { _ in
                 tableView.reloadRows(at: [indexPath], with: .none)
             }
@@ -71,7 +69,6 @@ class TwitterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
         cellWithImage.contentImage.kf.cancelDownloadTask()
-
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
