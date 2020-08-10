@@ -15,5 +15,3 @@ Of course, as a parent at Bement, you might think that the website works just fi
 |                      Name                     |            Role           |
 | --------------------------------------------- | ------------------------- |
 | [Runkai Zhang](https://github.com/1105420698) | Maintainer, Administrator |
-
-Special thanks for Mr. Wilson and all the admisson folks for their constant support and helpful suggestions.
