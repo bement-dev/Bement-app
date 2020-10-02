@@ -35,11 +35,14 @@ class LookAheadViewController: UIViewController, WKNavigationDelegate {
                     let unedittedCode = doc.body?.children[3].children[1].children[0].children[2].children[0].children[0].children[0].children[3].children[1].children[0].children[2].children[0].description
                     
                     let startOffset = unedittedCode!.index(unedittedCode!.startIndex, offsetBy: 9)
-                    let endOffset = unedittedCode!.index(unedittedCode!.endIndex, offsetBy: -37)
+                    let endOffset = unedittedCode!.index(unedittedCode!.endIndex, offsetBy: -97)
                     
                     let finalizedString = unedittedCode![startOffset...endOffset]
-                    _ = DispatchQueue.main.sync {
-                        self.lookAheadView.load(URLRequest(url: URL(string: String(finalizedString))!))
+                    DispatchQueue.main.sync {
+                        print(String(finalizedString));
+                        if let link = URL(string: String(finalizedString)) {
+                            self.lookAheadView.load(URLRequest(url: link))
+                        }
                     }
                 }
             } catch let error {

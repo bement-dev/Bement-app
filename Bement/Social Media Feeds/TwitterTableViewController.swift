@@ -55,9 +55,9 @@ class TwitterTableViewController: UITableViewController {
                 options: [
                     .scaleFactor(UIScreen.main.scale),
                     .processor(processor)
-            ]) { _ in
-                tableView.reloadRows(at: [indexPath], with: .none)
-            }
+                ], completionHandler:  { _ in
+                    tableView.reloadRows(at: [indexPath], with: .none)
+                })
         } else {
             cellWithImage.contentImage.removeFromSuperview()
             tableView.reloadRows(at: [indexPath], with: .none)
