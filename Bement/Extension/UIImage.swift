@@ -1,6 +1,6 @@
 //
 //  UIImage.swift
-//  WalkthroughOnboarding
+//  Bement
 //
 //  Created by Florian Marcu on 8/16/18.
 //  Copyright © 2019 Instamobile. All rights reserved.
