@@ -73,7 +73,7 @@ class AnnouncementViewController: UIViewController {
             } else {
                 DispatchQueue.main.sync {
                     if self.announcementSwitch.isOn {
-                        if self.titleField.text!.isEmpty {
+                        if self.titleField.hasText {
                             let data = Announcement(display: self.announcementSwitch.isOn, titleString: self.titleField.text!, firstLine: self.firstField.text, secondLine: self.secondField.text)
                             data.upload(sender: self)
                             self.currentAnnouncement.text = "true"

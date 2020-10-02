@@ -19,9 +19,7 @@
 		B2824B88230DEF0300CF4420 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B52230DEF0000CF4420 /* AnimationHelper.swift */; };
 		B2824B89230DEF0300CF4420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2824B53230DEF0000CF4420 /* LaunchScreen.storyboard */; };
 		B2824B8A230DEF0300CF4420 /* TwitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */; };
-		B2824B8B230DEF0300CF4420 /* FacebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B56230DEF0000CF4420 /* FacebookTableViewController.swift */; };
 		B2824B8D230DEF0300CF4420 /* TwitterWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */; };
-		B2824B8F230DEF0300CF4420 /* FacebookWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B5A230DEF0000CF4420 /* FacebookWithImageTableViewCell.swift */; };
 		B2824B92230DEF0300CF4420 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B5F230DEF0100CF4420 /* Tools.swift */; };
 		B2824B94230DEF0300CF4420 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B61230DEF0100CF4420 /* Announcement.swift */; };
 		B2824B96230DEF0300CF4420 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B64230DEF0200CF4420 /* HamburgerButton.swift */; };
@@ -91,9 +89,7 @@
 		B2824B52230DEF0000CF4420 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		B2824B53230DEF0000CF4420 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTableViewController.swift; sourceTree = "<group>"; };
-		B2824B56230DEF0000CF4420 /* FacebookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookTableViewController.swift; sourceTree = "<group>"; };
 		B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterWithImageTableViewCell.swift; sourceTree = "<group>"; };
-		B2824B5A230DEF0000CF4420 /* FacebookWithImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWithImageTableViewCell.swift; sourceTree = "<group>"; };
 		B2824B5F230DEF0100CF4420 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		B2824B61230DEF0100CF4420 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		B2824B64230DEF0200CF4420 /* HamburgerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
@@ -242,9 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */,
-				B2824B56230DEF0000CF4420 /* FacebookTableViewController.swift */,
 				B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */,
-				B2824B5A230DEF0000CF4420 /* FacebookWithImageTableViewCell.swift */,
 			);
 			path = "Social Media Feeds";
 			sourceTree = "<group>";
@@ -689,7 +683,6 @@
 				B2824B96230DEF0300CF4420 /* HamburgerButton.swift in Sources */,
 				B2824BAF230DEF0300CF4420 /* SpeedContactViewController.swift in Sources */,
 				B2824B87230DEF0300CF4420 /* StoryboardSupport.swift in Sources */,
-				B2824B8F230DEF0300CF4420 /* FacebookWithImageTableViewCell.swift in Sources */,
 				B2824BB1230DEF0300CF4420 /* LunchViewController.swift in Sources */,
 				B2824B86230DEF0300CF4420 /* WeatherStore.swift in Sources */,
 				B2824BAC230DEF0300CF4420 /* CameraPageViewController.swift in Sources */,
@@ -710,7 +703,6 @@
 				B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */,
 				B2824BA5230DEF0300CF4420 /* InquiryViewController.swift in Sources */,
 				B2824BAD230DEF0300CF4420 /* AnnouncementViewController.swift in Sources */,
-				B2824B8B230DEF0300CF4420 /* FacebookTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,7 +884,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -914,7 +906,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
