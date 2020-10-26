@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B7DFA2EE2E299A8CD210C45 /* Pods_Bement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */; };
+		B204CA0625470C84004B7CC6 /* FacebookWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA0525470C84004B7CC6 /* FacebookWithImageTableViewCell.swift */; };
+		B2297C0625464B0B002DFAE1 /* FacebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2297C0525464B0A002DFAE1 /* FacebookTableViewController.swift */; };
 		B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890723A9C881001BDA43 /* Kingfisher */; };
 		B24E890B23A9C927001BDA43 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890A23A9C927001BDA43 /* SkeletonView */; };
 		B25E76262315F90500B9399D /* Update#0.md in Resources */ = {isa = PBXBuildFile; fileRef = B25E76252315F90500B9399D /* Update#0.md */; };
@@ -83,6 +85,8 @@
 /* Begin PBXFileReference section */
 		7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.release.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.release.xcconfig"; sourceTree = "<group>"; };
 		8935B9066163E6CA8BEB2838 /* Pods-Bement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.debug.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.debug.xcconfig"; sourceTree = "<group>"; };
+		B204CA0525470C84004B7CC6 /* FacebookWithImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookWithImageTableViewCell.swift; sourceTree = "<group>"; };
+		B2297C0525464B0A002DFAE1 /* FacebookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTableViewController.swift; sourceTree = "<group>"; };
 		B25E76252315F90500B9399D /* Update#0.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Update#0.md"; sourceTree = "<group>"; };
 		B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
 		B2824B51230DEF0000CF4420 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 			children = (
 				B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */,
 				B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */,
+				B204CA0525470C84004B7CC6 /* FacebookWithImageTableViewCell.swift */,
+				B2297C0525464B0A002DFAE1 /* FacebookTableViewController.swift */,
 			);
 			path = "Social Media Feeds";
 			sourceTree = "<group>";
@@ -687,6 +693,7 @@
 				B2824B86230DEF0300CF4420 /* WeatherStore.swift in Sources */,
 				B2824BAC230DEF0300CF4420 /* CameraPageViewController.swift in Sources */,
 				B2824BA7230DEF0300CF4420 /* CalendersTableViewController.swift in Sources */,
+				B204CA0625470C84004B7CC6 /* FacebookWithImageTableViewCell.swift in Sources */,
 				B2824BB0230DEF0300CF4420 /* LoginViewController.swift in Sources */,
 				B2824B8A230DEF0300CF4420 /* TwitterTableViewController.swift in Sources */,
 				B2824BAB230DEF0300CF4420 /* UpdateTableViewController.swift in Sources */,
@@ -703,6 +710,7 @@
 				B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */,
 				B2824BA5230DEF0300CF4420 /* InquiryViewController.swift in Sources */,
 				B2824BAD230DEF0300CF4420 /* AnnouncementViewController.swift in Sources */,
+				B2297C0625464B0B002DFAE1 /* FacebookTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,7 +892,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -906,7 +914,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
