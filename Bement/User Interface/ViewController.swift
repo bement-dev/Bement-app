@@ -242,7 +242,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func backToMain(_ unwindSegue: UIStoryboardSegue) {
+    @IBAction func backToMain(segue: UIStoryboardSegue) {
         fetchData()
         adjustMenuItem()
         
@@ -310,10 +310,12 @@ class ViewController: UIViewController {
                                 let temperature = result["temperature"]?.int
                                 let summary = result["summary"]?.string
                                 let icon = result["icon"]?.string
+                                let doubleTemp = Double(temperature!)
+                                let celsius = 5.0 / 9.0 * (doubleTemp - 32.0)
 
                                 self.weather = WeatherStore(uvIndex: uvIndex!, temperature: temperature!, summary: summary!, icon: icon!)
                                 DispatchQueue.main.sync {
-                                    self.temperatureLabel.text = "\(self.weather!.temperature)°"
+                                    self.temperatureLabel.text = "\(self.weather!.temperature)/\(Int(celsius))°"
                                     self.uvLabel.text = "UV \(self.weather!.uvIndex)"
                                     switch self.weather!.uvIndex {
                                     case 0: self.uvBackground.backgroundColor = UIColor.systemGreen

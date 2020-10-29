@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B7DFA2EE2E299A8CD210C45 /* Pods_Bement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */; };
+		B204CA182547272F004B7CC6 /* FBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA162547272F004B7CC6 /* FBCell.swift */; };
+		B204CA192547272F004B7CC6 /* FBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA172547272F004B7CC6 /* FBTableViewController.swift */; };
 		B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890723A9C881001BDA43 /* Kingfisher */; };
 		B24E890B23A9C927001BDA43 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890A23A9C927001BDA43 /* SkeletonView */; };
 		B25E76262315F90500B9399D /* Update#0.md in Resources */ = {isa = PBXBuildFile; fileRef = B25E76252315F90500B9399D /* Update#0.md */; };
@@ -83,6 +85,8 @@
 /* Begin PBXFileReference section */
 		7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.release.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.release.xcconfig"; sourceTree = "<group>"; };
 		8935B9066163E6CA8BEB2838 /* Pods-Bement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.debug.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.debug.xcconfig"; sourceTree = "<group>"; };
+		B204CA162547272F004B7CC6 /* FBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBCell.swift; sourceTree = "<group>"; };
+		B204CA172547272F004B7CC6 /* FBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBTableViewController.swift; sourceTree = "<group>"; };
 		B25E76252315F90500B9399D /* Update#0.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Update#0.md"; sourceTree = "<group>"; };
 		B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
 		B2824B51230DEF0000CF4420 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 		B2824B54230DEF0000CF4420 /* Social Media Feeds */ = {
 			isa = PBXGroup;
 			children = (
+				B204CA172547272F004B7CC6 /* FBTableViewController.swift */,
+				B204CA162547272F004B7CC6 /* FBCell.swift */,
 				B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */,
 				B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */,
 			);
@@ -672,6 +678,7 @@
 				B2824BA2230DEF0300CF4420 /* ViewController.swift in Sources */,
 				B2824B92230DEF0300CF4420 /* Tools.swift in Sources */,
 				B2824B99230DEF0300CF4420 /* UIViewController.swift in Sources */,
+				B204CA192547272F004B7CC6 /* FBTableViewController.swift in Sources */,
 				B2824BA4230DEF0300CF4420 /* LookAheadViewController.swift in Sources */,
 				B2824B94230DEF0300CF4420 /* Announcement.swift in Sources */,
 				B2824B8D230DEF0300CF4420 /* TwitterWithImageTableViewCell.swift in Sources */,
@@ -699,6 +706,7 @@
 				B2824BA1230DEF0300CF4420 /* DetailTableViewCell.swift in Sources */,
 				B2824BA0230DEF0300CF4420 /* CatalogTableViewController.swift in Sources */,
 				B2824B97230DEF0300CF4420 /* UIViewExtensions.swift in Sources */,
+				B204CA182547272F004B7CC6 /* FBCell.swift in Sources */,
 				B2824B98230DEF0300CF4420 /* UIImage.swift in Sources */,
 				B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */,
 				B2824BA5230DEF0300CF4420 /* InquiryViewController.swift in Sources */,
@@ -811,7 +819,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -867,7 +875,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -884,7 +892,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -906,7 +914,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = JS9B962AR9;
 				INFOPLIST_FILE = Bement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
