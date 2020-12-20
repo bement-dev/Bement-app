@@ -12,6 +12,8 @@ import Fuzi
 
 class TwitterTableViewController: UITableViewController {
     
+    var reloadCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -55,7 +57,11 @@ class TwitterTableViewController: UITableViewController {
                 options: [
                     .scaleFactor(UIScreen.main.scale),
                     .processor(processor)
-                ], completionHandler: { _ in
+                ], completionHandler: { [self] _ in
+                    if reloadCount != 5 {
+                        reloadCount += 1
+                        tableView.reloadData()
+                    }
                 })
         } else {
             cellWithImage.contentImage.removeFromSuperview()

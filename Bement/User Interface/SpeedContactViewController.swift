@@ -65,7 +65,7 @@ class SpeedContactViewController: UIViewController, MFMailComposeViewControllerD
             guard let number = URL(string: "tel://4137747061") else { return }
             UIApplication.shared.open(number)
         case nursePhone:
-            guard let number = URL(string: "tel://4137747061,102") else { return }
+            guard let number = URL(string: "tel://4137747061,503") else { return }
             UIApplication.shared.open(number)
         case afterPhone:
             guard let number = URL(string: "tel://4137747061,126") else { return }
@@ -102,9 +102,9 @@ class SpeedContactViewController: UIViewController, MFMailComposeViewControllerD
         case busiEmail:
             composeEmail(to: ["jboyden@bement.org"])
         case nurseEmail:
-            composeEmail(to: ["azilinski@bement.org"])
+            composeEmail(to: ["shs@bement.org"])
         case afterEmail:
-            composeEmail(to: ["bwisniewski@bement.org"])
+            composeEmail(to: ["kmaccallum@bement.org"])
         default:
             print("This should not happen!")
         }

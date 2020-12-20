@@ -12,6 +12,8 @@ import Fuzi
 
 class FacebookTableViewController: UITableViewController {
     
+    var reloadCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -54,8 +56,11 @@ class FacebookTableViewController: UITableViewController {
                 with: URL(string: url),
                 options: [
                     .processor(processor)
-                ], completionHandler:  { _ in
-                    tableView.reloadRows(at: [indexPath], with: .none)
+                ], completionHandler:  { [self] _ in
+                    if reloadCount != 5 {
+                        reloadCount += 1
+                        tableView.reloadData()
+                    }
                 })
         } else {
             cellWithImage.contentImage.removeFromSuperview()
