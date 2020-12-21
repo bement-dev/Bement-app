@@ -333,6 +333,8 @@ class ViewController: UIViewController {
                                     case 12: self.uvBackground.backgroundColor = UIColor.systemPurple
                                     default: self.uvBackground.backgroundColor = UIColor.systemPurple
                                     }
+                                    
+                                    //print(self.weather!.icon)
                                     switch self.weather!.icon {
                                     case "clear-day":
                                         self.weatherIcon.image = UIImage(systemName: "sun.max.fill")
@@ -344,7 +346,7 @@ class ViewController: UIViewController {
                                         self.weatherIcon.image = UIImage(systemName: "cloud.rain.fill")
                                         self.weatherIcon.tintColor = UIColor.systemTeal
                                     case "snow":
-                                        self.weatherIcon.image = UIImage(systemName: "snow.fill")
+                                        self.weatherIcon.image = UIImage(systemName: "snow")
                                         self.weatherIcon.tintColor = UIColor.systemTeal
                                     case "sleet":
                                         self.weatherIcon.image = UIImage(systemName: "cloud.sleet.fill")
@@ -373,7 +375,7 @@ class ViewController: UIViewController {
                                     case "tornado":
                                         self.weatherIcon.image = UIImage(systemName: "tornado")
                                         self.weatherIcon.tintColor = UIColor.systemBlue
-                                    default:print("This should not happen!")
+                                    default: print("This should not happen!")
                                     }
                                 }
                             }

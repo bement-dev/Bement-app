@@ -56,14 +56,17 @@ class CameraPageViewController: UIViewController, UIImagePickerControllerDelegat
         
         if !(SPPermission.camera.isAuthorized && SPPermission.photoLibrary.isAuthorized) {
             let controller = SPPermissions.dialog([.camera, .photoLibrary])
+            controller.footerText = "Camera is required to take the picture, Photo library permission is required if you want to use an existing photo or save the one you took."
             
             controller.present(on: self)
         } else if SPPermission.camera.isAuthorized && !SPPermission.photoLibrary.isAuthorized {
             let controller = SPPermissions.dialog([.camera, .photoLibrary])
+            controller.footerText = "Camera is required to take the picture, Photo library permission is required if you want to use an existing photo or save the one you took."
             
             controller.present(on: self)
         } else if !SPPermission.camera.isAuthorized && !SPPermission.photoLibrary.isAuthorized {
             let controller = SPPermissions.dialog([.camera, .photoLibrary])
+            controller.footerText = "Camera is required to take the picture, Photo library permission is required if you want to use an existing photo or save the one you took."
             
             controller.present(on: self)
         }
