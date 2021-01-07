@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 import Fuzi
+import FeedKit
 
 class FacebookTableViewController: UITableViewController {
     
@@ -40,8 +41,8 @@ class FacebookTableViewController: UITableViewController {
         
         do {
             let doc = try HTMLDocument(string: AppDelegate.facebookItems[indexPath.row].description!, encoding: String.Encoding.utf8)
-            if doc.body!.children[0].stringValue == "\n      \n      \n    " {
-                cellWithImage.content.text = ""
+            if doc.body!.children[0].stringValue.isEmpty {
+                cellWithImage.content.removeFromSuperview()
             } else {
                 cellWithImage.content.text = doc.body?.children[0].stringValue
             }
@@ -55,6 +56,7 @@ class FacebookTableViewController: UITableViewController {
             cellWithImage.contentImage.kf.setImage(
                 with: URL(string: url),
                 options: [
+                    .scaleFactor(UIScreen.main.scale / 2),
                     .processor(processor)
                 ], completionHandler:  { [self] _ in
                     if reloadCount != 5 {
