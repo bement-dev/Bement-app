@@ -8,7 +8,7 @@
 
 import UIKit
 import Kingfisher
-import Fuzi
+import FeedKit
 
 class TwitterTableViewController: UITableViewController {
     
@@ -38,15 +38,10 @@ class TwitterTableViewController: UITableViewController {
         cellWithImage.selectionStyle = .none
         cellWithImage.dateOfPub.text = "Date: \(datePub)"
         
-        do {
-            let doc = try HTMLDocument(string: AppDelegate.twitterItems[indexPath.row].description!, encoding: String.Encoding.utf8)
-            if doc.body!.children[0].stringValue.prefix(15) == "pic.twitter.com" {
-                cellWithImage.content.removeFromSuperview()
-            } else {
-                cellWithImage.content.text = doc.body?.children[0].children[0].stringValue
-            }
-        } catch let error {
-            print(error)
+        if AppDelegate.twitterItems[indexPath.row].title == nil {
+            cellWithImage.content.removeFromSuperview()
+        } else {
+            cellWithImage.content.text = AppDelegate.twitterItems[indexPath.row].title
         }
         
         let processor = RoundCornerImageProcessor(cornerRadius: 15)

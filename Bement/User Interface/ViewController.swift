@@ -144,7 +144,7 @@ class ViewController: UIViewController {
         AppDelegate.facebookItems.removeAll()
         AppDelegate.twitterItems.removeAll()
 
-        let twitterURL = URL(string: "https://rss.app/feeds/3r2kmUvEXa9v77jH.xml")!
+        let twitterURL = URL(string: "https://rss.app/feeds/U5sBo6uPH2lPhQTq.xml")!
         let twitterParser = FeedParser(URL: twitterURL)
         twitterParser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
             if result.isSuccess {
