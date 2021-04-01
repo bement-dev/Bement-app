@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     @IBOutlet var startHour: UILabel!
     @IBOutlet var endHour: UILabel!
     @IBOutlet var data: UIButton!
-    @IBOutlet var identity: UIButton!
     @IBOutlet var weatherIcon: UIImageView!
     @IBOutlet var temperatureLabel: UILabel!
     @IBOutlet var uvBackground: UIView!
@@ -226,18 +225,10 @@ class ViewController: UIViewController {
                 self.data.center.x += self.view.bounds.width
                 self.data.alpha = 1
             }
-            UIView.animate(withDuration: 0.4) {
-                self.identity.center.x += self.view.bounds.width
-                self.identity.alpha = 1
-            }
         } else {
             UIView.animate(withDuration: 0.3) {
                 self.data.center.x -= self.view.bounds.width
                 self.data.alpha = 0
-            }
-            UIView.animate(withDuration: 0.4) {
-                self.identity.center.x -= self.view.bounds.width
-                self.identity.alpha = 0
             }
         }
     }
@@ -259,14 +250,10 @@ class ViewController: UIViewController {
         //print("Adjusted")
         if button.showsMenu {
             self.data.center.x = originalLocationMoved!
-            self.identity.center.x = originalLocationMoved!
             self.data.alpha = 1
-            self.identity.alpha = 1
         } else {
             self.data.center.x = originalLocation!
-            self.identity.center.x = originalLocation!
             self.data.alpha = 0
-            self.identity.alpha = 0
         }
     }
     

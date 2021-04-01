@@ -8,6 +8,4 @@ target 'Bement' do
   # Pods for Bement
   pod 'Shift'
   pod 'MarkdownView'
-  pod 'SPPermissions/Camera'
-  pod 'SPPermissions/PhotoLibrary'
 end

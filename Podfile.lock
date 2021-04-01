@@ -1,29 +1,20 @@
 PODS:
-  - MarkdownView (1.6.0)
+  - MarkdownView (1.7.1)
   - Shift (0.2.2)
-  - SPPermissions/Camera (5.3.2):
-    - SPPermissions/Core
-  - SPPermissions/Core (5.3.2)
-  - SPPermissions/PhotoLibrary (5.3.2):
-    - SPPermissions/Core
 
 DEPENDENCIES:
   - MarkdownView
   - Shift
-  - SPPermissions/Camera
-  - SPPermissions/PhotoLibrary
 
 SPEC REPOS:
   trunk:
     - MarkdownView
     - Shift
-    - SPPermissions
 
 SPEC CHECKSUMS:
-  MarkdownView: 25c1c2d7ff9706624a575556296e188be3dd3f6b
+  MarkdownView: cf30a97ab39b2bce04406adce541972c882363bd
   Shift: 86dc634d046fc86a879dbfdb492739672cc092be
-  SPPermissions: f1f82ba07d1a07e1d73521b19e7c3550b0bc0ddb
 
-PODFILE CHECKSUM: ec412401a356f55c3997da2e2af410cbeeaac30d
+PODFILE CHECKSUM: 498fc11145709f28209c25443f3a61f2d4290ceb
 
 COCOAPODS: 1.9.3
