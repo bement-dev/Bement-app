@@ -1,4 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Bement/Pods-Bement-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework
-${BUILT_PRODUCTS_DIR}/SPPermissions/SPPermissions.framework
 ${BUILT_PRODUCTS_DIR}/Shift/Shift.framework

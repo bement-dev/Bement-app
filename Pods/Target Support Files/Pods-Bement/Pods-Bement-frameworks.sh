@@ -198,12 +198,10 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SPPermissions/SPPermissions.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Shift/Shift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SPPermissions/SPPermissions.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Shift/Shift.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

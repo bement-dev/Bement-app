@@ -51,15 +51,6 @@ open class MarkdownView: UIView {
   @objc public func load(markdown: String?, enableImage: Bool = true) {
     guard let markdown = markdown else { return }
 
-    let bundle = Bundle(for: MarkdownView.self)
-
-    let htmlURL: URL? =
-      bundle.url(forResource: "index",
-                 withExtension: "html") ??
-      bundle.url(forResource: "index",
-                 withExtension: "html",
-                 subdirectory: "MarkdownView.bundle")
-
     if let url = htmlURL {
       let templateRequest = URLRequest(url: url)
 
@@ -83,7 +74,9 @@ open class MarkdownView: UIView {
       wv.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
       wv.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
       wv.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-      wv.backgroundColor = self.backgroundColor
+      wv.isOpaque = false
+      wv.backgroundColor = .clear
+      wv.scrollView.backgroundColor = .clear
 
       self.webView = wv
 

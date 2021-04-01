@@ -42,7 +42,6 @@
 		B2824BA9230DEF0300CF4420 /* CatalogDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7C230DEF0300CF4420 /* CatalogDetailTableViewController.swift */; };
 		B2824BAA230DEF0300CF4420 /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7D230DEF0300CF4420 /* UpdateTableViewCell.swift */; };
 		B2824BAB230DEF0300CF4420 /* UpdateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7E230DEF0300CF4420 /* UpdateTableViewController.swift */; };
-		B2824BAC230DEF0300CF4420 /* CameraPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7F230DEF0300CF4420 /* CameraPageViewController.swift */; };
 		B2824BAD230DEF0300CF4420 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B80230DEF0300CF4420 /* AnnouncementViewController.swift */; };
 		B2824BAE230DEF0300CF4420 /* ContactBementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B81230DEF0300CF4420 /* ContactBementViewController.swift */; };
 		B2824BAF230DEF0300CF4420 /* SpeedContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B82230DEF0300CF4420 /* SpeedContactViewController.swift */; };
@@ -57,7 +56,6 @@
 		B287295F2354BAA000E2B917 /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = B287295E2354BAA000E2B917 /* Siren */; };
 		B28729622354BBDA00E2B917 /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = B28729612354BBDA00E2B917 /* WhatsNewKit */; };
 		B297B5432339BAB6006C3ACE /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B297B5422339BAB6006C3ACE /* keys.plist */; };
-		B29E36092314411800658276 /* BementBuildingClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */; };
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
 		B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4918230DEC37007DB33A /* SceneDelegate.swift */; };
 		B2DAA725235661B800C33AB0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DAA724235661B800C33AB0 /* UIColor.swift */; };
@@ -114,7 +112,6 @@
 		B2824B7C230DEF0300CF4420 /* CatalogDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogDetailTableViewController.swift; sourceTree = "<group>"; };
 		B2824B7D230DEF0300CF4420 /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
 		B2824B7E230DEF0300CF4420 /* UpdateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewController.swift; sourceTree = "<group>"; };
-		B2824B7F230DEF0300CF4420 /* CameraPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPageViewController.swift; sourceTree = "<group>"; };
 		B2824B80230DEF0300CF4420 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
 		B2824B81230DEF0300CF4420 /* ContactBementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactBementViewController.swift; sourceTree = "<group>"; };
 		B2824B82230DEF0300CF4420 /* SpeedContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedContactViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +148,6 @@
 		B2824BF9230DF77A00CF4420 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2824BFA230DF77A00CF4420 /* .tgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = .tgz; sourceTree = "<group>"; };
 		B297B5422339BAB6006C3ACE /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
-		B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BementBuildingClassifier.mlmodel; sourceTree = "<group>"; };
 		B29E4913230DEC37007DB33A /* Bement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29E4916230DEC37007DB33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29E4918230DEC37007DB33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -276,7 +272,6 @@
 				B2824B7D230DEF0300CF4420 /* UpdateTableViewCell.swift */,
 				B2824B7E230DEF0300CF4420 /* UpdateTableViewController.swift */,
 				B2824B76230DEF0300CF4420 /* UpdateViewController.swift */,
-				B2824B7F230DEF0300CF4420 /* CameraPageViewController.swift */,
 				B2824B80230DEF0300CF4420 /* AnnouncementViewController.swift */,
 				B2824B81230DEF0300CF4420 /* ContactBementViewController.swift */,
 				B2824B82230DEF0300CF4420 /* SpeedContactViewController.swift */,
@@ -450,7 +445,6 @@
 				B2824B54230DEF0000CF4420 /* Social Media Feeds */,
 				B2824BD3230DF38600CF4420 /* Assets.xcassets */,
 				B29E4927230DEC3F007DB33A /* Info.plist */,
-				B29E36082314411800658276 /* BementBuildingClassifier.mlmodel */,
 			);
 			path = Bement;
 			sourceTree = "<group>";
@@ -692,13 +686,11 @@
 				B2824B87230DEF0300CF4420 /* StoryboardSupport.swift in Sources */,
 				B2824BB1230DEF0300CF4420 /* LunchViewController.swift in Sources */,
 				B2824B86230DEF0300CF4420 /* WeatherStore.swift in Sources */,
-				B2824BAC230DEF0300CF4420 /* CameraPageViewController.swift in Sources */,
 				B2824BA7230DEF0300CF4420 /* CalendersTableViewController.swift in Sources */,
 				B2824BB0230DEF0300CF4420 /* LoginViewController.swift in Sources */,
 				B2824B8A230DEF0300CF4420 /* TwitterTableViewController.swift in Sources */,
 				B2824BAB230DEF0300CF4420 /* UpdateTableViewController.swift in Sources */,
 				B2824BAA230DEF0300CF4420 /* UpdateTableViewCell.swift in Sources */,
-				B29E36092314411800658276 /* BementBuildingClassifier.mlmodel in Sources */,
 				B2824BA9230DEF0300CF4420 /* CatalogDetailTableViewController.swift in Sources */,
 				B2DAA725235661B800C33AB0 /* UIColor.swift in Sources */,
 				B2824BA6230DEF0300CF4420 /* CatalogWebViewController.swift in Sources */,
