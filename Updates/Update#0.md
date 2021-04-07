@@ -76,8 +76,8 @@ I absolutely love it, but I do I tell everyone that?
 
 ### For future developers and maintainers (issue 1)
 
-Hi! My name is Nico (or Runkai if you prefer). Since I am just a student, and I will not be here forever, and I need someone to look after this app. If your think you are qualified, or can simply take up a challenge, then there is nothing that can stop you.
-If you are here because you have no idea what is going on, my documentations are confusing (I understand), or just have no idea where to start. Visit [here](https://github.com/1105420698) and send me an email for some more technical information. The repository for the project should not be private by the time you are dealing with this. If you need any help with `git`, feel free looking for help on [Stack Overflow](https://stackoverflow.com). If you did not find the official Bement app documentation yet, here is the [link](https://bement.runkaizhang.xyz/).
+Hi! My name is Nico (or Runkai if you prefer). Since I am just a student, and I won't be here forever, and I need someone to look after this app. If your think you are qualified, or can withstand a challenge, then there is nothing that can stop you.
+If you are here because you have no idea what is going on, my documentations are confusing (I understand), or just have no idea where to start. Visit [here](https://github.com/1105420698) and send me an email for some more technical support. The repository for the project should not be private by the time you are dealing with this. If you need any help with `git`, feel free looking for help on [Stack Overflow](https://stackoverflow.com). If you did not find the official Bement app documentation yet, here is the [link](https://bement.runkaizhang.xyz/).
 
 Here is a list useful links that might help you get started:
 
