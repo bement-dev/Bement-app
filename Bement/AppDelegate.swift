@@ -13,16 +13,19 @@ import SwiftyJSON
 import Siren
 
 @UIApplicationMain
+/// :nodoc:
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Social media data variables
     
+    /// A universally accessible `RSSFeedItem` list that stores posts from Twitter.
     public static var twitterItems: [RSSFeedItem] = []
+    /// A universally accessible `RSSFeedItem` list that stores posts from Facebook.
     public static var facebookItems: [RSSFeedItem] = []
 
     // MARK: Application Handling
     
-    /// :nodoc: Fires when the application is launched
+    /// Fires when the application is launched
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -31,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    /// :nodoc: This method sets up the screen orientation, allowing different settings for different `ViewController`s.
+    /// This method sets up the screen orientation, allowing different settings for different `ViewController`s.
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if let rootViewController = self.topViewControllerWithRootViewController(rootViewController: window?.rootViewController) {
             if rootViewController.responds(to: #selector(ClagettViewController.canRotate)) {

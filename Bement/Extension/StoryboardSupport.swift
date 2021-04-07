@@ -28,18 +28,22 @@
 
 import UIKit
 
+/// :nodoc:
 protocol StoryboardIdentifiable {
   static var storyboardIdentifier: String { get }
 }
 
+/// :nodoc:
 extension StoryboardIdentifiable where Self: UIViewController {
   static var storyboardIdentifier: String {
     return String(describing: self)
   }
 }
 
+/// :nodoc:
 extension UIViewController: StoryboardIdentifiable { }
 
+/// :nodoc:
 extension UIStoryboard {
    //  If there are multiple storyboards in the project, each one must be named here:
   enum Storyboard: String {
@@ -69,23 +73,25 @@ extension UIStoryboard {
 /// 2) Add `enum SegueIdentifier: String { }` to conformance
 /// 3) Manual segues are trigged by `performSegue(with:sender:)`
 /// 4) `prepare(for:sender:)` does a `switch segueIdentifier(for: segue)` to select the appropriate segue case
-
 protocol SegueHandlerType {
-  associatedtype SegueIdentifier: RawRepresentable
+    /// :nodoc:
+    associatedtype SegueIdentifier: RawRepresentable
 }
 
+/// :nodoc:
 extension SegueHandlerType where Self: UIViewController, SegueIdentifier.RawValue == String {
-  func performSegue(withIdentifier identifier: SegueIdentifier, sender: Any?) {
-    performSegue(withIdentifier: identifier.rawValue, sender: sender)
-  }
-  
-  func segueIdentifier(for segue: UIStoryboardSegue) -> SegueIdentifier {
-    guard let identifier = segue.identifier,
-      let segueIdentifier = SegueIdentifier(rawValue: identifier)
-      else {
-        fatalError("Invalid segue identifier: \(String(describing: segue.identifier))")
+    /// :nodoc:
+    func performSegue(withIdentifier identifier: SegueIdentifier, sender: Any?) {
+        performSegue(withIdentifier: identifier.rawValue, sender: sender)
     }
+  
+    func segueIdentifier(for segue: UIStoryboardSegue) -> SegueIdentifier {
+        guard let identifier = segue.identifier,
+              let segueIdentifier = SegueIdentifier(rawValue: identifier)
+        else {
+            fatalError("Invalid segue identifier: \(String(describing: segue.identifier))")
+        }
     
-    return segueIdentifier
-  }
+        return segueIdentifier
+    }
 }

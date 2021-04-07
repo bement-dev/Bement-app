@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B7DFA2EE2E299A8CD210C45 /* Pods_Bement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */; };
-		B204CA182547272F004B7CC6 /* FBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA162547272F004B7CC6 /* FBCell.swift */; };
+		B204CA182547272F004B7CC6 /* imageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA162547272F004B7CC6 /* imageTableViewCell.swift */; };
 		B204CA192547272F004B7CC6 /* FBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA172547272F004B7CC6 /* FBTableViewController.swift */; };
 		B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890723A9C881001BDA43 /* Kingfisher */; };
 		B24E890B23A9C927001BDA43 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890A23A9C927001BDA43 /* SkeletonView */; };
@@ -21,13 +21,9 @@
 		B2824B88230DEF0300CF4420 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B52230DEF0000CF4420 /* AnimationHelper.swift */; };
 		B2824B89230DEF0300CF4420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2824B53230DEF0000CF4420 /* LaunchScreen.storyboard */; };
 		B2824B8A230DEF0300CF4420 /* TwitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */; };
-		B2824B8D230DEF0300CF4420 /* TwitterWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */; };
 		B2824B92230DEF0300CF4420 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B5F230DEF0100CF4420 /* Tools.swift */; };
 		B2824B94230DEF0300CF4420 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B61230DEF0100CF4420 /* Announcement.swift */; };
 		B2824B96230DEF0300CF4420 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B64230DEF0200CF4420 /* HamburgerButton.swift */; };
-		B2824B97230DEF0300CF4420 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B65230DEF0200CF4420 /* UIViewExtensions.swift */; };
-		B2824B98230DEF0300CF4420 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B66230DEF0200CF4420 /* UIImage.swift */; };
-		B2824B99230DEF0300CF4420 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B67230DEF0200CF4420 /* UIViewController.swift */; };
 		B2824B9C230DEF0300CF4420 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B6D230DEF0200CF4420 /* GlobalVariable.swift */; };
 		B2824B9D230DEF0300CF4420 /* CatalogResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B6E230DEF0200CF4420 /* CatalogResources.swift */; };
 		B2824BA0230DEF0300CF4420 /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B73230DEF0300CF4420 /* CatalogTableViewController.swift */; };
@@ -58,7 +54,6 @@
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
 		B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4918230DEC37007DB33A /* SceneDelegate.swift */; };
 		B2C41CA1261D4F5A000D7BA8 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = B2C41CA0261D4F5A000D7BA8 /* Reachability */; };
-		B2DAA725235661B800C33AB0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DAA724235661B800C33AB0 /* UIColor.swift */; };
 		B2F970E2231E0F4F003C854A /* BementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F970E1231E0F4F003C854A /* BementUITests.swift */; };
 		B2F970F0231E0F5F003C854A /* BementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F970EF231E0F5F003C854A /* BementTests.swift */; };
 /* End PBXBuildFile section */
@@ -83,7 +78,7 @@
 /* Begin PBXFileReference section */
 		7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.release.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.release.xcconfig"; sourceTree = "<group>"; };
 		8935B9066163E6CA8BEB2838 /* Pods-Bement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.debug.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.debug.xcconfig"; sourceTree = "<group>"; };
-		B204CA162547272F004B7CC6 /* FBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBCell.swift; sourceTree = "<group>"; };
+		B204CA162547272F004B7CC6 /* imageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageTableViewCell.swift; sourceTree = "<group>"; };
 		B204CA172547272F004B7CC6 /* FBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBTableViewController.swift; sourceTree = "<group>"; };
 		B25E76252315F90500B9399D /* Update#0.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Update#0.md"; sourceTree = "<group>"; };
 		B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
@@ -91,13 +86,9 @@
 		B2824B52230DEF0000CF4420 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		B2824B53230DEF0000CF4420 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTableViewController.swift; sourceTree = "<group>"; };
-		B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterWithImageTableViewCell.swift; sourceTree = "<group>"; };
 		B2824B5F230DEF0100CF4420 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		B2824B61230DEF0100CF4420 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		B2824B64230DEF0200CF4420 /* HamburgerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
-		B2824B65230DEF0200CF4420 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		B2824B66230DEF0200CF4420 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		B2824B67230DEF0200CF4420 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B2824B6D230DEF0200CF4420 /* GlobalVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 		B2824B6E230DEF0200CF4420 /* CatalogResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogResources.swift; sourceTree = "<group>"; };
 		B2824B73230DEF0300CF4420 /* CatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogTableViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +143,6 @@
 		B29E4916230DEC37007DB33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29E4918230DEC37007DB33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B29E4927230DEC3F007DB33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2DAA724235661B800C33AB0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B2F970DF231E0F4F003C854A /* BementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F970E1231E0F4F003C854A /* BementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BementUITests.swift; sourceTree = "<group>"; };
 		B2F970E3231E0F4F003C854A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -225,22 +215,12 @@
 			path = Updates;
 			sourceTree = "<group>";
 		};
-		B2824B50230DEF0000CF4420 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				B2824B51230DEF0000CF4420 /* StoryboardSupport.swift */,
-				B2824B52230DEF0000CF4420 /* AnimationHelper.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		B2824B54230DEF0000CF4420 /* Social Media Feeds */ = {
 			isa = PBXGroup;
 			children = (
 				B204CA172547272F004B7CC6 /* FBTableViewController.swift */,
-				B204CA162547272F004B7CC6 /* FBCell.swift */,
+				B204CA162547272F004B7CC6 /* imageTableViewCell.swift */,
 				B2824B55230DEF0000CF4420 /* TwitterTableViewController.swift */,
-				B2824B58230DEF0000CF4420 /* TwitterWithImageTableViewCell.swift */,
 			);
 			path = "Social Media Feeds";
 			sourceTree = "<group>";
@@ -248,11 +228,9 @@
 		B2824B63230DEF0200CF4420 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B2824B51230DEF0000CF4420 /* StoryboardSupport.swift */,
+				B2824B52230DEF0000CF4420 /* AnimationHelper.swift */,
 				B2824B64230DEF0200CF4420 /* HamburgerButton.swift */,
-				B2824B65230DEF0200CF4420 /* UIViewExtensions.swift */,
-				B2824B66230DEF0200CF4420 /* UIImage.swift */,
-				B2824B67230DEF0200CF4420 /* UIViewController.swift */,
-				B2DAA724235661B800C33AB0 /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -441,7 +419,6 @@
 				B2824B5F230DEF0100CF4420 /* Tools.swift */,
 				B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */,
 				B2824B63230DEF0200CF4420 /* Extension */,
-				B2824B50230DEF0000CF4420 /* Helpers */,
 				B2824B54230DEF0000CF4420 /* Social Media Feeds */,
 				B2824BD3230DF38600CF4420 /* Assets.xcassets */,
 				B29E4927230DEC3F007DB33A /* Info.plist */,
@@ -671,11 +648,9 @@
 				B2824BA8230DEF0300CF4420 /* ClagettViewController.swift in Sources */,
 				B2824BA2230DEF0300CF4420 /* ViewController.swift in Sources */,
 				B2824B92230DEF0300CF4420 /* Tools.swift in Sources */,
-				B2824B99230DEF0300CF4420 /* UIViewController.swift in Sources */,
 				B204CA192547272F004B7CC6 /* FBTableViewController.swift in Sources */,
 				B2824BA4230DEF0300CF4420 /* LookAheadViewController.swift in Sources */,
 				B2824B94230DEF0300CF4420 /* Announcement.swift in Sources */,
-				B2824B8D230DEF0300CF4420 /* TwitterWithImageTableViewCell.swift in Sources */,
 				B2824B9C230DEF0300CF4420 /* GlobalVariable.swift in Sources */,
 				B2824BAE230DEF0300CF4420 /* ContactBementViewController.swift in Sources */,
 				B2824BA3230DEF0300CF4420 /* UpdateViewController.swift in Sources */,
@@ -692,14 +667,11 @@
 				B2824BAB230DEF0300CF4420 /* UpdateTableViewController.swift in Sources */,
 				B2824BAA230DEF0300CF4420 /* UpdateTableViewCell.swift in Sources */,
 				B2824BA9230DEF0300CF4420 /* CatalogDetailTableViewController.swift in Sources */,
-				B2DAA725235661B800C33AB0 /* UIColor.swift in Sources */,
 				B2824BA6230DEF0300CF4420 /* CatalogWebViewController.swift in Sources */,
 				B2824B9D230DEF0300CF4420 /* CatalogResources.swift in Sources */,
 				B2824BA1230DEF0300CF4420 /* DetailTableViewCell.swift in Sources */,
 				B2824BA0230DEF0300CF4420 /* CatalogTableViewController.swift in Sources */,
-				B2824B97230DEF0300CF4420 /* UIViewExtensions.swift in Sources */,
-				B204CA182547272F004B7CC6 /* FBCell.swift in Sources */,
-				B2824B98230DEF0300CF4420 /* UIImage.swift in Sources */,
+				B204CA182547272F004B7CC6 /* imageTableViewCell.swift in Sources */,
 				B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */,
 				B2824BA5230DEF0300CF4420 /* InquiryViewController.swift in Sources */,
 				B2824BAD230DEF0300CF4420 /* AnnouncementViewController.swift in Sources */,

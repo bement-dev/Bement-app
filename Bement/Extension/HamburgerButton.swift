@@ -9,7 +9,9 @@ import CoreGraphics
 import QuartzCore
 import UIKit
 
+/// :nodoc:
 class HamburgerButton: UIButton {
+    /// :nodoc:
     let shortStroke: CGPath = {
         let path = CGMutablePath()
         path.move(to: CGPoint(x: 2, y: 2))
@@ -18,6 +20,7 @@ class HamburgerButton: UIButton {
         return path
     }()
     
+    /// :nodoc:
     let outline: CGPath = {
         let path = CGMutablePath()
         path.move(to: CGPoint(x: 10, y: 27))
@@ -32,16 +35,22 @@ class HamburgerButton: UIButton {
         return path
     }()
     
+    /// :nodoc:
     let menuStrokeStart: CGFloat = 0.325
+    /// :nodoc:
     let menuStrokeEnd: CGFloat = 0.9
     
+    /// :nodoc:
     let hamburgerStrokeStart: CGFloat = 0.028
+    /// :nodoc:
     let hamburgerStrokeEnd: CGFloat = 0.111
     
+    /// :nodoc:
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
+    /// :nodoc:
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -85,6 +94,7 @@ class HamburgerButton: UIButton {
         self.bottom.position = CGPoint(x: 40, y: 36)
     }
     
+    /// :nodoc:
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
 
@@ -135,6 +145,7 @@ class HamburgerButton: UIButton {
         }
     }
     
+    /// :nodoc:
     var showsMenu: Bool = false {
         didSet {
             let strokeStart = CABasicAnimation(keyPath: "strokeStart")
@@ -191,12 +202,17 @@ class HamburgerButton: UIButton {
         }
     }
     
+    /// :nodoc:
     var top: CAShapeLayer! = CAShapeLayer()
+    /// :nodoc:
     var bottom: CAShapeLayer! = CAShapeLayer()
+    /// :nodoc:
     var middle: CAShapeLayer! = CAShapeLayer()
 }
 
+/// :nodoc:
 extension CALayer {
+    /// :nodoc:
     func ocb_applyAnimation(_ animation: CABasicAnimation) {
         let copy = animation.copy() as! CABasicAnimation
         

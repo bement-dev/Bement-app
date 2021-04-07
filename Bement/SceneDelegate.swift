@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// :nodoc:
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    /// :nodoc:
     var window: UIWindow?
 
     /// :nodoc:

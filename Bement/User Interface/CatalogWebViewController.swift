@@ -34,32 +34,32 @@ class CatalogWebViewController: UIViewController, WKUIDelegate, WKNavigationDele
         
         switch GlobalVariable.CatalogGrade {
         case "Kindergarten":
-            self.title = Catalog.Gradek3[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Gradek3[GlobalVariable.row]]!)
+            self.title = CatalogResources.Gradek3[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Gradek3[GlobalVariable.row]]!)
         case "Grade 1":
-            self.title = Catalog.Gradek3[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Gradek3[GlobalVariable.row]]!)
+            self.title = CatalogResources.Gradek3[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Gradek3[GlobalVariable.row]]!)
         case "Grade 2":
-            self.title = Catalog.Gradek3[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Gradek3[GlobalVariable.row]]!)
+            self.title = CatalogResources.Gradek3[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Gradek3[GlobalVariable.row]]!)
         case "Grade 3":
-            self.title = Catalog.Gradek3[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Gradek3[GlobalVariable.row]]!)
+            self.title = CatalogResources.Gradek3[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Gradek3[GlobalVariable.row]]!)
         case "Grade 4":
-            self.title = Catalog.Grade45[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Grade45[GlobalVariable.row]]!)
+            self.title = CatalogResources.Grade45[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Grade45[GlobalVariable.row]]!)
         case "Grade 5":
-            self.title = Catalog.Grade45[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Grade45[GlobalVariable.row]]!)
+            self.title = CatalogResources.Grade45[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Grade45[GlobalVariable.row]]!)
         case "Grade 6":
-            self.title = Catalog.Grade6[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Grade6[GlobalVariable.row]]!)
+            self.title = CatalogResources.Grade6[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Grade6[GlobalVariable.row]]!)
         case "Grade 7":
-            self.title = Catalog.Grade789[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Grade789[GlobalVariable.row]]!)
+            self.title = CatalogResources.Grade789[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Grade789[GlobalVariable.row]]!)
         case "Grade 8 & 9":
-            self.title = Catalog.Grade789[GlobalVariable.row]
-            accessWeb(link: Catalog.links[Catalog.Grade789[GlobalVariable.row]]!)
+            self.title = CatalogResources.Grade789[GlobalVariable.row]
+            accessWeb(link: CatalogResources.links[CatalogResources.Grade789[GlobalVariable.row]]!)
         default:
             print("This should not happen!")
         }

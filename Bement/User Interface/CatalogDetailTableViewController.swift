@@ -8,12 +8,15 @@
 
 import UIKit
 
+/// Like `CatalogTableViewController` but this expands that.
 class CatalogDetailTableViewController: UITableViewController {
     
+    /// The label to display the catalog.
     @IBOutlet weak var titleTextDetail: UINavigationItem!
+    /// The row data from `CatalogDetailTableViewController`.
     var segueData = Int()
-    var catalogs = [String()]
     
+    /// Determine which catalog it should fetch based on data (`segueData`) passed to it.
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,39 +45,41 @@ class CatalogDetailTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-    
+    /// The number of sections will always be 1, this is a constant.
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    /// Initialize the table with the correct number of rows based on the catalog.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch segueData {
-        case 1: return Catalog.Gradek3.count
-        case 2: return Catalog.Gradek3.count
-        case 3: return Catalog.Gradek3.count
-        case 4: return Catalog.Gradek3.count
-        case 5: return Catalog.Grade45.count
-        case 6: return Catalog.Grade45.count
-        case 7: return Catalog.Grade6.count
-        case 8: return Catalog.Grade789.count
-        case 9: return Catalog.Grade789.count
+        case 1: return CatalogResources.Gradek3.count
+        case 2: return CatalogResources.Gradek3.count
+        case 3: return CatalogResources.Gradek3.count
+        case 4: return CatalogResources.Gradek3.count
+        case 5: return CatalogResources.Grade45.count
+        case 6: return CatalogResources.Grade45.count
+        case 7: return CatalogResources.Grade6.count
+        case 8: return CatalogResources.Grade789.count
+        case 9: return CatalogResources.Grade789.count
         default: return 0
         }
     }
     
+    /// Set the title of the cells using data from `CatalogResources`
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cells", for: indexPath) as! DetailTableViewCell
         
         switch segueData {
-        case 1: cell.title.text = Catalog.Gradek3[indexPath.row]
-        case 2: cell.title.text = Catalog.Gradek3[indexPath.row]
-        case 3: cell.title.text = Catalog.Gradek3[indexPath.row]
-        case 4: cell.title.text = Catalog.Gradek3[indexPath.row]
-        case 5: cell.title.text = Catalog.Grade45[indexPath.row]
-        case 6: cell.title.text = Catalog.Grade45[indexPath.row]
-        case 7: cell.title.text = Catalog.Grade6[indexPath.row]
-        case 8: cell.title.text = Catalog.Grade789[indexPath.row]
-        case 9: cell.title.text = Catalog.Grade789[indexPath.row]
+        case 1: cell.title.text = CatalogResources.Gradek3[indexPath.row]
+        case 2: cell.title.text = CatalogResources.Gradek3[indexPath.row]
+        case 3: cell.title.text = CatalogResources.Gradek3[indexPath.row]
+        case 4: cell.title.text = CatalogResources.Gradek3[indexPath.row]
+        case 5: cell.title.text = CatalogResources.Grade45[indexPath.row]
+        case 6: cell.title.text = CatalogResources.Grade45[indexPath.row]
+        case 7: cell.title.text = CatalogResources.Grade6[indexPath.row]
+        case 8: cell.title.text = CatalogResources.Grade789[indexPath.row]
+        case 9: cell.title.text = CatalogResources.Grade789[indexPath.row]
         default:
             print("This should not happen!")
         }
@@ -82,6 +87,7 @@ class CatalogDetailTableViewController: UITableViewController {
         return cell
     }
     
+    /// Pass which catalog it currently holds to the `CatalogWebViewController`, and performs a segue to actually go there.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         GlobalVariable.row = indexPath.row
         switch segueData {
@@ -107,15 +113,5 @@ class CatalogDetailTableViewController: UITableViewController {
             print("This should not happen!")
         }
         self.performSegue(withIdentifier: "toWeb", sender: self)
-    }
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-
-        let userInterfaceStyle = traitCollection.userInterfaceStyle // Either .unspecified, .light, or .dark
-            
-        if userInterfaceStyle == .dark {
-        } else {
-        }
     }
 }

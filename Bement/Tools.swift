@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// A collection of reusable functions that for some reason was stuffed into a class. Now there is only one function left, please change this.
 class Tools {
     
     /**

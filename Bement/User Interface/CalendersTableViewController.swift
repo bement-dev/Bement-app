@@ -8,16 +8,20 @@
 
 import UIKit
 
+/// A table to display all the available calenders a user can subscribe to.
 class CalendersTableViewController: UITableViewController {
     
+    /// :nodoc:
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    /// The number of sections here is a constant because everything is manually inputted.
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
+    /// initialize the table with correct number of rows within each section.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 6
@@ -26,18 +30,7 @@ class CalendersTableViewController: UITableViewController {
         }
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-                super.traitCollectionDidChange(previousTraitCollection)
-
-                let userInterfaceStyle = traitCollection.userInterfaceStyle // Either .unspecified, .light, or .dark
-                
-                if userInterfaceStyle == .dark {
-                    self.view.backgroundColor = .black
-                } else {
-                    self.view.backgroundColor = .white
-                }
-            }
-    
+    /// Prompt to subscribe whenever the user clicks on a cell.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             switch indexPath.row {
