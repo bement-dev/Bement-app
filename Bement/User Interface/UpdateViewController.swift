@@ -33,7 +33,7 @@ class UpdateViewController: UIViewController, WKNavigationDelegate {
             mdView.load(markdown: markdown, enableImage: true)
             
             mdView.isScrollEnabled = true;
-            mdView.backgroundColor = #colorLiteral(red: 0.1330000013, green: 0.1330000013, blue: 0.1330000013, alpha: 1);
+            mdView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0);
 
             // called when user touch link
             mdView.onTouchLink = { [weak self] request in

@@ -10,30 +10,36 @@ import UIKit
 import Kingfisher
 import FeedKit
 
+/// A `UITableViewController` that helps displaying a list of posts from Twitter.
 class TwitterTableViewController: UITableViewController {
     
+    /// Keep track of the amount of time this table is reloaded.
     var reloadCount = 0
     
+    /// :nodoc:
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    /// :nodoc:
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    /// :nodoc:
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return AppDelegate.twitterItems.count
     }
     
+    /// :nodoc:
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         let datePub = formatter.string(from: AppDelegate.twitterItems[indexPath.row].pubDate!)
         
-        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
+        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! imageTableViewCell
         
         cellWithImage.selectionStyle = .none
         cellWithImage.dateOfPub.text = "Date: \(datePub)"
@@ -66,28 +72,21 @@ class TwitterTableViewController: UITableViewController {
         return cellWithImage
     }
     
+    /// Stop downloading images when the table is finished displaying.
     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
+        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! imageTableViewCell
         cellWithImage.contentImage.kf.cancelDownloadTask()
     }
     
+    /// Automatically determine cell height, no idea if this actually works or not.
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.estimatedRowHeight
     }
     
+    /// Open link when a cell is pressed.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let link = URL(string: AppDelegate.twitterItems[indexPath.row].link!) {
             UIApplication.shared.open(link)
-        }
-    }
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        
-        let userInterfaceStyle = traitCollection.userInterfaceStyle // Either .unspecified, .light, or .dark
-        
-        if userInterfaceStyle == .dark {
-        } else {
         }
     }
 }

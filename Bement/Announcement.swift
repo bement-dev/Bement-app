@@ -43,7 +43,6 @@ class Announcement {
      - parameters:
         - sender: A `UIViewController` that is recieving and presenting the success message.
      */
-    // TODO: Modify this method so that it is "immune" to problems related power and time efficiency.
     func upload(sender: UIViewController) {
         let id = CKRecord.ID(recordName: "0")
         let record = CKRecord(recordType: "Announcment", recordID: id)

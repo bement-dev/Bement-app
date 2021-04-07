@@ -23,7 +23,7 @@ class AnnouncementViewController: UIViewController {
     @IBOutlet var firstField: UITextField!
     /// The `UITextField` for inputing the second line of the announcement.
     @IBOutlet var secondField: UITextField!
-    
+    /// The `UITextField` that will display either "On" or "Off" to indicate whether there is already an announcement in effect.
     @IBOutlet var currentAnnouncement: UILabel!
     
     ///:nodoc: Set up the button after the screen is loaded.

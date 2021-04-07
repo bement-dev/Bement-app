@@ -8,25 +8,30 @@
 
 import UIKit
 
+/// A table to display all the library catalogs.
 class CatalogTableViewController: UITableViewController {
     
+    /// A number stored to pass onto the next `UIViewController`.
     var indexRow = Int()
     
+    /// :nodoc:
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
     // MARK: - Table view data source
-    
+    /// Only one section, this is a constant.
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    /// Only ten rows, this is a constant.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
+    /// Segue to another table for more information whenever a row has been clicked.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         switch indexPath.row {
@@ -62,6 +67,7 @@ class CatalogTableViewController: UITableViewController {
         }
     }
     
+    /// Sends the index data to `CatalogDetailTableViewController`.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "resource" {
@@ -73,14 +79,4 @@ class CatalogTableViewController: UITableViewController {
             destinationVC.segueData = catalogID
         }
     }
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-            super.traitCollectionDidChange(previousTraitCollection)
-
-            let userInterfaceStyle = traitCollection.userInterfaceStyle // Either .unspecified, .light, or .dark
-            
-            if userInterfaceStyle == .dark {
-            } else {
-            }
-        }
 }
