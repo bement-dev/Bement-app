@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/cezheng/Fuzi",
         "state": {
           "branch": null,
-          "revision": "5955a7d9b3bb5f24adb1a46ce8586ba37eee43bc",
-          "version": "3.1.2"
+          "revision": "f08c8323da21e985f3772610753bcfc652c2103f",
+          "version": "3.1.3"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager",
         "state": {
           "branch": null,
-          "revision": "b0f0a127cca6bb39378447baa2afff74123abd09",
-          "version": "6.5.5"
+          "revision": "4dc6bc7d1c9747bd0c261c8c055903f9fdef91f7",
+          "version": "6.5.6"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
         "state": {
           "branch": null,
-          "revision": "910d808ade2a576e1a292ceb458a6fa43f67f594",
-          "version": "5.14.0"
+          "revision": "2a10bf41da75599a9f8e872dbd44fe0155a2e00c",
+          "version": "5.15.8"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/ArtSabintsev/Siren.git",
         "state": {
           "branch": null,
-          "revision": "1a37f10ef2750c7ccf12ce363215c542860db29b",
-          "version": "5.4.4"
+          "revision": "9173fc529731705a737658b2801ccbc19dd385c8",
+          "version": "5.8.1"
         }
       },
       {
@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/Juanpe/SkeletonView.git",
         "state": {
           "branch": null,
-          "revision": "d09a5d75ee09a89db2555a83ab2d61d04c93419b",
-          "version": "1.8.7"
+          "revision": "32ab6d3852e91312dcbfc3f3a749cfc691da75fe",
+          "version": "1.13.0"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
         "state": {
           "branch": null,
-          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
-          "version": "5.0.0"
+          "revision": "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
+          "version": "5.0.1"
         }
       },
       {
@@ -78,8 +78,8 @@
         "repositoryURL": "https://github.com/SvenTiigi/WhatsNewKit.git",
         "state": {
           "branch": null,
-          "revision": "41319af1696c9a8c95f0f68cc24be025fbb34b96",
-          "version": "1.3.3"
+          "revision": "92a9d6f5f6754aba0df972514fd7686f1de03bcc",
+          "version": "1.3.7"
         }
       }
     ]

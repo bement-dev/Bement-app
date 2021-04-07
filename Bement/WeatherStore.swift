@@ -14,10 +14,10 @@ class WeatherStore {
     var summary: String
     var icon: String
     
-    init(uvIndex: Int, temperature: Int, summary: String, icon: String) {
-        self.uvIndex = uvIndex
-        self.temperature = temperature
-        self.summary = summary
-        self.icon = icon
+    init(uvIndex: Int?, temperature: Int?, summary: String?, icon: String?) {
+        self.uvIndex = uvIndex ?? 0
+        self.temperature = temperature ?? 0
+        self.summary = summary ?? "Something went wrong..."
+        self.icon = icon ?? "xmark.octagon.fill"
     }
 }

@@ -7,27 +7,22 @@
 //
 
 import XCTest
+@testable import Bement
 
-class BementTests: XCTestCase {
+class WeatherStoreTests: XCTestCase {
 
+    var sunny:WeatherStore!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sunny = WeatherStore(uvIndex: 4, temperature: 72, summary: "Is sunny lol", icon: "sun.max.fill")
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sunny = nil
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testTemperatureCanBeRetrieved() {
+        XCTAssertEqual(sunny.temperature, 72)
     }
 
 }

@@ -26,25 +26,6 @@ class Tools {
         object.layer.cornerRadius = 15
         object.layer.masksToBounds = true
     }
-    
-    public static func makeDate(year: Int, month: Int, day: Int, hr: Int, min: Int, sec: Int) -> NSDate {
-        let calendar = NSCalendar(calendarIdentifier: .gregorian)!
-        let components = NSDateComponents()
-        components.year = year
-        components.month = month
-        components.day = day
-        components.hour = hr
-        components.minute = min
-        components.second = sec
-        let date = calendar.date(from: components as DateComponents)
-        return date! as NSDate
-    }
-    
-    public static func component2Date(_ component: DateComponents) -> NSDate {
-        let calender = NSCalendar(calendarIdentifier: .gregorian)
-        let date = calender?.date(from: component)
-        return date! as NSDate
-    }
 }
 
 
