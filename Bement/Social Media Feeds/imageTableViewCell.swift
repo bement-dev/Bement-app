@@ -1,5 +1,5 @@
 //
-//  TwitterWithImageTableViewCell.swift
+//  imageTableViewCell.swift
 //  Bement
 //
 //  Created by Runkai Zhang on 5/27/19.
@@ -8,7 +8,10 @@
 
 import UIKit
 
-class TwitterWithImageTableViewCell: UITableViewCell {
+/**
+ A `UITableViewCell` that displays a date, a image, and some texts
+*/
+class imageTableViewCell: UITableViewCell {
     
     @IBOutlet var dateOfPub: UILabel!
     @IBOutlet var contentImage: UIImageView!

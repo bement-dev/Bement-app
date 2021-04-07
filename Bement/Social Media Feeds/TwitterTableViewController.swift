@@ -33,7 +33,7 @@ class TwitterTableViewController: UITableViewController {
         formatter.dateStyle = .medium
         let datePub = formatter.string(from: AppDelegate.twitterItems[indexPath.row].pubDate!)
         
-        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
+        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! imageTableViewCell
         
         cellWithImage.selectionStyle = .none
         cellWithImage.dateOfPub.text = "Date: \(datePub)"
@@ -67,7 +67,7 @@ class TwitterTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! TwitterWithImageTableViewCell
+        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! imageTableViewCell
         cellWithImage.contentImage.kf.cancelDownloadTask()
     }
     

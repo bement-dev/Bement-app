@@ -34,7 +34,7 @@ class FacebookTableViewController: UITableViewController {
         formatter.dateStyle = .medium
         let datePub = formatter.string(from: AppDelegate.facebookItems[indexPath.row].pubDate!)
         
-        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! FacebookWithImageTableViewCell
+        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! imageTableViewCell
         
         cellWithImage.selectionStyle = .none
         cellWithImage.dateOfPub.text = "Date: \(datePub)"
@@ -73,7 +73,7 @@ class FacebookTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! FacebookWithImageTableViewCell
+        let cellWithImage = tableView.dequeueReusableCell(withIdentifier: "cellWithImage", for: indexPath) as! imageTableViewCell
         cellWithImage.contentImage.kf.cancelDownloadTask()
     }
     
