@@ -1,4 +1,4 @@
-# The Bement App
+# The Bement App [![Build Status](https://app.bitrise.io/app/c66ff05b3e6e82d8/status.svg?token=8gYN-yKBe3hZCG13ywDGOA&branch=master)](https://app.bitrise.io/app/c66ff05b3e6e82d8)
 [Original repository (archived)](https://github.com/1105420698/Bement-App)
 
 Basic Ground Rules:
