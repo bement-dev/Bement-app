@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B7DFA2EE2E299A8CD210C45 /* Pods_Bement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */; };
 		B204CA182547272F004B7CC6 /* imageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA162547272F004B7CC6 /* imageTableViewCell.swift */; };
 		B204CA192547272F004B7CC6 /* FBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA172547272F004B7CC6 /* FBTableViewController.swift */; };
 		B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890723A9C881001BDA43 /* Kingfisher */; };
 		B24E890B23A9C927001BDA43 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890A23A9C927001BDA43 /* SkeletonView */; };
 		B25E76262315F90500B9399D /* Update#0.md in Resources */ = {isa = PBXBuildFile; fileRef = B25E76252315F90500B9399D /* Update#0.md */; };
+		B25EDB28261F2EE8007465E6 /* MarkdownView in Frameworks */ = {isa = PBXBuildFile; productRef = B25EDB27261F2EE8007465E6 /* MarkdownView */; };
 		B276892D2497E2510009791D /* Fuzi in Frameworks */ = {isa = PBXBuildFile; productRef = B276892C2497E2510009791D /* Fuzi */; };
 		B2824B48230DEE2A00CF4420 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B2824B47230DEE2A00CF4420 /* SwiftyJSON */; };
 		B2824B4B230DEE6400CF4420 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = B2824B4A230DEE6400CF4420 /* FeedKit */; };
@@ -76,8 +76,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.release.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.release.xcconfig"; sourceTree = "<group>"; };
-		8935B9066163E6CA8BEB2838 /* Pods-Bement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bement.debug.xcconfig"; path = "Target Support Files/Pods-Bement/Pods-Bement.debug.xcconfig"; sourceTree = "<group>"; };
 		B204CA162547272F004B7CC6 /* imageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageTableViewCell.swift; sourceTree = "<group>"; };
 		B204CA172547272F004B7CC6 /* FBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBTableViewController.swift; sourceTree = "<group>"; };
 		B25E76252315F90500B9399D /* Update#0.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Update#0.md"; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 		B2F970EF231E0F5F003C854A /* BementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BementTests.swift; sourceTree = "<group>"; };
 		B2F970F1231E0F5F003C854A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F970F7231E0F78003C854A /* Bement.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bement.xctestplan; sourceTree = "<group>"; };
-		E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +157,7 @@
 			files = (
 				B276892D2497E2510009791D /* Fuzi in Frameworks */,
 				B2C41CA1261D4F5A000D7BA8 /* Reachability in Frameworks */,
+				B25EDB28261F2EE8007465E6 /* MarkdownView in Frameworks */,
 				B24E890B23A9C927001BDA43 /* SkeletonView in Frameworks */,
 				B2824B4B230DEE6400CF4420 /* FeedKit in Frameworks */,
 				B2824BB4230DEF7300CF4420 /* IQKeyboardManagerSwift in Frameworks */,
@@ -167,7 +165,6 @@
 				B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */,
 				B28729622354BBDA00E2B917 /* WhatsNewKit in Frameworks */,
 				B2824B48230DEE2A00CF4420 /* SwiftyJSON in Frameworks */,
-				2B7DFA2EE2E299A8CD210C45 /* Pods_Bement.framework in Frameworks */,
 				B287295F2354BAA000E2B917 /* Siren in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,20 +186,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		600D72C34D3F455661C18410 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8935B9066163E6CA8BEB2838 /* Pods-Bement.debug.xcconfig */,
-				7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		630BA7DFFD33383A289DDBA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B2824BD6230DF5EA00CF4420 /* CloudKit.framework */,
-				E812BD6DAEB32A36D8B79411 /* Pods_Bement.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -387,7 +374,6 @@
 				B2F970E0231E0F4F003C854A /* BementUITests */,
 				B2F970EE231E0F5F003C854A /* BementTests */,
 				B29E4914230DEC37007DB33A /* Products */,
-				600D72C34D3F455661C18410 /* Pods */,
 				630BA7DFFD33383A289DDBA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -451,11 +437,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B29E492A230DEC3F007DB33A /* Build configuration list for PBXNativeTarget "Bement" */;
 			buildPhases = (
-				92E6227E21F5E71D8061F08D /* [CP] Check Pods Manifest.lock */,
 				B29E490F230DEC37007DB33A /* Sources */,
 				B29E4910230DEC37007DB33A /* Frameworks */,
 				B29E4911230DEC37007DB33A /* Resources */,
-				0C5D745CF5982C23CBA041AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +456,7 @@
 				B24E890A23A9C927001BDA43 /* SkeletonView */,
 				B276892C2497E2510009791D /* Fuzi */,
 				B2C41CA0261D4F5A000D7BA8 /* Reachability */,
+				B25EDB27261F2EE8007465E6 /* MarkdownView */,
 			);
 			productName = Bement;
 			productReference = B29E4913230DEC37007DB33A /* Bement.app */;
@@ -556,6 +541,7 @@
 				B24E890923A9C927001BDA43 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 				B276892B2497E2510009791D /* XCRemoteSwiftPackageReference "Fuzi" */,
 				B2C41C9F261D4F5A000D7BA8 /* XCRemoteSwiftPackageReference "Reachability" */,
+				B25EDB26261F2EE8007465E6 /* XCRemoteSwiftPackageReference "MarkdownView" */,
 			);
 			productRefGroup = B29E4914230DEC37007DB33A /* Products */;
 			projectDirPath = "";
@@ -597,48 +583,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0C5D745CF5982C23CBA041AD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bement/Pods-Bement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bement/Pods-Bement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bement/Pods-Bement-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		92E6227E21F5E71D8061F08D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bement-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B29E490F230DEC37007DB33A /* Sources */ = {
@@ -852,7 +796,6 @@
 		};
 		B29E492B230DEC3F007DB33A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8935B9066163E6CA8BEB2838 /* Pods-Bement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
@@ -874,7 +817,6 @@
 		};
 		B29E492C230DEC3F007DB33A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BEF7D1F4C2CF9A15C269509 /* Pods-Bement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bement/Bement.entitlements;
@@ -1030,6 +972,14 @@
 				minimumVersion = 1.8.2;
 			};
 		};
+		B25EDB26261F2EE8007465E6 /* XCRemoteSwiftPackageReference "MarkdownView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/keitaoouchi/MarkdownView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
 		B276892B2497E2510009791D /* XCRemoteSwiftPackageReference "Fuzi" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/cezheng/Fuzi";
@@ -1098,6 +1048,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B24E890923A9C927001BDA43 /* XCRemoteSwiftPackageReference "SkeletonView" */;
 			productName = SkeletonView;
+		};
+		B25EDB27261F2EE8007465E6 /* MarkdownView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B25EDB26261F2EE8007465E6 /* XCRemoteSwiftPackageReference "MarkdownView" */;
+			productName = MarkdownView;
 		};
 		B276892C2497E2510009791D /* Fuzi */ = {
 			isa = XCSwiftPackageProductDependency;
