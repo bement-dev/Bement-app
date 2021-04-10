@@ -7,10 +7,7 @@
 //
 
 import UIKit
-import CoreData
 import FeedKit
-import SwiftyJSON
-import Siren
 
 @UIApplicationMain
 /// :nodoc:
@@ -28,8 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// Fires when the application is launched
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        Siren.shared.wail()
         
         return true
     }

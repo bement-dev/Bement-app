@@ -38,30 +38,12 @@
         }
       },
       {
-        "package": "MarkdownView",
-        "repositoryURL": "https://github.com/keitaoouchi/MarkdownView.git",
-        "state": {
-          "branch": null,
-          "revision": "b88cd53afe4c8bb42d40e0141be03922d1d3c6c9",
-          "version": "1.7.1"
-        }
-      },
-      {
         "package": "Reachability",
         "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
         "state": {
           "branch": null,
           "revision": "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
           "version": "5.1.0"
-        }
-      },
-      {
-        "package": "Siren",
-        "repositoryURL": "https://github.com/ArtSabintsev/Siren.git",
-        "state": {
-          "branch": null,
-          "revision": "9173fc529731705a737658b2801ccbc19dd385c8",
-          "version": "5.8.1"
         }
       },
       {
