@@ -418,6 +418,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				B2BF932126214FE400990A78 /* PBXTargetDependency */,
+				B2BF932326214FE400990A78 /* PBXTargetDependency */,
+				B2BF932526214FE400990A78 /* PBXTargetDependency */,
+				B2BF932726214FE400990A78 /* PBXTargetDependency */,
+				B2BF932926214FE400990A78 /* PBXTargetDependency */,
+				B2BF932B26214FE400990A78 /* PBXTargetDependency */,
+				B2BF931F26214FD500990A78 /* PBXTargetDependency */,
 			);
 			name = Bement;
 			packageProductDependencies = (
@@ -605,6 +612,34 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B2BF931F26214FD500990A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2BF931E26214FD500990A78 /* SkeletonView */;
+		};
+		B2BF932126214FE400990A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2BF932026214FE400990A78 /* SwiftyJSON */;
+		};
+		B2BF932326214FE400990A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2BF932226214FE400990A78 /* FeedKit */;
+		};
+		B2BF932526214FE400990A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2BF932426214FE400990A78 /* IQKeyboardManagerSwift */;
+		};
+		B2BF932726214FE400990A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2BF932626214FE400990A78 /* Kingfisher */;
+		};
+		B2BF932926214FE400990A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2BF932826214FE400990A78 /* Fuzi */;
+		};
+		B2BF932B26214FE400990A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2BF932A26214FE400990A78 /* Reachability */;
+		};
 		B2F970E5231E0F4F003C854A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B29E4912230DEC37007DB33A /* Bement */;
@@ -698,6 +733,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -751,9 +787,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1008,6 +1046,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B2824BB2230DEF7300CF4420 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		B2BF931E26214FD500990A78 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24E890923A9C927001BDA43 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		B2BF932026214FE400990A78 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2824B46230DEE2A00CF4420 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		B2BF932226214FE400990A78 /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2824B49230DEE6400CF4420 /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
+		B2BF932426214FE400990A78 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2824BB2230DEF7300CF4420 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		B2BF932626214FE400990A78 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24E890623A9C881001BDA43 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B2BF932826214FE400990A78 /* Fuzi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B276892B2497E2510009791D /* XCRemoteSwiftPackageReference "Fuzi" */;
+			productName = Fuzi;
+		};
+		B2BF932A26214FE400990A78 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2C41C9F261D4F5A000D7BA8 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 		B2C41CA0261D4F5A000D7BA8 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
