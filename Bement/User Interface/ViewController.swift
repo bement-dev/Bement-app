@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 import CloudKit
 import WhatsNewKit
 import FeedKit
