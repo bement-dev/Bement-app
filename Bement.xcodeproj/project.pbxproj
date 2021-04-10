@@ -43,7 +43,6 @@
 		B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD0230DF2D500CF4420 /* Main.storyboard */; };
 		B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD3230DF38600CF4420 /* Assets.xcassets */; };
 		B2824BD7230DF5EA00CF4420 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2824BD6230DF5EA00CF4420 /* CloudKit.framework */; };
-		B28729622354BBDA00E2B917 /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = B28729612354BBDA00E2B917 /* WhatsNewKit */; };
 		B297B5432339BAB6006C3ACE /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B297B5422339BAB6006C3ACE /* keys.plist */; };
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
 		B29E4919230DEC37007DB33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4918230DEC37007DB33A /* SceneDelegate.swift */; };
@@ -152,7 +151,6 @@
 				B2824BB4230DEF7300CF4420 /* IQKeyboardManagerSwift in Frameworks */,
 				B2824BD7230DF5EA00CF4420 /* CloudKit.framework in Frameworks */,
 				B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */,
-				B28729622354BBDA00E2B917 /* WhatsNewKit in Frameworks */,
 				B2824B48230DEE2A00CF4420 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +424,6 @@
 				B2824B47230DEE2A00CF4420 /* SwiftyJSON */,
 				B2824B4A230DEE6400CF4420 /* FeedKit */,
 				B2824BB3230DEF7300CF4420 /* IQKeyboardManagerSwift */,
-				B28729612354BBDA00E2B917 /* WhatsNewKit */,
 				B24E890723A9C881001BDA43 /* Kingfisher */,
 				B24E890A23A9C927001BDA43 /* SkeletonView */,
 				B276892C2497E2510009791D /* Fuzi */,
@@ -509,7 +506,6 @@
 				B2824B46230DEE2A00CF4420 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				B2824B49230DEE6400CF4420 /* XCRemoteSwiftPackageReference "FeedKit" */,
 				B2824BB2230DEF7300CF4420 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				B28729602354BBDA00E2B917 /* XCRemoteSwiftPackageReference "WhatsNewKit" */,
 				B24E890623A9C881001BDA43 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				B24E890923A9C927001BDA43 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 				B276892B2497E2510009791D /* XCRemoteSwiftPackageReference "Fuzi" */,
@@ -972,14 +968,6 @@
 				minimumVersion = 6.4.1;
 			};
 		};
-		B28729602354BBDA00E2B917 /* XCRemoteSwiftPackageReference "WhatsNewKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SvenTiigi/WhatsNewKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.0;
-			};
-		};
 		B2C41C9F261D4F5A000D7BA8 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
@@ -1020,11 +1008,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B2824BB2230DEF7300CF4420 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
-		};
-		B28729612354BBDA00E2B917 /* WhatsNewKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B28729602354BBDA00E2B917 /* XCRemoteSwiftPackageReference "WhatsNewKit" */;
-			productName = WhatsNewKit;
 		};
 		B2C41CA0261D4F5A000D7BA8 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
