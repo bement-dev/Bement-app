@@ -59,14 +59,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cells" id="0Ew-Tz-UxP" customClass="DetailTableViewCell" customModule="Bement" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="390" height="42.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Ew-Tz-UxP" id="IMH-jr-nkp">
-                                    <rect key="frame" x="0.0" y="0.0" width="358.66666666666669" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="358.66666666666669" height="42.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVy-ef-e4S">
-                                            <rect key="frame" x="20" y="11.000000000000002" width="330.66666666666669" height="21.666666666666671"/>
+                                            <rect key="frame" x="20" y="11.000000000000002" width="330.66666666666669" height="20.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -1099,90 +1099,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZd-zm-rf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2797.5999999999999" y="1752.7093596059115"/>
-        </scene>
-        <!--Updates-->
-        <scene sceneID="mNW-fn-iBM">
-            <objects>
-                <tableViewController id="09c-Wc-Ch5" customClass="UpdateTableViewController" customModule="Bement" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WI9-v5-OCG">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="250" id="7sK-4K-ErS" customClass="UpdateTableViewCell" customModule="Bement" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="390" height="250"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7sK-4K-ErS" id="eHe-DE-7fb">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJo-A2-pWJ">
-                                            <rect key="frame" x="105" y="11" width="180" height="173"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="fJo-A2-pWJ" secondAttribute="height" multiplier="1:1" id="6o8-Sa-0BX"/>
-                                                <constraint firstAttribute="height" constant="78" id="dJs-uV-6EP"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejE-G5-sq2">
-                                            <rect key="frame" x="20" y="190" width="52" height="26.666666666666657"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rJ-CL-p2A">
-                                            <rect key="frame" x="20" y="223" width="33" height="16"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="fJo-A2-pWJ" secondAttribute="bottom" constant="55" id="2ss-3K-yu8"/>
-                                        <constraint firstItem="fJo-A2-pWJ" firstAttribute="leading" secondItem="eHe-DE-7fb" secondAttribute="leadingMargin" constant="85" id="5XT-eM-pic"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ejE-G5-sq2" secondAttribute="trailing" constant="20" symbolic="YES" id="LoZ-PD-i1s"/>
-                                        <constraint firstItem="fJo-A2-pWJ" firstAttribute="top" secondItem="eHe-DE-7fb" secondAttribute="topMargin" id="MJa-y0-ZBU"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="fJo-A2-pWJ" secondAttribute="trailing" constant="85" id="P0H-pl-atk"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="3rJ-CL-p2A" secondAttribute="bottom" id="Ukf-DP-FT8"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3rJ-CL-p2A" secondAttribute="trailing" constant="20" symbolic="YES" id="a0b-pI-cbv"/>
-                                        <constraint firstItem="ejE-G5-sq2" firstAttribute="top" secondItem="eHe-DE-7fb" secondAttribute="topMargin" constant="179" id="ebL-nF-Nsb"/>
-                                        <constraint firstItem="ejE-G5-sq2" firstAttribute="leading" secondItem="eHe-DE-7fb" secondAttribute="leadingMargin" id="jGX-kJ-pGC"/>
-                                        <constraint firstItem="3rJ-CL-p2A" firstAttribute="leading" secondItem="eHe-DE-7fb" secondAttribute="leadingMargin" id="wSc-5o-g02"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="updateDate" destination="3rJ-CL-p2A" id="JKS-Em-gWh"/>
-                                    <outlet property="updateImage" destination="fJo-A2-pWJ" id="vrt-XK-Fzk"/>
-                                    <outlet property="updateTitle" destination="ejE-G5-sq2" id="aNQ-EN-qYY"/>
-                                    <segue destination="fBg-QL-5q6" kind="show" id="gGG-0q-ZrQ"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="09c-Wc-Ch5" id="0jh-K3-20j"/>
-                            <outlet property="delegate" destination="09c-Wc-Ch5" id="aFW-mA-A8W"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Updates" id="HvB-Jc-ThB"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nNK-Ci-QsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3740" y="2451.7241379310344"/>
-        </scene>
-        <!--Update View Controller-->
-        <scene sceneID="d4F-ZW-q3A">
-            <objects>
-                <viewController id="fBg-QL-5q6" customClass="UpdateViewController" customModule="Bement" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fZc-Eh-JCv">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="HUq-RF-441"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="yUu-Qt-8RF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PaF-HV-Hzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4680.8000000000002" y="2451.7241379310344"/>
         </scene>
         <!--Contact-->
         <scene sceneID="dRy-al-xEp">
@@ -2451,13 +2367,7 @@
                             <outlet property="delegate" destination="WL3-FN-URO" id="OEG-VF-Xrn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Twitter" id="21z-6R-BCo">
-                        <barButtonItem key="leftBarButtonItem" image="update" id="7ts-Wc-Ezz">
-                            <connections>
-                                <segue destination="09c-Wc-Ch5" kind="show" id="OWc-4X-Nxg"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Twitter" id="21z-6R-BCo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEH-Ga-8fi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2607,7 +2517,6 @@
         <image name="protected" width="682.66668701171875" height="682.66668701171875"/>
         <image name="social" width="1200" height="1200"/>
         <image name="twitter" width="25" height="25"/>
-        <image name="update" width="24" height="24"/>
         <namedColor name="LibrarySpecialCellColor">
             <color red="0.7369999885559082" green="0.74099999666213989" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

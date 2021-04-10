@@ -11,8 +11,6 @@
 		B204CA192547272F004B7CC6 /* FBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204CA172547272F004B7CC6 /* FBTableViewController.swift */; };
 		B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890723A9C881001BDA43 /* Kingfisher */; };
 		B24E890B23A9C927001BDA43 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B24E890A23A9C927001BDA43 /* SkeletonView */; };
-		B25E76262315F90500B9399D /* Update#0.md in Resources */ = {isa = PBXBuildFile; fileRef = B25E76252315F90500B9399D /* Update#0.md */; };
-		B25EDB28261F2EE8007465E6 /* MarkdownView in Frameworks */ = {isa = PBXBuildFile; productRef = B25EDB27261F2EE8007465E6 /* MarkdownView */; };
 		B276892D2497E2510009791D /* Fuzi in Frameworks */ = {isa = PBXBuildFile; productRef = B276892C2497E2510009791D /* Fuzi */; };
 		B2824B48230DEE2A00CF4420 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B2824B47230DEE2A00CF4420 /* SwiftyJSON */; };
 		B2824B4B230DEE6400CF4420 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = B2824B4A230DEE6400CF4420 /* FeedKit */; };
@@ -29,15 +27,12 @@
 		B2824BA0230DEF0300CF4420 /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B73230DEF0300CF4420 /* CatalogTableViewController.swift */; };
 		B2824BA1230DEF0300CF4420 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B74230DEF0300CF4420 /* DetailTableViewCell.swift */; };
 		B2824BA2230DEF0300CF4420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B75230DEF0300CF4420 /* ViewController.swift */; };
-		B2824BA3230DEF0300CF4420 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B76230DEF0300CF4420 /* UpdateViewController.swift */; };
 		B2824BA4230DEF0300CF4420 /* LookAheadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B77230DEF0300CF4420 /* LookAheadViewController.swift */; };
 		B2824BA5230DEF0300CF4420 /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B78230DEF0300CF4420 /* InquiryViewController.swift */; };
 		B2824BA6230DEF0300CF4420 /* CatalogWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B79230DEF0300CF4420 /* CatalogWebViewController.swift */; };
 		B2824BA7230DEF0300CF4420 /* CalendersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7A230DEF0300CF4420 /* CalendersTableViewController.swift */; };
 		B2824BA8230DEF0300CF4420 /* ClagettViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7B230DEF0300CF4420 /* ClagettViewController.swift */; };
 		B2824BA9230DEF0300CF4420 /* CatalogDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7C230DEF0300CF4420 /* CatalogDetailTableViewController.swift */; };
-		B2824BAA230DEF0300CF4420 /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7D230DEF0300CF4420 /* UpdateTableViewCell.swift */; };
-		B2824BAB230DEF0300CF4420 /* UpdateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B7E230DEF0300CF4420 /* UpdateTableViewController.swift */; };
 		B2824BAD230DEF0300CF4420 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B80230DEF0300CF4420 /* AnnouncementViewController.swift */; };
 		B2824BAE230DEF0300CF4420 /* ContactBementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B81230DEF0300CF4420 /* ContactBementViewController.swift */; };
 		B2824BAF230DEF0300CF4420 /* SpeedContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2824B82230DEF0300CF4420 /* SpeedContactViewController.swift */; };
@@ -48,7 +43,6 @@
 		B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD0230DF2D500CF4420 /* Main.storyboard */; };
 		B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2824BD3230DF38600CF4420 /* Assets.xcassets */; };
 		B2824BD7230DF5EA00CF4420 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2824BD6230DF5EA00CF4420 /* CloudKit.framework */; };
-		B287295F2354BAA000E2B917 /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = B287295E2354BAA000E2B917 /* Siren */; };
 		B28729622354BBDA00E2B917 /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = B28729612354BBDA00E2B917 /* WhatsNewKit */; };
 		B297B5432339BAB6006C3ACE /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B297B5422339BAB6006C3ACE /* keys.plist */; };
 		B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E4916230DEC37007DB33A /* AppDelegate.swift */; };
@@ -78,7 +72,6 @@
 /* Begin PBXFileReference section */
 		B204CA162547272F004B7CC6 /* imageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageTableViewCell.swift; sourceTree = "<group>"; };
 		B204CA172547272F004B7CC6 /* FBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBTableViewController.swift; sourceTree = "<group>"; };
-		B25E76252315F90500B9399D /* Update#0.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Update#0.md"; sourceTree = "<group>"; };
 		B2824B4F230DEEFF00CF4420 /* WeatherStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
 		B2824B51230DEF0000CF4420 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
 		B2824B52230DEF0000CF4420 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
@@ -92,15 +85,12 @@
 		B2824B73230DEF0300CF4420 /* CatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogTableViewController.swift; sourceTree = "<group>"; };
 		B2824B74230DEF0300CF4420 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		B2824B75230DEF0300CF4420 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2824B76230DEF0300CF4420 /* UpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		B2824B77230DEF0300CF4420 /* LookAheadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookAheadViewController.swift; sourceTree = "<group>"; };
 		B2824B78230DEF0300CF4420 /* InquiryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InquiryViewController.swift; sourceTree = "<group>"; };
 		B2824B79230DEF0300CF4420 /* CatalogWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogWebViewController.swift; sourceTree = "<group>"; };
 		B2824B7A230DEF0300CF4420 /* CalendersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendersTableViewController.swift; sourceTree = "<group>"; };
 		B2824B7B230DEF0300CF4420 /* ClagettViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClagettViewController.swift; sourceTree = "<group>"; };
 		B2824B7C230DEF0300CF4420 /* CatalogDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogDetailTableViewController.swift; sourceTree = "<group>"; };
-		B2824B7D230DEF0300CF4420 /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
-		B2824B7E230DEF0300CF4420 /* UpdateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewController.swift; sourceTree = "<group>"; };
 		B2824B80230DEF0300CF4420 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
 		B2824B81230DEF0300CF4420 /* ContactBementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactBementViewController.swift; sourceTree = "<group>"; };
 		B2824B82230DEF0300CF4420 /* SpeedContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedContactViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +147,6 @@
 			files = (
 				B276892D2497E2510009791D /* Fuzi in Frameworks */,
 				B2C41CA1261D4F5A000D7BA8 /* Reachability in Frameworks */,
-				B25EDB28261F2EE8007465E6 /* MarkdownView in Frameworks */,
 				B24E890B23A9C927001BDA43 /* SkeletonView in Frameworks */,
 				B2824B4B230DEE6400CF4420 /* FeedKit in Frameworks */,
 				B2824BB4230DEF7300CF4420 /* IQKeyboardManagerSwift in Frameworks */,
@@ -165,7 +154,6 @@
 				B24E890823A9C881001BDA43 /* Kingfisher in Frameworks */,
 				B28729622354BBDA00E2B917 /* WhatsNewKit in Frameworks */,
 				B2824B48230DEE2A00CF4420 /* SwiftyJSON in Frameworks */,
-				B287295F2354BAA000E2B917 /* Siren in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,14 +180,6 @@
 				B2824BD6230DF5EA00CF4420 /* CloudKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B25E76242315F90500B9399D /* Updates */ = {
-			isa = PBXGroup;
-			children = (
-				B25E76252315F90500B9399D /* Update#0.md */,
-			);
-			path = Updates;
 			sourceTree = "<group>";
 		};
 		B2824B54230DEF0000CF4420 /* Social Media Feeds */ = {
@@ -234,9 +214,6 @@
 				B2824B7A230DEF0300CF4420 /* CalendersTableViewController.swift */,
 				B2824B7B230DEF0300CF4420 /* ClagettViewController.swift */,
 				B2824B7C230DEF0300CF4420 /* CatalogDetailTableViewController.swift */,
-				B2824B7D230DEF0300CF4420 /* UpdateTableViewCell.swift */,
-				B2824B7E230DEF0300CF4420 /* UpdateTableViewController.swift */,
-				B2824B76230DEF0300CF4420 /* UpdateViewController.swift */,
 				B2824B80230DEF0300CF4420 /* AnnouncementViewController.swift */,
 				B2824B81230DEF0300CF4420 /* ContactBementViewController.swift */,
 				B2824B82230DEF0300CF4420 /* SpeedContactViewController.swift */,
@@ -369,7 +346,6 @@
 			children = (
 				B2F970F7231E0F78003C854A /* Bement.xctestplan */,
 				B29E4915230DEC37007DB33A /* Bement */,
-				B25E76242315F90500B9399D /* Updates */,
 				B2824BD8230DF77900CF4420 /* docs */,
 				B2F970E0231E0F4F003C854A /* BementUITests */,
 				B2F970EE231E0F5F003C854A /* BementTests */,
@@ -450,13 +426,11 @@
 				B2824B47230DEE2A00CF4420 /* SwiftyJSON */,
 				B2824B4A230DEE6400CF4420 /* FeedKit */,
 				B2824BB3230DEF7300CF4420 /* IQKeyboardManagerSwift */,
-				B287295E2354BAA000E2B917 /* Siren */,
 				B28729612354BBDA00E2B917 /* WhatsNewKit */,
 				B24E890723A9C881001BDA43 /* Kingfisher */,
 				B24E890A23A9C927001BDA43 /* SkeletonView */,
 				B276892C2497E2510009791D /* Fuzi */,
 				B2C41CA0261D4F5A000D7BA8 /* Reachability */,
-				B25EDB27261F2EE8007465E6 /* MarkdownView */,
 			);
 			productName = Bement;
 			productReference = B29E4913230DEC37007DB33A /* Bement.app */;
@@ -535,13 +509,11 @@
 				B2824B46230DEE2A00CF4420 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				B2824B49230DEE6400CF4420 /* XCRemoteSwiftPackageReference "FeedKit" */,
 				B2824BB2230DEF7300CF4420 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				B287295D2354BAA000E2B917 /* XCRemoteSwiftPackageReference "Siren" */,
 				B28729602354BBDA00E2B917 /* XCRemoteSwiftPackageReference "WhatsNewKit" */,
 				B24E890623A9C881001BDA43 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				B24E890923A9C927001BDA43 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 				B276892B2497E2510009791D /* XCRemoteSwiftPackageReference "Fuzi" */,
 				B2C41C9F261D4F5A000D7BA8 /* XCRemoteSwiftPackageReference "Reachability" */,
-				B25EDB26261F2EE8007465E6 /* XCRemoteSwiftPackageReference "MarkdownView" */,
 			);
 			productRefGroup = B29E4914230DEC37007DB33A /* Products */;
 			projectDirPath = "";
@@ -563,7 +535,6 @@
 				B2824B89230DEF0300CF4420 /* LaunchScreen.storyboard in Resources */,
 				B297B5432339BAB6006C3ACE /* keys.plist in Resources */,
 				B2824BCE230DF2D500CF4420 /* Main.storyboard in Resources */,
-				B25E76262315F90500B9399D /* Update#0.md in Resources */,
 				B2824BD4230DF38600CF4420 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,7 +568,6 @@
 				B2824B94230DEF0300CF4420 /* Announcement.swift in Sources */,
 				B2824B9C230DEF0300CF4420 /* GlobalVariable.swift in Sources */,
 				B2824BAE230DEF0300CF4420 /* ContactBementViewController.swift in Sources */,
-				B2824BA3230DEF0300CF4420 /* UpdateViewController.swift in Sources */,
 				B29E4917230DEC37007DB33A /* AppDelegate.swift in Sources */,
 				B2824B88230DEF0300CF4420 /* AnimationHelper.swift in Sources */,
 				B2824B96230DEF0300CF4420 /* HamburgerButton.swift in Sources */,
@@ -608,8 +578,6 @@
 				B2824BA7230DEF0300CF4420 /* CalendersTableViewController.swift in Sources */,
 				B2824BB0230DEF0300CF4420 /* LoginViewController.swift in Sources */,
 				B2824B8A230DEF0300CF4420 /* TwitterTableViewController.swift in Sources */,
-				B2824BAB230DEF0300CF4420 /* UpdateTableViewController.swift in Sources */,
-				B2824BAA230DEF0300CF4420 /* UpdateTableViewCell.swift in Sources */,
 				B2824BA9230DEF0300CF4420 /* CatalogDetailTableViewController.swift in Sources */,
 				B2824BA6230DEF0300CF4420 /* CatalogWebViewController.swift in Sources */,
 				B2824B9D230DEF0300CF4420 /* CatalogResources.swift in Sources */,
@@ -972,14 +940,6 @@
 				minimumVersion = 1.8.2;
 			};
 		};
-		B25EDB26261F2EE8007465E6 /* XCRemoteSwiftPackageReference "MarkdownView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/keitaoouchi/MarkdownView.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.1;
-			};
-		};
 		B276892B2497E2510009791D /* XCRemoteSwiftPackageReference "Fuzi" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/cezheng/Fuzi";
@@ -1012,14 +972,6 @@
 				minimumVersion = 6.4.1;
 			};
 		};
-		B287295D2354BAA000E2B917 /* XCRemoteSwiftPackageReference "Siren" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ArtSabintsev/Siren.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.3;
-			};
-		};
 		B28729602354BBDA00E2B917 /* XCRemoteSwiftPackageReference "WhatsNewKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SvenTiigi/WhatsNewKit.git";
@@ -1049,11 +1001,6 @@
 			package = B24E890923A9C927001BDA43 /* XCRemoteSwiftPackageReference "SkeletonView" */;
 			productName = SkeletonView;
 		};
-		B25EDB27261F2EE8007465E6 /* MarkdownView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B25EDB26261F2EE8007465E6 /* XCRemoteSwiftPackageReference "MarkdownView" */;
-			productName = MarkdownView;
-		};
 		B276892C2497E2510009791D /* Fuzi */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B276892B2497E2510009791D /* XCRemoteSwiftPackageReference "Fuzi" */;
@@ -1073,11 +1020,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B2824BB2230DEF7300CF4420 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
-		};
-		B287295E2354BAA000E2B917 /* Siren */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B287295D2354BAA000E2B917 /* XCRemoteSwiftPackageReference "Siren" */;
-			productName = Siren;
 		};
 		B28729612354BBDA00E2B917 /* WhatsNewKit */ = {
 			isa = XCSwiftPackageProductDependency;
