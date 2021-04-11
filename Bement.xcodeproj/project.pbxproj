@@ -111,7 +111,6 @@
 		B29E4916230DEC37007DB33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29E4918230DEC37007DB33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B29E4927230DEC3F007DB33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2F970F7231E0F78003C854A /* Bement.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bement.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,7 +302,6 @@
 		B29E490A230DEC37007DB33A = {
 			isa = PBXGroup;
 			children = (
-				B2F970F7231E0F78003C854A /* Bement.xctestplan */,
 				B29E4915230DEC37007DB33A /* Bement */,
 				B2824BD8230DF77900CF4420 /* docs */,
 				B29E4914230DEC37007DB33A /* Products */,
