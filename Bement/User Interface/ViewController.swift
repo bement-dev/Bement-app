@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     
     private var observer: NSObjectProtocol?
     
-    var weather: WeatherStore?
-    
     public static var twitterRetrieved = false
     public static var facebookRecieved = false
     
@@ -57,22 +55,22 @@ class ViewController: UIViewController {
             self.fetchData()
             self.fetchPosts()
         }
-
+        
         originalLocationMoved = data.center.x
         originalLocation = data.center.x - view.bounds.width
         
         button = HamburgerButton(frame: CGRect(x: 0, y: 0, width: 54, height: 54))
         button.addTarget(self, action: #selector(toggle(_:)), for: .touchUpInside)
-                                
+        
         buttonView.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-                button.topAnchor.constraint(equalTo: buttonView.topAnchor),
-                button.bottomAnchor.constraint(equalTo: buttonView.bottomAnchor),
-                button.leftAnchor.constraint(equalTo: buttonView.leftAnchor),
-                button.rightAnchor.constraint(equalTo: buttonView.rightAnchor),
-                button.centerXAnchor.constraint(equalTo: buttonView.centerXAnchor),
-                button.centerYAnchor.constraint(equalTo: buttonView.centerYAnchor)
+            button.topAnchor.constraint(equalTo: buttonView.topAnchor),
+            button.bottomAnchor.constraint(equalTo: buttonView.bottomAnchor),
+            button.leftAnchor.constraint(equalTo: buttonView.leftAnchor),
+            button.rightAnchor.constraint(equalTo: buttonView.rightAnchor),
+            button.centerXAnchor.constraint(equalTo: buttonView.centerXAnchor),
+            button.centerYAnchor.constraint(equalTo: buttonView.centerYAnchor)
         ])
     }
     
@@ -138,7 +136,7 @@ class ViewController: UIViewController {
     func fetchPosts() {
         AppDelegate.facebookItems.removeAll()
         AppDelegate.twitterItems.removeAll()
-
+        
         let twitterURL = URL(string: "https://rss.app/feeds/U5sBo6uPH2lPhQTq.xml")!
         let twitterParser = FeedParser(URL: twitterURL)
         twitterParser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
@@ -236,91 +234,78 @@ class ViewController: UIViewController {
     
     func retrieveWeatherData() {
         let apiKey = URL(string: "https://api.darksky.net/forecast/149da9678f344c568394d88cf55289f2/42.5482866,-72.6059389")
+        var weather: WeatherStore = WeatherStore()
         
         if let url = apiKey {
-             let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
-             if let error = error {
-                  print(error)
-             } else {
+            let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
+                if let error = error {
+                    print(error)
+                } else {
                     if let usableData = data {
-                        do {
-                            let json = try JSON(data: usableData)
-                            if let result = json.dictionary!["currently"]?.dictionary {
-                                let uvIndex = result["uvIndex"]?.int
-                                let temperature = result["temperature"]?.int
-                                let summary = result["summary"]?.string
-                                let icon = result["icon"]?.string
-                                let doubleTemp = Double(temperature!)
-                                let celsius = 5.0 / 9.0 * (doubleTemp - 32.0)
-
-                                self.weather = WeatherStore(uvIndex: uvIndex!, temperature: temperature!, summary: summary!, icon: icon!)
-                                DispatchQueue.main.sync {
-                                    self.temperatureLabel.text = "\(self.weather!.temperature)/\(Int(celsius))°"
-                                    self.uvLabel.text = "UV \(self.weather!.uvIndex)"
-                                    switch self.weather!.uvIndex {
-                                    case 0: self.uvBackground.backgroundColor = UIColor.systemGreen
-                                    case 1: self.uvBackground.backgroundColor = UIColor.systemGreen
-                                    case 2: self.uvBackground.backgroundColor = UIColor.systemGreen
-                                    case 3: self.uvBackground.backgroundColor = UIColor.systemYellow
-                                    case 4: self.uvBackground.backgroundColor = UIColor.systemYellow
-                                    case 5: self.uvBackground.backgroundColor = UIColor.systemYellow
-                                    case 6: self.uvBackground.backgroundColor = UIColor.systemOrange
-                                    case 7: self.uvBackground.backgroundColor = UIColor.systemOrange
-                                    case 8: self.uvBackground.backgroundColor = UIColor.systemRed
-                                    case 9: self.uvBackground.backgroundColor = UIColor.systemRed
-                                    case 10: self.uvBackground.backgroundColor = UIColor.systemRed
-                                    case 11: self.uvBackground.backgroundColor = UIColor.systemPurple
-                                    case 12: self.uvBackground.backgroundColor = UIColor.systemPurple
-                                    default: self.uvBackground.backgroundColor = UIColor.systemPurple
-                                    }
-                                    
-                                    //print(self.weather!.icon)
-                                    switch self.weather!.icon {
-                                    case "clear-day":
-                                        self.weatherIcon.image = UIImage(systemName: "sun.max.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemYellow
-                                    case "clear-night":
-                                        self.weatherIcon.image = UIImage(systemName: "moon.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemYellow
-                                    case "rain":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.rain.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemTeal
-                                    case "snow":
-                                        self.weatherIcon.image = UIImage(systemName: "snow")
-                                        self.weatherIcon.tintColor = UIColor.systemTeal
-                                    case "sleet":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.sleet.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemTeal
-                                    case "wind":
-                                        self.weatherIcon.image = UIImage(systemName: "wind")
-                                        self.weatherIcon.tintColor = UIColor.systemTeal
-                                    case "fog":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.fog.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemGray
-                                    case "cloudy":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemGray
-                                    case "partly-cloudy-day":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.sun.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemYellow
-                                    case "partly-cloudy-night":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.moon.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemBlue
-                                    case "hail":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.hail.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemBlue
-                                    case "thunderstorm":
-                                        self.weatherIcon.image = UIImage(systemName: "cloud.bolt.rain.fill")
-                                        self.weatherIcon.tintColor = UIColor.systemYellow
-                                    case "tornado":
-                                        self.weatherIcon.image = UIImage(systemName: "tornado")
-                                        self.weatherIcon.tintColor = UIColor.systemBlue
-                                    default: print("This should not happen!")
-                                    }
-                                }
+                        weather = WeatherStore(usableData)
+                        DispatchQueue.main.sync {
+                            self.temperatureLabel.text = "\(weather.fahrenheit)/\(weather.celsius)°"
+                            self.uvLabel.text = "UV \(weather.uvIndex)"
+                            switch weather.uvIndex {
+                            case 0: self.uvBackground.backgroundColor = UIColor.systemGreen
+                            case 1: self.uvBackground.backgroundColor = UIColor.systemGreen
+                            case 2: self.uvBackground.backgroundColor = UIColor.systemGreen
+                            case 3: self.uvBackground.backgroundColor = UIColor.systemYellow
+                            case 4: self.uvBackground.backgroundColor = UIColor.systemYellow
+                            case 5: self.uvBackground.backgroundColor = UIColor.systemYellow
+                            case 6: self.uvBackground.backgroundColor = UIColor.systemOrange
+                            case 7: self.uvBackground.backgroundColor = UIColor.systemOrange
+                            case 8: self.uvBackground.backgroundColor = UIColor.systemRed
+                            case 9: self.uvBackground.backgroundColor = UIColor.systemRed
+                            case 10: self.uvBackground.backgroundColor = UIColor.systemRed
+                            case 11: self.uvBackground.backgroundColor = UIColor.systemPurple
+                            case 12: self.uvBackground.backgroundColor = UIColor.systemPurple
+                            default: self.uvBackground.backgroundColor = UIColor.systemPurple
                             }
-                        } catch {
-                            print(error)
+                            
+                            //print(self.weather!.icon)
+                            switch weather.icon {
+                            case "clear-day":
+                                self.weatherIcon.image = UIImage(systemName: "sun.max.fill")
+                                self.weatherIcon.tintColor = UIColor.systemYellow
+                            case "clear-night":
+                                self.weatherIcon.image = UIImage(systemName: "moon.fill")
+                                self.weatherIcon.tintColor = UIColor.systemYellow
+                            case "rain":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.rain.fill")
+                                self.weatherIcon.tintColor = UIColor.systemTeal
+                            case "snow":
+                                self.weatherIcon.image = UIImage(systemName: "snow")
+                                self.weatherIcon.tintColor = UIColor.systemTeal
+                            case "sleet":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.sleet.fill")
+                                self.weatherIcon.tintColor = UIColor.systemTeal
+                            case "wind":
+                                self.weatherIcon.image = UIImage(systemName: "wind")
+                                self.weatherIcon.tintColor = UIColor.systemTeal
+                            case "fog":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.fog.fill")
+                                self.weatherIcon.tintColor = UIColor.systemGray
+                            case "cloudy":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.fill")
+                                self.weatherIcon.tintColor = UIColor.systemGray
+                            case "partly-cloudy-day":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.sun.fill")
+                                self.weatherIcon.tintColor = UIColor.systemYellow
+                            case "partly-cloudy-night":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.moon.fill")
+                                self.weatherIcon.tintColor = UIColor.systemBlue
+                            case "hail":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.hail.fill")
+                                self.weatherIcon.tintColor = UIColor.systemBlue
+                            case "thunderstorm":
+                                self.weatherIcon.image = UIImage(systemName: "cloud.bolt.rain.fill")
+                                self.weatherIcon.tintColor = UIColor.systemYellow
+                            case "tornado":
+                                self.weatherIcon.image = UIImage(systemName: "tornado")
+                                self.weatherIcon.tintColor = UIColor.systemBlue
+                            default: print("This should not happen!")
+                            }
                         }
                     }
                 }
